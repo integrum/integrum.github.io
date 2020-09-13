@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7]><html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8]><html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!--><html lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noodp, noydir" />
+<meta name="viewport" content="width=device-width" />
+<title>Episode #81 - Spike Stories, Estimating Before Planning and Blocked Stories - Integrum</title>
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/integrum/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/wp-content/themes/integrum/css/print.css" />
+<link rel="pingback" href="/xmlrpc.php" />
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="/2012/09/episode-81-spike-stories-estimating-before-planning-and-blocked-stories/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Episode #81 - Spike Stories, Estimating Before Planning and Blocked Stories - Integrum" />
+<meta property="og:description" content="Clayton, Jade, Roy and Drew discuss: Spike and research stories Estimating stories during planning Blocked stories in a sprint Failing sprints Transcript Clayton Lengel‑Zigich:  Welcome &hellip;" />
+<meta property="og:url" content="http://integrumtech.com/2012/09/episode-81-spike-stories-estimating-before-planning-and-blocked-stories/" />
+<meta property="og:site_name" content="Integrum" />
+<meta property="article:tag" content="Clayton Lengel-Zigich,Drew LeSueur,Jade Meskill,Roy van de Water" />
+<meta property="article:section" content="Agile Weekly Podcast" />
+<meta property="article:published_time" content="2012-09-27T06:00:57+00:00" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/integrumtech.com\/","name":"Integrum"}</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/integrumtech.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style type="text/css">
+.powerpress_player .wp-audio-shortcode { max-width: 200px; }
+</style>
+<link rel='stylesheet' id='mediaelement-css' href="/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.13-9993131" type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css' href="/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.5.1" type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href="/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1" type='text/css' media='all' />
+<link rel='stylesheet' id='export-wp-page-to-static-html-css' href="/wp-content/plugins/export-wp-page-to-static-html/public/css/export-wp-page-to-static-html-public.css?ver=1.0.0" type='text/css' media='all' />
+		<script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src="/wp-content/plugins/powerpress/player.min.js?ver=5.5.1" id='powerpress-player-js'></script>
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js?ver=5.5.1" id='jquery-js'></script>
+<script type='text/javascript' src="/wp-content/themes/integrum/js/jquery.cycle.all.js?ver=5.5.1" id='cycle-js'></script>
+<script type='text/javascript' src="/wp-content/themes/integrum/js/main.js?ver=5.5.1" id='integrum-main-js'></script>
+<script type='text/javascript' src="/wp-content/plugins/export-wp-page-to-static-html/public/js/export-wp-page-to-static-html-public.js?ver=1.0.0" id='export-wp-page-to-static-html-js'></script>
+<link rel="https://api.w.org/" href="/wp-json/" /><link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/6983" /><link rel='shortlink' href="/?p=6983" />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2012%2F09%2Fepisode-81-spike-stories-estimating-before-planning-and-blocked-stories%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2012%2F09%2Fepisode-81-spike-stories-estimating-before-planning-and-blocked-stories%2F&#038;format=xml" />
+<script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://integrumtech.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://integrumtech.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+</head>
+<body class="post-template-default single single-post postid-6983 single-format-standard">
+<div id="wrapper">
+    <div id="wrapper-header">
+    	<header id="header" role="banner">
+            <h1 id="logo"><a href="/" title="Integrum" rel="home">Integrum</a></h1>
+            <nav id="navigation" role="navigation" class="clearfix">
+                <div class="menu-primary-container"><ul id="menu-primary" class="menu"><li id="menu-item-7406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7406"><a title="Go home" href="/">Start</a></li>
+<li id="menu-item-7615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7615"><a title="Meet the team" href="/crew/">Meet</a></li>
+<li id="menu-item-7407" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-7407"><a title="Listen to a scrumcast" href="/category/agile-weekly-podcast/">Listen</a></li>
+<li id="menu-item-7614" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-7614"><a title="Read our industry insights" href="/blog/">Read</a></li>
+<li id="menu-item-7408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7408"><a href="/training-courses/">Learn</a></li>
+<li id="menu-item-7613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7613"><a title="Get in touch with us" href="/contact/">Act</a></li>
+</ul></div>            </nav>
+	    </header>
+    </div>
+    <div id="main" role="main" class="clearfix">
+		<section id="content" class="container-content container-content-wide">
+					<header class="page-header">
+				<h1 class="page-title">Agile Weekly Podcast</h1>
+			</header>
+							<article id="post-6983" class="first post-6983 post type-post status-publish format-standard hentry category-agile-weekly-podcast tag-clayton-lengel-zigich tag-drew-lesueur tag-jade-meskill tag-roy-van-de-water odd">
+	    <header class="entry-header">
+			<h1 class="entry-title"><a href="/2012/09/episode-81-spike-stories-estimating-before-planning-and-blocked-stories/" title="Permalink to Episode #81 &#8211; Spike Stories, Estimating Before Planning and Blocked Stories" rel="bookmark">Episode #81 &#8211; Spike Stories, Estimating Before Planning and Blocked Stories</a></h1>
+			<ul class="entry-meta">
+												<li class="episode">#81</li>
+								<li class="date"><time datetime="2012-09-27T06:00:57+00:00">September 27, 2012</time></li>
+				<li class="category"><ul class="post-categories">
+	<li><a href="/category/agile-weekly-podcast/" rel="category tag">Agile Weekly Podcast</a></li></ul></li>
+	        </ul>
+	    </header>
+		<div class="entry-content">
+						<div class="entry-speakers">
+				<p>Featured speakers:</p>
+											<a href="/crew/clayton-lengel-zigich/">
+								<img src="/wp-content/themes/integrum/img/headshots/clayton.jpg" alt="Clayton Lengel-Zigich" width="84" height="84">
+								Clayton							</a>
+													<a href="/crew/jade-meskill/">
+								<img src="/wp-content/themes/integrum/img/headshots/jade.jpg" alt="Jade Meskill" width="84" height="84">
+								Jade							</a>
+													<a href="/crew/roy-van-de-water/">
+								<img src="/wp-content/themes/integrum/img/headshots/roy.jpg" alt="Roy van de Water" width="84" height="84">
+								Roy							</a>
+									</div>
+						<div class="powerpress_player" id="powerpress_player_5107"><a href="http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/episode_81_a.mp3" title="Play" onclick="return powerpress_embed_html5a('5107','http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/episode_81_a.mp3');" target="_blank"><img src="/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></div>
+			<p>Clayton, Jade, Roy and Drew discuss:</p>
+<ul>
+<li>Spike and research stories</li>
+<li>Estimating stories during planning</li>
+<li>Blocked stories in a sprint</li>
+<li>Failing sprints</li>
+</ul>
+<p><em>Transcript</em></p>
+<p><strong>Clayton Lengel‑Zigich</strong>:  Welcome to another episode of the Agile Weekly Podcast. I&#8217;m Clayton Lengel‑Zigich.</p>
+<p><strong>Roy van de Water</strong>:  I&#8217;m Roy van de Water.</p>
+<p><strong>Drew LeSueur</strong>:  I&#8217;m Drew LeSueur.</p>
+<p><strong>Jade Meskill</strong>:  I&#8217;m Jade Meskill.</p>
+<p><strong>Clayton</strong>:  Today, we&#8217;ve got a smattering of topics, a potpourri if you will.</p>
+<p><strong>Jade</strong>:  [laughs]</p>
+<p><strong>Clayton</strong>:  We don&#8217;t have a guest. If you&#8217;ve been listening to the podcast for a while, you might have noticed that the last 38 episodes we&#8217;ve had guests, but not this one. First topic, &#8220;Are spike/research stories a smell&#8221;?</p>
+<p><strong>Drew</strong>:  Jade, you hate spikes.</p>
+<p><strong>Jade</strong>:  I do. Yes, I think so. I&#8217;m not against them entirely, but I&#8217;ve seen people take it too far. Basically, have multiple iterations of a spike, which to me, is a project.</p>
+<p><strong>Roy</strong>:  Yeah. That&#8217;s just a spike taken to excess. You were telling me earlier about a spike taking six weeks to do. It seems to me that the spike should take maybe one or two hours. But I could totally see the validity of, if you&#8217;re going to put up some task and you don&#8217;t know if it&#8217;s actually possible, you can&#8217;t commit to getting it done within your iteration.</p>
+<p>So, you set aside some time to go and do the spike. If you have a four‑week iteration that poses a problem, because that means you&#8217;re doing your spike now. That means your actual features aren&#8217;t getting done until eight weeks from now. A spike might be something that you can&#8217;t do if you are doing one‑month iterations.</p>
+<p><strong>Jade</strong>:  I prefer instead of committing to an unknown, creating a research task or something like that, that we can give a time box or an estimate to. And then use that information to now be able to turn that spike into something that is estimable.</p>
+<p><strong>Roy</strong>:  That&#8217;s what I was thinking of, when I was thinking of the spike. I guess the spike is supposed to be a prototype that you throw out at the end, right?</p>
+<p><strong>Jade</strong>:  Yeah.</p>
+<p><strong>Roy</strong>:  I was thinking more along the lines of research task. But I don&#8217;t like the idea of doing a pure research task either. If you&#8217;re going to spend two hours researching it, why not get started on building it, and improve that as possible.</p>
+<p><strong>Jade</strong>:  Yeah. When I say research, that&#8217;s what I&#8217;m thinking. Let&#8217;s prove it out. Let&#8217;s make sure it happens. Too many times, I&#8217;ve seen the spike become the actual product.</p>
+<p><strong>Roy</strong>:  Right, and then you have a whole bunch of people working on it, who have absolutely no concern for good quality, because we&#8217;re throwing this away at the end, anyway. By that time, you&#8217;re too attached to it. You can&#8217;t invest the time to really build it for real, and it&#8217;s already about to market.</p>
+<p><strong>Drew</strong>:  There&#8217;s also a danger in, &#8220;We&#8217;re just going to see if we can do this.&#8221; Even doing it in a sprint or especially if it goes beyond more than one sprint, is sometimes what you prototyped and what you did can be the actual product. I know that that was a pretty rigid, but there&#8217;s danger in thinking, &#8220;Oh, this isn&#8217;t real yet. Oh, this isn&#8217;t real yet, this is just a prototype,&#8221; and then carrying that on.</p>
+<p><strong>Roy</strong>:  Usually to any spike, there&#8217;s really one crucial component that you&#8217;re wondering like &#8220;Is this even possible&#8221;?</p>
+<p>It&#8217;s not like the whole spike is&#8230;and usually that one critical component ‑‑ and obviously not in all cases ‑‑ but I mean you can probably knock it out in under a day and just prove that that part is possible and that&#8217;s all the information you need to estimate the rest of story. Now, I can commit to it.</p>
+<p><strong>Clayton</strong>:  Let&#8217;s say that you are doing sprint planning and a story comes up that you hadn&#8217;t really looked up before. Maybe you glanced at it but you don&#8217;t know what it tells. You have never done it before and no one on the team has ever done anything like it before, and you have no idea if it works. What do you do?</p>
+<p><strong>Roy</strong>:  OK, there&#8217;s a huge difference between &#8220;It&#8217;s never been done before,&#8221; and &#8220;I have never done this before and I am not sure if it&#8217;s possible.&#8221;</p>
+<p>I have never driven to New York City but I am positive I can do it.</p>
+<p><strong>Clayton</strong>:  &#8220;There&#8217;s some piece of technology I have never worked.&#8221; &#8220;There&#8217;s a third‑party API that I have never used before and I don&#8217;t feel comfortable coming into the story.&#8221;</p>
+<p><strong>Roy</strong>:  Within some limits&#8230;I guess it&#8217;s up to a comfort level but it&#8217;s still reasonable to commit the stuff even if it&#8217;s unknown.</p>
+<p><strong>Clayton</strong>:  I can&#8217;t commit to it. It&#8217;s too much for&#8230;</p>
+<p><strong>Jade</strong>:  It&#8217;s got freaking laser beams.</p>
+<p><strong>Roy</strong>:  It&#8217;s got freaking laser beams. Then I could totally see like pulling in a research story or a research task or whatever, spending an hour to researching it, and building up a prototype of what you actually think it&#8217;s going to be with the thought in mind that if this works, this is going into production.</p>
+<p>I can totally see that, and then at worst you&#8217;re wasting like an hour or two.</p>
+<p><strong>Clayton</strong>:  If it takes me longer than an hour to answer my question?</p>
+<p><strong>Roy</strong>:  Then maybe you should talk to your team and see if you can come up with an alternative solution or something that&#8217;s simpler. I don&#8217;t know.</p>
+<p><strong>Jade</strong>:  Maybe you&#8217;re asking the wrong question.</p>
+<p><strong>Roy</strong>:  Who is asking wrong question, me or&#8230;?</p>
+<p><strong>Jade</strong>:  If it takes longer than that to answer your question, maybe you could break that down into some smaller pieces. Maybe you have multiple questions that need to be answered.</p>
+<p><strong>Roy</strong>:  Multiple research tasks, I could say that, especially we have the type of team that has gigantic stories, where they take multiple days to finish each one.</p>
+<p><strong>Jade</strong>:  You mean that prevents you from getting too far down this path and becoming too attached to this thing that was supposed to be a prototype or something that you are going to throw away at the end?</p>
+<p><strong>Roy</strong>:  Right, and the other thing that I would make sure too is with any spike or prototype, I mean that would be specially the stuff that I pair on. Because I could totally see that becoming very quickly into a personal project where, because I am the one who saw the spike through, next week I might just as well be the one that works on it, and I certainly know the most about it.</p>
+<p><strong>Jade</strong>:  &#8230;and the laser beam expert.</p>
+<p><strong>Roy</strong>:  Right, exactly. I am the laser beam expert. You guys are afraid as hell of me and can&#8217;t fire me because the laser expert gets it by bus, you guys are screwed.</p>
+<p><strong>Clayton</strong>:  When did you just take the approach of saying, &#8220;Forget the spike or the research thing, let&#8217;s just do the story,&#8221; and in part of doing the story, I will do the two hours of research and we&#8217;ll just complete it there. We don&#8217;t have to wait on the whole other iteration&#8221;?</p>
+<p><strong>Roy</strong>:  If you&#8217;re really that concerned about waiting on a whole other iteration, then it sounds like your iterations are too long.</p>
+<p><strong>Jade</strong>:  If you&#8217;re willing to take it in to your sprint, then you have, implicitly, given it some estimate.</p>
+<p><strong>Roy</strong>:  Yeah, but what if part&#8230;</p>
+<p><strong>Jade</strong>:  It can be completed inside of your sprint.</p>
+<p><strong>Roy</strong>:  Yeah, but I could see a product owner brow‑beating the team into taking the story on, &#8220;Hey, we need to get this done by Tuesday,&#8221; and you&#8217;re like, &#8220;Well, I don&#8217;t even know if I can get it done this sprint.&#8221;</p>
+<p>&#8220;But we need it by Tuesday.&#8221;</p>
+<p><strong>Jade</strong>:  By bringing it into your sprint, you&#8217;ve implicitly agreed that it can be done by Tuesday.</p>
+<p><strong>Roy</strong>:  That&#8217;s a good point. The team members should feel that they are empowered to refuse to bring that stuff in, unless they honestly believe they can get it done.</p>
+<p><strong>Jade</strong>:  You either truly cannot estimate it at all or it&#8217;s just hard and you don&#8217;t want to estimate it. I&#8217;ve ran into very few situations where there is no possible way to estimate the story or whatever it is that we&#8217;re faced with.</p>
+<p>It happens, but very few. I might give it a very large estimate, because I&#8217;m highly uncertain.</p>
+<p><strong>Roy</strong>:  We&#8217;ve definitely seen cases in which we think like, &#8220;Hey, there might be a really easy way to do this. We&#8217;re trying to develop some feature and there&#8217;s a library that Mike did 90 percent of it for us. We&#8217;re afraid to commit to it because it could take two days or it could take one hour depending on the availability of that library or not.&#8221;</p>
+<p>I could see that as being a really good case for, &#8220;We&#8217;re just going to commit to because we know, at most, it&#8217;s going to take two days. It&#8217;s probably only going to take an hour because a library exists or it probably exists or whatever.&#8221;</p>
+<p>But, at least, you can commit to it. Now, do you leave that extra&#8230;do you commit to the maximum amount of time it would take, so you could potentially be leaving almost two days worth of work on the table that you&#8217;re not committing to?</p>
+<p><strong>Clayton</strong>:  If you change the scenario up a bit, and we say that you are doing a planning poker game, and you have this stack of stories that are loosely defined. You&#8217;re not talking about the details of the stories to the acceptance criteria and anything like that, but some stories come up and they sound really scary. How often do you just spike them versus maybe giving them a larger estimate?</p>
+<p>What do you do?</p>
+<p><strong>Jade</strong>:  I&#8217;ve been faced with that. I&#8217;ve worked with a team that had to deal with that. What we ended up doing was breaking that unknown down into some still large, but smaller pieces.</p>
+<p>We have this huge thing that we just can&#8217;t estimate. We have no idea how to do it. Well, could we talk about things that we could estimate and could understand and simplify the equation?</p>
+<p>We ended up with some pretty large loose estimates on the things that were pretty big unknowns, but it wasn&#8217;t that we could not estimate it at all.</p>
+<p><strong>Clayton</strong>:  How do you know when you are spending too much time estimating and breaking things down just for the sake of getting that estimate versus just trying to take the work in or&#8230;?</p>
+<p><strong>Roy</strong>:  Are you suggesting taking the work in without estimating at all?</p>
+<p><strong>Clayton</strong>:  I&#8217;m saying, is it worth it if you have some story that everyone on the team says, or maybe there&#8217;s one really outspoken person and they want to spike this because they&#8217;ve never ‑‑ I&#8217;ll go back to the API example ‑ they&#8217;ve never worked with a third‑party API, so there is no way they can size it because it could be the most complex thing in the world, so they want to spike it.</p>
+<p>Is it worth the time to go through and break the story down so that it can be sized better or it to have a whole separate spike story, to research the API? Are you wasting your time giving an estimate at that point?</p>
+<p><strong>Roy</strong>:  It depends on how quickly you need to get it done. If you need to get it done this iteration, then the only way to reasonably do that is to break it down into estimatable chunks that you can be, as a team, confident that you can complete if before the sprint is done.</p>
+<p>If the product owner determines that this needs to get done this week or as soon as possible, it&#8217;s a top priority story, even if it takes three weeks, &#8220;I still need it done as soon as possible,&#8221; then you&#8217;re going to have to break it down and apply some estimates to it.</p>
+<p><strong>Clayton</strong>:  If research stories and spikes are smells, how often should a team be using them?</p>
+<p><strong>Roy</strong>:  I don&#8217;t know. In the teams, it&#8217;s something like it will come up only like once every other month or so. In my experience, it&#8217;s not that common for a spike to pop up.</p>
+<p><strong>Clayton</strong>:  If it does come more frequently, what does that signal? What could you learn from that?</p>
+<p><strong>Roy</strong>:  That&#8217;s probably because you&#8217;re not breaking stories down far enough to begin with for pulling it into the sprint.</p>
+<p><strong>Jade</strong>:  Yeah, they&#8217;re either way too large or your team is incredibly inexperienced, that could happen.</p>
+<p><strong>Roy</strong>:  Or your team is just really worried that they&#8217;re going to be held responsible for their stories. They&#8217;ve been burnt in the past by product owners that really pressure them into pulling stories in or pressure them and yell at them afterwards if they don&#8217;t&#8230;</p>
+<p>[crosstalk]</p>
+<p><strong>Clayton</strong>:  They&#8217;re fearful for some reason?</p>
+<p><strong>Roy</strong>:  I could see that, yeah.</p>
+<p><strong>Clayton</strong>:  OK.</p>
+<p><strong>Roy</strong>:  It&#8217;s like, &#8220;I don&#8217;t want to commit to anything because I don&#8217;t want to be kept to this,&#8221; or, &#8220;I don&#8217;t trust the rest of my team to actually do it.&#8221;</p>
+<p><strong>Jade</strong>:  Another thing I could be signaling is that you&#8217;re missing a skill on your team. Maybe there&#8217;s a team member that you need to have that has the necessary experience or qualifications. There might be something that really they just don&#8217;t know how to do.</p>
+<p>If for a bunch of developers and we need to illustrate something. Maybe we just can&#8217;t do it. That would be another indication that we&#8217;re missing it, a critical person on our team.</p>
+<p><strong>Clayton</strong>:  We talked a little bit about estimates, but there are a lot of things out there that are doing story point estimating&#8230;basically, that&#8217;s part of the planning process. Does that seem like a reasonable thing to do? What are some downsides to that, maybe?</p>
+<p><strong>Roy</strong>:  I don&#8217;t know. I&#8217;ve been guilty of being on a team where we do that. It feels reasonable at the time, but I can&#8217;t really name any benefits we get out of it. I don&#8217;t know. Maybe it&#8217;s like double‑ledger bookkeeping that we are confident that our tasking matches up to the point estimates to somewhat reasonable.</p>
+<p>We&#8217;re not pulling in five 13s in one‑week sprint. But, other than that, I don&#8217;t really know how much value we&#8217;re getting out of it.</p>
+<p><strong>Drew</strong>:  On teams where they&#8217;re not doing anything with those points, they&#8217;re not using it to do release planning, longer‑term planning, or determining velocity, that sort of thing, then what&#8217;s the point? But, if they&#8217;re actually using those numbers, then, it&#8217;s valuable.</p>
+<p><strong>Roy</strong>:  One huge thing valid that I can see getting out of it is, it very quickly lets everybody on the team that&#8217;s part of the estimating process know, that they&#8217;re on the same page or not. This is something totally different than you Drew, like, &#8220;You threw up a 13 and I threw up a 3, then that means we&#8217;re got to talk, because, clearly, we have two hugely different understandings about what this is supposed to take.&#8221;</p>
+<p>That should probably come up during tasking, anyway.</p>
+<p><strong>Jade</strong>:  Yeah. There&#8217;s some value in that ‑‑ knowing that we&#8217;re in alignment. I do think that, if you&#8217;re not using them for anything, you&#8217;re probably wasting your time.</p>
+<p><strong>Roy</strong>:  Yeah. If you&#8217;re doing it as part of the planning process, and you&#8217;re finding that you&#8217;re estimating even one 13, if you&#8217;re getting into 8s and 13s, I would seriously consider breaking them down into smaller stories, so they might be useful as an indicator that you need to break stuff down.</p>
+<p>Because, if you just start tasking, then is becomes like [inaudible 12:30] slowly where you&#8217;re adding task to your story a little bit at a time, and there&#8217;s not a clear cut‑off point where, &#8220;OK, this is too much. We need to break this into smaller pieces.&#8221;</p>
+<p><strong>Clayton</strong>:  If you are doing release planning, you are using the estimates or something somewhat meaningful, does it really make sense to estimate right before the planning? Isn&#8217;t it easy to game the system if you do that?</p>
+<p><strong>Jade</strong>:  Yeah. I personally think that estimation should happen in some sort of backlog grooming or something outside of the actual planning meeting. You should come into the planning meeting with all your stories estimated and ready to go, because estimation does affect priority sometimes.</p>
+<p>The product owner might make a different decision depending on what the team thinks it will take to implement a certain feature, and trying to do all that right during the planning meeting itself can lead to a lot of waste of time and confusion.</p>
+<p><strong>Roy</strong>:  I agree, but, if you&#8217;re just starting to do something with estimates, or you want to start doing with your estimates and tracking the velocity or doing some kind of release planning, at the very least, starting to collect to estimates right before planning allows you to start collecting velocity data, so that, later on, when you are doing backlog grooming and you want that information, you have the data available.</p>
+<p><strong>Clayton</strong>:  I think you can still do the estimates way beforehand and still getting something [inaudible 13:50] .</p>
+<p><strong>Roy</strong>:  I totally agree. But, if you don&#8217;t have a backlog grooming session or whatever, and you aren&#8217;t willing to invest the time yet, I don&#8217;t know. All I&#8217;m saying is, you can still get some value out of doing estimates right before planning, but it&#8217;s not going to be as meaningful, or as valuable as it would be if you were to do it before.</p>
+<p><strong>Jade</strong>:  It takes the same amount of time, but, mentally separating those concerns is good for a team, to treat estimations separate from planning.</p>
+<p><strong>Roy</strong>:  I agree.</p>
+<p><strong>Clayton</strong>:  One last topic real quick. Here&#8217;s the scenario. Let&#8217;s say that you&#8217;ve got a Scrum team, and, in their spread, they completed every single story, except one story, and, for whatever reason, they decide that they can&#8217;t continue on a story, and it&#8217;s blocked. They didn&#8217;t know something planning, or something came up, and they just can&#8217;t continue.</p>
+<p>The assumptions they made were wrong. Should the team feel bad about that? Should they feel like they failed their sprint? Is it an exception? They did everything they could, so it&#8217;s OK? What do you guys think?</p>
+<p><strong>Jade</strong>:  I need a research spike before I can answer that question.</p>
+<p>[laughter]</p>
+<p><strong>Roy</strong>:  It should be considered a failure because that means that something went horribly wrong. They did the best they could at the time, but it doesn&#8217;t mean we should ignore this and not learn from experience. We should count it as a sprint failure, and it should probably be the biggest topic in the retrospective.</p>
+<p><strong>Clayton</strong>:  Yeah, it might be.</p>
+<p><strong>Jade</strong>:  Too often, sprint failures are punitive, that we treat them as this thing that we&#8217;re going to beat the team up against, like you should never fail. You&#8217;re going to fail. It&#8217;s going to happen on every team. There will be sprints that you fail for a myriad of reasons.</p>
+<p><strong>Roy</strong>:  But it should be the exception.</p>
+<p><strong>Jade</strong>:  It should be the exception. If you&#8217;re failing constantly, you need to be looking at what&#8217;s causing these failures, if you&#8217;re overcommitting or whatever it may be. I agree with Roy that it should be the big topic of the retrospective, but it shouldn&#8217;t be something that is used to punish the team itself.</p>
+<p><strong>Drew</strong>:  Right, like the good and the bad, like, &#8220;Hooray, we&#8217;ve got all this stuff done! We released this awesome stuff. But, oh, too bad! We didn&#8217;t get this one done. In hindsight, what could we have done different&#8221;? It&#8217;s a success and a failure.</p>
+<p><strong>Roy</strong>:  Yeah, because I&#8217;m sure there&#8217;s something we could have done different to prevent that. In hindsight, you can see like, &#8220;Oh well, we should have done whatever to prevent this.&#8221;</p>
+<p><strong>Clayton</strong>:  We&#8217;ve asked this question during planning, or maybe we made these assumptions about how this thing was going to work.</p>
+<p><strong>Roy</strong>:  Right. How could we avoid making those assumptions in the future? How could you remind yourself to ask these types of questions that would have caused this particular question to get asked for answers that come forward or something like that?</p>
+<p><strong>Jade</strong>:  Yeah, but if you&#8217;re being essentially punished for that, you&#8217;re not going to think about that. You&#8217;re just going to think about how can we never fail again, instead of being open‑minded about, &#8220;OK, how could we have done this differently so that we don&#8217;t run into this again.&#8221;</p>
+<p><strong>Clayton</strong>:  Yeah. It&#8217;s OK to fail if we use it as a means to&#8230;</p>
+<p><strong>Jade</strong>:  &#8230;a learning opportunity.</p>
+<p><strong>Clayton</strong>:  Yeah, right.</p>
+<p><strong>Jade</strong>:  And we acknowledge and embrace that failure, and say, &#8220;OK, we may have not adhered to a commitment, but we learned a whole bunch about what could be done differently next time around.&#8221; And that might not work either, but you&#8217;ve got to keep trying.</p>
+<p><strong>Roy</strong>:  Right. [inaudible 16:59] twice. They failed two weeks in a row, or two sprints in a row, at what point, you start actually considering it failure.</p>
+<p><strong>Clayton</strong>:  All right. That wraps things up. That&#8217;s all the time we&#8217;ve got. We invite you to check us out on the Facebook fan page at facebook.com/AgileWeekly, where you can continue the conversation on this podcast or any of the others. We&#8217;ll see you soon. Goodbye.</p>
+<p>[music]</p>
+<p><strong>Announcer</strong>:  If there&#8217;s something you&#8217;d like to hear in a future episode, head over to integrumtech.com/podcast, where you can suggest a topic or a guest.</p>
+<p>Looking for an easy way to stay up‑to‑date with the latest news, techniques, and events in the Agile community? Sign up today at agileweekly.com. It&#8217;s the best agile content, delivered weekly for free.</p>
+<p>The Agile Weekly podcast is brought to you by Integrum Technologies and recorded at Gangplank Studios in Chandler, Arizona. For old episodes, check out IntegrumTech.com or subscribe on iTunes.</p>
+<p>Need help with your Agile transition? Have a question, and need to phone a friend? Try calling the Agile hotline, it&#8217;s free. Call 866‑244‑8656.</p>
+								</div>
+	</a>
+</article>
+					<nav id="nav-below" class="navigation">
+			<div class="nav-previous">PREVIOUS: <a href="/2012/09/announcing-the-inaugural-agile-open-southwest/" rel="prev">Announcing the Inaugural Agile Open Southwest</a></div>		<div class="nav-next">NEXT: <a href="/2012/10/agile-conference-open-southwest/" rel="next">Agile Open Southwest 2012 &#8211; Agile Conference</a></div>		</nav><!-- #nav-below -->
+						<div id="comments">
+	
+	
+		<a href="https://facebook.com/AgileWeekly">Join the conversation on Facebook</a></div><!-- #comments -->
+							</section>
+		<div id="callouts" class="whatif">
+					<div class="callout-badge" id="callout-badge-rss">
+				<p class="action"><a href="https://itunes.apple.com/us/podcast/agile-weekly-podcast/id309948372?mt=2">Subscribe to the podcast</a></p>
+			</div>
+			<aside id="text-6" class="widget widget-1 callout-light widget widget_text">			<div class="textwidget"><a href="http://www.stitcher.com/s?fid=19189&refid=stpr"><img src="http://cloudfront.assets.stitcher.com/promo.assets/stitcher-banner-300x250.jpg" width="300" height="250" alt="Listen to Stitcher"></a></div>
+		</aside>		<aside id="integrum-text-widget-12" class="widget widget-2 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Make your <strong>mark</strong></h2>				<div class="blurb">
+					Get involved with the Agile Weekly Podcast by volunteering to be a guest, recommending a speaker, submitting a question, or suggesting a topic.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="https://agileweeklypodcast.uservoice.com/">Step up to the mic</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-13" class="widget widget-3 callout-light widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Build up your <strong>toolkit</strong></h2>				<div class="blurb">
+					Learn new tips and tricks for empowering your team and transforming your business.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="/blog/">See the blog</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-14" class="widget widget-4 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Hungy for <strong>More Info?</strong></h2>				<div class="blurb">
+					Agile Weekly is a quick way to stay up-to-date with the latest news, techniques and events in the Agile community. Signup today for the best Scrum, Lean, Kanban and XP content, curated by agile practitioners.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="http://agileweekly.com">Sign up</a></li>
+									</ul>
+			</div>
+		</aside>				</div>    </div>
+    <footer id="footer-document">
+		<div id="featured-clients" class="clearfix"><h3>Recent revolutions:</h3>			<div class="textwidget"><a href="https://www.britannica.com/" title="Encyclopaedia Brittanica"><img src="/wp-content/themes/integrum/img/client-logo-encyclobritannica.gif" alt="Encyclopaedia Brittanica"></a>
+<a href="http://www.orbitz.com/" title="Orbitz"><img src="/wp-content/themes/integrum/img/client-logo-orbitz.gif" alt="Orbitz"></a>
+<a href="https://www.monster.com/" title="Monster.com"><img src="/wp-content/themes/integrum/img/client-logo-monster.gif" alt="Monster.com"></a>
+<a href="http://www.valleymetro.org/" title="Valley Metro"><img src="/wp-content/themes/integrum/img/client-logo-valleymetro.gif" alt="Valley Metro"></a>
+<a href="https://www.microsoft.com/" title="Microsoft"><img src="/wp-content/themes/integrum/img/client-logo-microsoft.gif" alt="Microsoft"></a>
+<a href="https://www.intel.com/" title="Intel"><img src="/wp-content/themes/integrum/img/client-logo-intel.gif" alt="Intel"></a>
+<a href="http://www.pearson.com/" title="Pearson"><img src="/wp-content/themes/integrum/img/client-logo-pearson.gif" alt="Pearson"></a></div>
+		</div>        <div id="footer-contact" class="clearfix">
+			<div id="text-2" class="widget widget_text"><h2>Take the first step towards greatness, and hire a coach today.</h2>			<div class="textwidget"><p>Send us your questions, comments, hopes, and dreams using this form, or contact us at 888-999-1246 or <a href="/cdn-cgi/l/email-protection#2e474048416e47405a4b495c5b435a4b4d46004d4143"><span class="__cf_email__" data-cfemail="91f8fff7fed1f8ffe5f4f6e3e4fce5f4f2f9bff2fefcbf">[email&#160;protected]</span></a></p>
+</div>
+		</div><div id="gform_widget-2" class="widget gform_widget">		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src="/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js?ver=1.9.12.7" id='gform_masked_input-js'></script>
+
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_1' ><form method='post' enctype='multipart/form-data'  id='gform_1'  action='/2012/09/episode-81-spike-stories-estimating-before-planning-and-blocked-stories/'>
+                        <div class='gform_body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id='field_1_1' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_1' >Name:</label><div class='ginput_container'>
+                                    <input name='input_1' id='input_1_1' type='text' value='' class='medium' tabindex='1'  />
+                                </div></li><li id='field_1_3' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_3' >Phone number:</label><div class='ginput_container'><input name='input_3' id='input_1_3' type='tel' value='' class='medium' tabindex='2'   /></div></li><li id='field_1_2' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_2' >Email:</label><div class='ginput_container'>
+                            <input name='input_2' id='input_1_2' type='email' value='' class='medium' tabindex='3'   />
+                        </div></li><li id='field_1_4' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_4' >Speak up:</label><div class='ginput_container'>
+					<textarea name='input_4' id='input_1_4' class='textarea medium' tabindex='4'    rows='10' cols='50'></textarea>
+				</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Send my message' tabindex='5' onclick='if(window["gf_submitting_1"]){return false;}  if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  ' /> 
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjAzOTlkODFhZmZmM2ZmZjMzY2I2ZTc1OTFjZjU5Zjk5Il0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(!/(android)/i.test(navigator.userAgent)){jQuery('#input_1_3').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );}} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [1, 1]) } ); </script></div><div id="text-3" class="widget widget_text">			<div class="textwidget"><p class="site-id">Site by <a href="http://fortyagency.com" title="Forty branding + marketing">Forty</a></p></div>
+		</div>        </div> <!--/#footer-contact-->
+    </footer>
+</div> <!--/#wrapper-->
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src="/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.13-9993131" id='mediaelement-core-js'></script>
+<script type='text/javascript' src="/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.5.1" id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src="/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.5.1" id='wp-mediaelement-js'></script>
+<script type='text/javascript' src="/wp-includes/js/comment-reply.min.js?ver=5.5.1" id='comment-reply-js'></script>
+<script type='text/javascript' src="/wp-includes/js/wp-embed.min.js?ver=5.5.1" id='wp-embed-js'></script>
+</body>
+</html>

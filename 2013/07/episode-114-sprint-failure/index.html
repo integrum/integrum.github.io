@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7]><html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8]><html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!--><html lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noodp, noydir" />
+<meta name="viewport" content="width=device-width" />
+<title>Episode #114 - Sprint Failure - Integrum</title>
+<link rel="shortcut icon" type="image/ico" href="http://integrumtech.com/favicon.ico" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://integrumtech.com/wp-content/themes/integrum/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="http://integrumtech.com/wp-content/themes/integrum/css/print.css" />
+<link rel="pingback" href="http://integrumtech.com/xmlrpc.php" />
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://integrumtech.com/2013/07/episode-114-sprint-failure/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Episode #114 - Sprint Failure - Integrum" />
+<meta property="og:description" content="Roy van de Water and Clayton Lengel-Zigich discuss: What is a failed sprint? How should the team react? What should the team demo? What should &hellip;" />
+<meta property="og:url" content="http://integrumtech.com/2013/07/episode-114-sprint-failure/" />
+<meta property="og:site_name" content="Integrum" />
+<meta property="article:tag" content="Clayton Lengel-Zigich,Roy van de Water" />
+<meta property="article:section" content="Agile Weekly Podcast" />
+<meta property="article:published_time" content="2013-07-11T06:00:37+00:00" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/integrumtech.com\/","name":"Integrum"}</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/integrumtech.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style type="text/css">
+.powerpress_player .wp-audio-shortcode { max-width: 200px; }
+</style>
+<link rel='stylesheet' id='mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.13-9993131' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://integrumtech.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='export-wp-page-to-static-html-css'  href='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/css/export-wp-page-to-static-html-public.css?ver=1.0.0' type='text/css' media='all' />
+		<script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/powerpress/player.min.js?ver=5.5.1' id='powerpress-player-js'></script>
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js?ver=5.5.1" id='jquery-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/jquery.cycle.all.js?ver=5.5.1' id='cycle-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/main.js?ver=5.5.1' id='integrum-main-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/js/export-wp-page-to-static-html-public.js?ver=1.0.0' id='export-wp-page-to-static-html-js'></script>
+<link rel="https://api.w.org/" href="http://integrumtech.com/wp-json/" /><link rel="alternate" type="application/json" href="http://integrumtech.com/wp-json/wp/v2/posts/7296" /><link rel='shortlink' href='http://integrumtech.com/?p=7296' />
+<link rel="alternate" type="application/json+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2013%2F07%2Fepisode-114-sprint-failure%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2013%2F07%2Fepisode-114-sprint-failure%2F&#038;format=xml" />
+<script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://integrumtech.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://integrumtech.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+</head>
+<body class="post-template-default single single-post postid-7296 single-format-standard">
+<div id="wrapper">
+    <div id="wrapper-header">
+    	<header id="header" role="banner">
+            <h1 id="logo"><a href="http://integrumtech.com/" title="Integrum" rel="home">Integrum</a></h1>
+            <nav id="navigation" role="navigation" class="clearfix">
+                <div class="menu-primary-container"><ul id="menu-primary" class="menu"><li id="menu-item-7406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7406"><a title="Go home" href="http://integrumtech.com/">Start</a></li>
+<li id="menu-item-7615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7615"><a title="Meet the team" href="http://integrumtech.com/crew/">Meet</a></li>
+<li id="menu-item-7407" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-7407"><a title="Listen to a scrumcast" href="http://integrumtech.com/category/agile-weekly-podcast/">Listen</a></li>
+<li id="menu-item-7614" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-7614"><a title="Read our industry insights" href="http://integrumtech.com/blog/">Read</a></li>
+<li id="menu-item-7408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7408"><a href="http://integrumtech.com/training-courses/">Learn</a></li>
+<li id="menu-item-7613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7613"><a title="Get in touch with us" href="http://integrumtech.com/contact/">Act</a></li>
+</ul></div>            </nav>
+	    </header>
+    </div>
+    <div id="main" role="main" class="clearfix">
+		<section id="content" class="container-content container-content-wide">
+					<header class="page-header">
+				<h1 class="page-title">Agile Weekly Podcast</h1>
+			</header>
+							<article id="post-7296" class="first post-7296 post type-post status-publish format-standard hentry category-agile-weekly-podcast tag-clayton-lengel-zigich tag-roy-van-de-water odd">
+	    <header class="entry-header">
+			<h1 class="entry-title"><a href="http://integrumtech.com/2013/07/episode-114-sprint-failure/" title="Permalink to Episode #114 &#8211; Sprint Failure" rel="bookmark">Episode #114 &#8211; Sprint Failure</a></h1>
+			<ul class="entry-meta">
+												<li class="episode">#114</li>
+								<li class="date"><time datetime="2013-07-11T06:00:37+00:00">July 11, 2013</time></li>
+				<li class="category"><ul class="post-categories">
+	<li><a href="http://integrumtech.com/category/agile-weekly-podcast/" rel="category tag">Agile Weekly Podcast</a></li></ul></li>
+	        </ul>
+	    </header>
+		<div class="entry-content">
+						<div class="entry-speakers">
+				<p>Featured speakers:</p>
+											<a href="http://integrumtech.com/crew/clayton-lengel-zigich/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/clayton.jpg" alt="Clayton Lengel-Zigich" width="84" height="84">
+								Clayton							</a>
+													<a href="http://integrumtech.com/crew/roy-van-de-water/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/roy.jpg" alt="Roy van de Water" width="84" height="84">
+								Roy							</a>
+									</div>
+						<div class="powerpress_player" id="powerpress_player_9763"><a href="http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/20130710.mp3" title="Play" onclick="return powerpress_embed_html5a('9763','http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/20130710.mp3');" target="_blank"><img src="http://integrumtech.com/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></div>
+			<p>Roy van de Water and Clayton Lengel-Zigich discuss:</p>
+<ul>
+<li>What <em>is</em> a failed sprint?</li>
+<li>How should the team react?</li>
+<li>What should the team demo?</li>
+<li>What should the Scrum Master do?</li>
+<li>What does a Product Owner want?</li>
+</ul>
+<p><em>Transcript</em></p>
+<p><strong>Clayton Lengle-Zigich:</strong> Welcome to another episode of the Agile weekly podcast. I am Clayton Lengle-Zigich.</p>
+<p><strong>Roy Van de Water</strong>:  I&#8217;m Roy Van de Water.</p>
+<p><strong>Clayton</strong>:  Today we&#8217;re going to be talking about a very rare thing that we&#8217;ve heard about from certain people. It&#8217;s called, &#8220;What happens when you fail your sprint.&#8221;</p>
+<p><strong>Roy</strong>:  I&#8217;ve never experienced this personally.</p>
+<p><strong>Clayton</strong>:  Me either. Of course not.</p>
+<p><strong>Roy</strong>:  Right. Hypothetically, if it did happen, what do you do?</p>
+<p><strong>Clayton</strong>:  I guess we should define it first. Roy and I were talking about this topic earlier today and I was thinking, &#8220;I wonder if we think the same thing ‑‑ what it means if we say &#8216;fail a sprint'&#8221;? Is failing a Sprint the same thing as, you committed to do five stories, and you only got four done? Are we calling that a failure?</p>
+<p><strong>Roy</strong>:  Yeah.</p>
+<p><strong>Clayton</strong>:  OK, I think so, too. What if you committed to doing five stories and then, you also had a sprint goal and you fulfilled the sprint goal, but you didn&#8217;t do one of the stories? Is that a failure?</p>
+<p><strong>Roy</strong>:  That&#8217;s interesting. I haven&#8217;t really made sprint goals all that often, which is probably a bigger problem, but that&#8217;s an interesting point. If the value of the sprint is to achieve your sprint goal and your stories are almost an implementation to try to achieve that goal, then maybe achieving the sprint goal is all you need.</p>
+<p><strong>Clayton</strong>:  For example, I always like to use the travel website. If our sprint goal is to make it easier for people to book a rental car when they book a cruise vacation, and we fulfil our sprint goal, but we didn&#8217;t do one of the stories, does it really matter?</p>
+<p><strong>Roy</strong>:  I think that one is a little bit in our sync, because making it easier is like a slighter scale. You can make it a teeny, teeny little bit easier by doing a text change. I think the important part&#8230;I think what I really consider a failure is when you promise to deliver something and you fail to keep your promise. When essentially, you lose trust with the people that you have promised to, because you didn&#8217;t do what you said you were going to do.</p>
+<p><strong>Clayton</strong>:  Like maybe, the product owner. You say, &#8220;Hey product owner, leave me alone for the next week and I promise you that I will get this thing done.&#8221; Then, in a week, you don&#8217;t get it done. So now the product owner trusts you less.</p>
+<p><strong>Roy</strong>:  Right, exactly.</p>
+<p><strong>Clayton</strong>:  OK. I think that makes sense. If we define failure as making a promise and then not&#8230;basically, we&#8217;re saying you aren&#8217;t doing what you said you were going to do. We talk about that, we use that phrase a lot internally. If you say that sprint failure is not doing what you said you were going to do, a lot of people I know don&#8217;t like to talk about sprint failure because they don&#8217;t like to talk about failing.</p>
+<p><strong>Roy</strong>:  Well, it&#8217;s confrontational, of a sort.</p>
+<p><strong>Clayton</strong>:  I see a lot of people, a lot of teams that will try to find all kinds of ways to explain why they didn&#8217;t really fail. Whether it&#8217;s, &#8220;Well we were working on these five things, but then something happened and we didn&#8217;t have to this anymore, so we didn&#8217;t really technically fail because we still did the important stuff.&#8221;</p>
+<p><strong>Roy</strong>:  Or &#8220;We worked on all of these things, but then this major interruption happened or this outside dependency caused us to fail our sprint because we were waiting to get something back from them. We thought we&#8217;d get it this week and we didn&#8217;t.&#8221;</p>
+<p><strong>Clayton</strong>:  One thing I&#8217;ve always noticed or thought, personally, is that if you don&#8217;t view failure as that big of a deal, if you view it as a learning moment, or a way that you can improve, then it doesn&#8217;t really matter if you failed because who cares, you don&#8217;t have to try to explain it away.</p>
+<p><strong>Roy</strong>:  As long as you&#8217;re honest about it, you try to fix it for the next time.</p>
+<p><strong>Clayton</strong>:  Let&#8217;s describe that then. I think there was a team that you were working with or we were talking about that had failed their sprint, or they weren&#8217;t going to get it done on time. So they cancelled their demo.</p>
+<p><strong>Roy</strong>:  They actually postponed their demo about three or four days under the idea of, &#8220;We don&#8217;t have anything to demo right now because we didn&#8217;t do the stories we said we were going to do, but we should have them done in three days so we&#8217;re going to go ahead and do the demo then.</p>
+<p><strong>Clayton</strong>:  In the entire sprint review we include the demo and the retrospective. Did they do the retrospective or did they skip that part too?</p>
+<p><strong>Roy</strong>:  No, as far as I know the iteration was essentially extended for an additional three days.</p>
+<p><strong>Clayton</strong>:  In that case we would call that a failure because they didn&#8217;t get it done when they said they&#8217;d get it done. What advice would you give to a team that doesn&#8217;t get things done? Maybe they got 80 percent of their stories done. Let&#8217;s say that rather than being really bad and getting 80 percent of everything done, they actually got eight out of ten stories done. Would you suggest that they show something in the demo? How would they handle that in the demo? What would the team do?</p>
+<p><strong>Roy</strong>:  I would say that if you actually complete something, then show it off because it&#8217;s going to go into production, but if you haven&#8217;t finished it don&#8217;t show it because when you&#8217;re demoing, you&#8217;re demoing to not just a product owner who knows what&#8217;s going on within the team and was probably made aware way before this that not everything was going to get done, but you&#8217;re also demoing to the stakeholders, potentially even users of the system and so I feel it&#8217;s important to actually show them what they are now able to have.</p>
+<p><strong>Clayton</strong>:  So those are the things you only demo what you&#8217;ve actually shipped.</p>
+<p><strong>Roy</strong>:  Exactly.</p>
+<p><strong>Clayton</strong>:  I have always gone back and forth on showing things that aren&#8217;t done‑done or unaccepted, only for the sake of maybe really valuing extra feedback. I guess there are probably more bad behaviors that come from demoing half done things or not done things then you&#8217;d get a benefit from the feedback.</p>
+<p><strong>Roy</strong>:  I&#8217;m on the fence on that too. On one hand I think you shouldn&#8217;t demo anything that isn&#8217;t done because you are setting this expectation that features part of the product when you are starting a new moderation and it may not be prioritized anymore because something may have come up. The specific details on how to post a function may completely change. Essentially you are demonstrating something that may never happen so you are setting expectations that you don&#8217;t have the power to meet.</p>
+<p>However, gaining additional feedback totally makes sense ‑‑ that may be what drives the actual change so it&#8217;s really dangerous I feel, but if you were to be extremely explicit about the fact that this is not finished, there is no promise, you are doing it purely to receive feedback, I could see that it might be OK.</p>
+<p><strong>Clayton</strong>:  So probably don&#8217;t ever do that because most people are not going to listen to you when you say you are not going to get this.</p>
+<p><strong>Roy</strong>:  I could see tens of people attending the meeting and be, &#8220;Wow&#8221;! And then selling to all the customers and then it gets put on the back and it&#8217;s never going to get done. Then you are taking power away from the product all of a sudden cause now they have to finish it because all the customers are demanding it.</p>
+<p><strong>Clayton</strong>:  In a crucial demo part of this review, some people from the team might actually get up and showcase their features and show them on a projector screen. How do you think the team should address the sprint itself ‑‑ should they address the fact that they didn&#8217;t get it all done or should they skip over that?</p>
+<p><strong>Roy</strong>:  It is important to be as transparent as possible. If a team has failed a sprint, totally own up to it. Explain why but be really careful that you are explaining why and not making excuses. I would recommend verbalizing all reasons things specifically the team did wrong. The example I made earlier where you are depending on an outside source and they weren&#8217;t able to get you the stuff you needed on time and you thought they would. I would word that as &#8220;We made a promise for things that we did not have direct control over and the way we would mitigate that in future is by only promising things we know we can deliver.&#8221;</p>
+<p><strong>Clayton</strong>:  I was watching a video from Dan North speaking in the conference about high performing teams. One of the things I thought was really interesting was he was talking about the team he was working on ‑‑ which was really high performing. They had a component of their showcase, they were doing scrum, but the component of the demo where they talked about things they learned. I thought that was a better way where you can pretty much convey the same information but it&#8217;s not presented as, &#8220;We would have had that stuff done but excuse excuse excuse.&#8221;</p>
+<p>We didn&#8217;t get things done being very afraid of failure and we learn these things that will help us in the future. I feel like that&#8217;s a much easier way to go about it even though its sugar coating the fact that you failed. I&#8217;m not necessarily advocating that but for teams that are transitioning, that aren&#8217;t as comfortable with conflict or perceived conflict involved with saying, &#8220;We failed.&#8221; ‑‑ technically what you learn might be easier.</p>
+<p><strong>Roy</strong>:  There might be some difficulty with how you structure your retrospective with respect to your demo. You may not have identified a good way, you may not have learned what you are going to learn by your demo time because you might your retrospective afterwards.</p>
+<p><strong>Clayton</strong>:  That&#8217;s a good point. What would you suggest is positive or healthy behavior that someone in a Scrum Master role might take to a team that failed a sprint?</p>
+<p><strong>Roy</strong>:  I would absolutely orient a retrospect around it ‑‑ start out a notion like, &#8220;Hey we failed, how can we do better about it&#8221;? I have seen many retrospectives where it&#8217;s completely shoved under the rug or brushed over.</p>
+<p><strong>Clayton</strong>:  There were some colossal failures but&#8230;</p>
+<p>[cross talk]</p>
+<p><strong>Roy</strong>:  Nobody wants to talk about it, it&#8217;s really painful and it&#8217;s conflict and probably there is going to be some finger pointing and yelling and pent‑up emotions. I would expect a high performing team, as much as you say it, failure shouldn&#8217;t be that big a deal so you can learn from it. On the other hand, neither should failure be a total non‑issue, right?</p>
+<p>You shouldn&#8217;t ignore a failure and be, &#8220;Oh, whatever. We failed. We&#8217;ll fail again next week. We don&#8217;t really care about hitting our commitment anyway.&#8221; You have to find a balance and hopefully, the team cares enough to at least get somewhat passionate about making sure it doesn&#8217;t happen again.</p>
+<p><strong>Clayton</strong>:  It gives them a really concrete thing to use for inspect and adapt, I think. I&#8217;ve always felt that as a Scrum Master, if there was a sprint failure, depending on what the circumstances are, as a facilitator you&#8217;re not going to go and force them down some path.</p>
+<p>As the Scrum Master, there may be a responsibility ‑‑ you have to bring things to light, to really call out the 100 pound gorilla in the room and say, &#8220;Hey, I think we&#8217;re not talking about all the issues,&#8221; or maybe format the exercise or facilitate in a certain way, so that some of those things can come to light.</p>
+<p><strong>Roy</strong>:  That is interesting, though, because I found that most teams don&#8217;t even believe that consistent success is possible. I know I didn&#8217;t believe that myself back when we were doing contracting work with Instagram. I always thought that Derek and Jade kept pushing us to try to hit our sprints continually.</p>
+<p>I was like, &#8220;You know, that&#8217;s a nice ideal, but that&#8217;s not actually reality.&#8221; It wasn&#8217;t until I was on a team where we consistently hit our sprint week after week for months at a time and we had one failure and it was a big deal, but then we were right back on track again. It&#8217;s truly possible, but I know that until that happened to me, I did not believe it.</p>
+<p><strong>Clayton</strong>:  One of the interesting things about that specific example was the answer to &#8220;The sprints are failing,&#8221; was not, &#8220;Work harder.&#8221; It was, &#8220;Do less until you start succeeding.&#8221;</p>
+<p>That&#8217;s one thing that a lot of teams&#8230;I&#8217;ve seen teams that will fail weeks at a time, but then, they consistently commit to big chunks of work. Rather than saying, &#8220;Hey, maybe we need to slow down to go fast, so let&#8217;s do less and less until we are successful.&#8221;</p>
+<p><strong>Roy</strong>:  Well, product owners, especially are really, really touchy about that. &#8220;Wow, these guys have $100 of capacity and they are committing to only 50 percent of that. All this wasted money and time. What do I do about that&#8221;? Then, the reality is they probably were only going to get 50 percent of the capacity done anyway.</p>
+<p><strong>Clayton</strong>:  Right. If they&#8217;re failing they might.</p>
+<p><strong>Roy</strong>:  They commit to a whole bunch, but they only hit a percentage of that. Maybe it makes sense to&#8230;Maybe what they&#8217;re doing is not committing to less, but committing to exactly what they are capable of.</p>
+<p><strong>Clayton</strong>:  If I&#8217;m the product owner and I&#8217;m working with a Scrum team or on the Scrum team, I would prefer for my purposes to have something that was a little more consistent. So rather than be lied to every week ‑‑ and not maliciously lied to, but rather than have some rosy optimistic outlook of what this sprint&#8217;s, &#8220;Everything should be great this time around.&#8221; ‑‑ I&#8217;d rather have the realistic thing. If that means going slower and&#8230;</p>
+<p><strong>Roy</strong>:  But, you&#8217;re not really going slower, right? You&#8217;re just not promising to go as fast.</p>
+<p><strong>Clayton</strong>:  It appears that I&#8217;m going slower.</p>
+<p><strong>Roy</strong>:  Sure.</p>
+<p><strong>Clayton</strong>:  If that&#8217;s the case, I&#8217;d rather have reality that makes my prediction stuff much easier. Then, I think, that&#8217;s another place where inspect and adapt comes in, where you can find ways or with the Scrum Master and whatever the team can improve, so that they can go faster hopefully. But whatever their pace is, that&#8217;s all I&#8217;m going to get. I would much rather know what the reality is.</p>
+<p><strong>Roy</strong>:  I agree ‑‑ it makes it a lot easier to improve over time because if you commit to your full capacity, then you have to go from zero to 100 percent immediately, right?</p>
+<p>You either fail your sprint or you hit your sprint. But, if you can slide that capacity down to what you can actually hit, then you can slowly move that up and you have much more opportunity for incremental growth, rather than an all or nothing thing. Then you can slowly work your way up to 100 percent.</p>
+<p><strong>Clayton</strong>:  One more bonus question before we go. If a Scrum team has committed to 10 stories and it&#8217;s the last day of their sprint and they realize they are not going to get the last two things done, and they say, &#8220;Oh, Mr. Product Owner, we&#8217;re not going to get these three, two things done, can we take that out of the sprint&#8221;? If they took them out, will you count that as a success or failure?</p>
+<p><strong>Roy</strong>:  I would count that as a failure because at the beginning of the iteration, they promised to get those things done. It&#8217;s a bit of a gray area, so if they realize on day one of the iteration that those two things weren&#8217;t going to get done, that would be totally different than if they realized 10 minutes before the demo.</p>
+<p><strong>Clayton</strong>:  I&#8217;ve never seen that street go two ways. I&#8217;ve only seen it where the team asks if they can have things removed, but when they finish, I don&#8217;t ever think I&#8217;ve seen a team that says, &#8220;Bring it on. Give me more stuff. We can&#8217;t wait to get more things.&#8221;</p>
+<p><strong>Roy</strong>:  I&#8217;ve seen both, but it definitely never happens at the beginning of the iteration that they say, &#8220;OK, give us more stuff.&#8221; Sometimes, towards the end, I&#8217;ve seen teams finish the iteration in half the time and then, pull in a little bit additional work&#8230;</p>
+<p><strong>Clayton</strong>:  OK. That&#8217;s good.</p>
+<p><strong>Roy</strong>:  &#8230;and demo that as well. Now, if they didn&#8217;t manage to accomplish all of the additional work before the demo, I would not consider that a failure.</p>
+<p><strong>Clayton</strong>:  To me, that says topic for another episode. All right. Thanks.</p>
+<p>[music]</p>
+<p><strong>Announcer 1</strong>:  If there is something you&#8217;d like to hear in a future episode, get over to integramtech.com/podcast where you can suggest a topic or a guest.</p>
+<p><strong>Announcer 2</strong>:  Looking for an easy way to stay up‑to‑date with the latest news, techniques and events in the Agile community? Sign up today at agileweekly.com.</p>
+<p>It&#8217;s the best Agile content delivered weekly for free.</p>
+<p><strong>Announcer 1</strong>:  The Agile Weekly Podcast is brought to you by Integram Technologies and recorded in Gangplank Studios in Chandler, Arizona.</p>
+<p>For old episodes, check out integramtech.com or subscribe on iTunes.</p>
+<p><strong>Announcer 2</strong>:  Need help with your Agile transition? Have a question and need to phone a friend? Try calling the Agile hotline. It&#8217;s free. Call 866‑244‑8656.</p>
+								</div>
+	</a>
+</article>
+					<nav id="nav-below" class="navigation">
+			<div class="nav-previous">PREVIOUS: <a href="http://integrumtech.com/2013/07/episode-113-high-costs-and-negative-value-of-pair-programming/" rel="prev">Episode #113 &#8211; High Costs and Negative Value of Pair Programming</a></div>		<div class="nav-next">NEXT: <a href="http://integrumtech.com/2013/07/episode-115/" rel="next">Episode #115 &#8211; Commitment Considered Harmful?</a></div>		</nav><!-- #nav-below -->
+						<div id="comments">
+	
+	
+		<a href="https://facebook.com/AgileWeekly">Join the conversation on Facebook</a></div><!-- #comments -->
+							</section>
+		<div id="callouts" class="whatif">
+					<div class="callout-badge" id="callout-badge-rss">
+				<p class="action"><a href="https://itunes.apple.com/us/podcast/agile-weekly-podcast/id309948372?mt=2">Subscribe to the podcast</a></p>
+			</div>
+			<aside id="text-6" class="widget widget-1 callout-light widget widget_text">			<div class="textwidget"><a href="http://www.stitcher.com/s?fid=19189&refid=stpr"><img src="http://cloudfront.assets.stitcher.com/promo.assets/stitcher-banner-300x250.jpg" width="300" height="250" alt="Listen to Stitcher"></a></div>
+		</aside>		<aside id="integrum-text-widget-12" class="widget widget-2 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Make your <strong>mark</strong></h2>				<div class="blurb">
+					Get involved with the Agile Weekly Podcast by volunteering to be a guest, recommending a speaker, submitting a question, or suggesting a topic.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="https://agileweeklypodcast.uservoice.com/">Step up to the mic</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-13" class="widget widget-3 callout-light widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Build up your <strong>toolkit</strong></h2>				<div class="blurb">
+					Learn new tips and tricks for empowering your team and transforming your business.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="/blog/">See the blog</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-14" class="widget widget-4 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Hungy for <strong>More Info?</strong></h2>				<div class="blurb">
+					Agile Weekly is a quick way to stay up-to-date with the latest news, techniques and events in the Agile community. Signup today for the best Scrum, Lean, Kanban and XP content, curated by agile practitioners.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="http://agileweekly.com">Sign up</a></li>
+									</ul>
+			</div>
+		</aside>				</div>    </div>
+    <footer id="footer-document">
+		<div id="featured-clients" class="clearfix"><h3>Recent revolutions:</h3>			<div class="textwidget"><a href="https://www.britannica.com/" title="Encyclopaedia Brittanica"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-encyclobritannica.gif" alt="Encyclopaedia Brittanica"></a>
+<a href="http://www.orbitz.com/" title="Orbitz"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-orbitz.gif" alt="Orbitz"></a>
+<a href="https://www.monster.com/" title="Monster.com"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-monster.gif" alt="Monster.com"></a>
+<a href="http://www.valleymetro.org/" title="Valley Metro"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-valleymetro.gif" alt="Valley Metro"></a>
+<a href="https://www.microsoft.com/" title="Microsoft"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-microsoft.gif" alt="Microsoft"></a>
+<a href="https://www.intel.com/" title="Intel"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-intel.gif" alt="Intel"></a>
+<a href="http://www.pearson.com/" title="Pearson"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-pearson.gif" alt="Pearson"></a></div>
+		</div>        <div id="footer-contact" class="clearfix">
+			<div id="text-2" class="widget widget_text"><h2>Take the first step towards greatness, and hire a coach today.</h2>			<div class="textwidget"><p>Send us your questions, comments, hopes, and dreams using this form, or contact us at 888-999-1246 or <a href="/cdn-cgi/l/email-protection#533a3d353c133a3d27363421263e2736303b7d303c3e"><span class="__cf_email__" data-cfemail="523b3c343d123b3c26373520273f2637313a7c313d3f7c">[email&#160;protected]</span></a></p>
+</div>
+		</div><div id="gform_widget-2" class="widget gform_widget">		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js?ver=1.9.12.7' id='gform_masked_input-js'></script>
+
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_1' ><form method='post' enctype='multipart/form-data'  id='gform_1'  action='/2013/07/episode-114-sprint-failure/'>
+                        <div class='gform_body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id='field_1_1' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_1' >Name:</label><div class='ginput_container'>
+                                    <input name='input_1' id='input_1_1' type='text' value='' class='medium' tabindex='1'  />
+                                </div></li><li id='field_1_3' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_3' >Phone number:</label><div class='ginput_container'><input name='input_3' id='input_1_3' type='tel' value='' class='medium' tabindex='2'   /></div></li><li id='field_1_2' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_2' >Email:</label><div class='ginput_container'>
+                            <input name='input_2' id='input_1_2' type='email' value='' class='medium' tabindex='3'   />
+                        </div></li><li id='field_1_4' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_4' >Speak up:</label><div class='ginput_container'>
+					<textarea name='input_4' id='input_1_4' class='textarea medium' tabindex='4'    rows='10' cols='50'></textarea>
+				</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Send my message' tabindex='5' onclick='if(window["gf_submitting_1"]){return false;}  if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  ' /> 
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjAzOTlkODFhZmZmM2ZmZjMzY2I2ZTc1OTFjZjU5Zjk5Il0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(!/(android)/i.test(navigator.userAgent)){jQuery('#input_1_3').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );}} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [1, 1]) } ); </script></div><div id="text-3" class="widget widget_text">			<div class="textwidget"><p class="site-id">Site by <a href="http://fortyagency.com" title="Forty branding + marketing">Forty</a></p></div>
+		</div>        </div> <!--/#footer-contact-->
+    </footer>
+</div> <!--/#wrapper-->
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.13-9993131' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.5.1' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.5.1' id='wp-mediaelement-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/comment-reply.min.js?ver=5.5.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/wp-embed.min.js?ver=5.5.1' id='wp-embed-js'></script>
+</body>
+</html>

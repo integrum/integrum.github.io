@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7]><html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8]><html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!--><html lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noodp, noydir" />
+<meta name="viewport" content="width=device-width" />
+<title>Episode #102 - Agile Metrics and Organization Debt - Integrum</title>
+<link rel="shortcut icon" type="image/ico" href="http://integrumtech.com/favicon.ico" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://integrumtech.com/wp-content/themes/integrum/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="http://integrumtech.com/wp-content/themes/integrum/css/print.css" />
+<link rel="pingback" href="http://integrumtech.com/xmlrpc.php" />
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://integrumtech.com/2013/03/episode-102-agile-metrics-and-organization-debt/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Episode #102 - Agile Metrics and Organization Debt - Integrum" />
+<meta property="og:description" content="Roy van de Water, Jade Meskill, Derek Neighbors and Clayton Lengel-Zigich discuss: Agile Metrics Releasing Often Organizational Debt Transcript Clayton Lengel‑Zigich:  Welcome to another episode &hellip;" />
+<meta property="og:url" content="http://integrumtech.com/2013/03/episode-102-agile-metrics-and-organization-debt/" />
+<meta property="og:site_name" content="Integrum" />
+<meta property="article:tag" content="Clayton Lengel-Zigich,Derek Neighbors,Jade Meskill,Roy van de Water" />
+<meta property="article:section" content="Agile Weekly Podcast" />
+<meta property="article:published_time" content="2013-03-21T06:00:31+00:00" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/integrumtech.com\/","name":"Integrum"}</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/integrumtech.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style type="text/css">
+.powerpress_player .wp-audio-shortcode { max-width: 200px; }
+</style>
+<link rel='stylesheet' id='mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.13-9993131' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://integrumtech.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='export-wp-page-to-static-html-css'  href='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/css/export-wp-page-to-static-html-public.css?ver=1.0.0' type='text/css' media='all' />
+		<script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/powerpress/player.min.js?ver=5.5.1' id='powerpress-player-js'></script>
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js?ver=5.5.1" id='jquery-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/jquery.cycle.all.js?ver=5.5.1' id='cycle-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/main.js?ver=5.5.1' id='integrum-main-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/js/export-wp-page-to-static-html-public.js?ver=1.0.0' id='export-wp-page-to-static-html-js'></script>
+<link rel="https://api.w.org/" href="http://integrumtech.com/wp-json/" /><link rel="alternate" type="application/json" href="http://integrumtech.com/wp-json/wp/v2/posts/7172" /><link rel='shortlink' href='http://integrumtech.com/?p=7172' />
+<link rel="alternate" type="application/json+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2013%2F03%2Fepisode-102-agile-metrics-and-organization-debt%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2013%2F03%2Fepisode-102-agile-metrics-and-organization-debt%2F&#038;format=xml" />
+<script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://integrumtech.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://integrumtech.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+</head>
+<body class="post-template-default single single-post postid-7172 single-format-standard">
+<div id="wrapper">
+    <div id="wrapper-header">
+    	<header id="header" role="banner">
+            <h1 id="logo"><a href="http://integrumtech.com/" title="Integrum" rel="home">Integrum</a></h1>
+            <nav id="navigation" role="navigation" class="clearfix">
+                <div class="menu-primary-container"><ul id="menu-primary" class="menu"><li id="menu-item-7406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7406"><a title="Go home" href="http://integrumtech.com/">Start</a></li>
+<li id="menu-item-7615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7615"><a title="Meet the team" href="http://integrumtech.com/crew/">Meet</a></li>
+<li id="menu-item-7407" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-7407"><a title="Listen to a scrumcast" href="http://integrumtech.com/category/agile-weekly-podcast/">Listen</a></li>
+<li id="menu-item-7614" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-7614"><a title="Read our industry insights" href="http://integrumtech.com/blog/">Read</a></li>
+<li id="menu-item-7408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7408"><a href="http://integrumtech.com/training-courses/">Learn</a></li>
+<li id="menu-item-7613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7613"><a title="Get in touch with us" href="http://integrumtech.com/contact/">Act</a></li>
+</ul></div>            </nav>
+	    </header>
+    </div>
+    <div id="main" role="main" class="clearfix">
+		<section id="content" class="container-content container-content-wide">
+					<header class="page-header">
+				<h1 class="page-title">Agile Weekly Podcast</h1>
+			</header>
+							<article id="post-7172" class="first post-7172 post type-post status-publish format-standard hentry category-agile-weekly-podcast tag-clayton-lengel-zigich tag-derek-neighbors tag-jade-meskill tag-roy-van-de-water odd">
+	    <header class="entry-header">
+			<h1 class="entry-title"><a href="http://integrumtech.com/2013/03/episode-102-agile-metrics-and-organization-debt/" title="Permalink to Episode #102 &#8211; Agile Metrics and Organization Debt" rel="bookmark">Episode #102 &#8211; Agile Metrics and Organization Debt</a></h1>
+			<ul class="entry-meta">
+												<li class="episode">#102</li>
+								<li class="date"><time datetime="2013-03-21T06:00:31+00:00">March 21, 2013</time></li>
+				<li class="category"><ul class="post-categories">
+	<li><a href="http://integrumtech.com/category/agile-weekly-podcast/" rel="category tag">Agile Weekly Podcast</a></li></ul></li>
+	        </ul>
+	    </header>
+		<div class="entry-content">
+						<div class="entry-speakers">
+				<p>Featured speakers:</p>
+											<a href="http://integrumtech.com/crew/clayton-lengel-zigich/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/clayton.jpg" alt="Clayton Lengel-Zigich" width="84" height="84">
+								Clayton							</a>
+													<a href="http://integrumtech.com/crew/derek-neighbors/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/derek.jpg" alt="Derek Neighbors" width="84" height="84">
+								Derek							</a>
+													<a href="http://integrumtech.com/crew/jade-meskill/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/jade.jpg" alt="Jade Meskill" width="84" height="84">
+								Jade							</a>
+													<a href="http://integrumtech.com/crew/roy-van-de-water/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/roy.jpg" alt="Roy van de Water" width="84" height="84">
+								Roy							</a>
+									</div>
+						<div class="powerpress_player" id="powerpress_player_9920"><a href="http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/20130320_episode102.mp3" title="Play" onclick="return powerpress_embed_html5a('9920','http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/20130320_episode102.mp3');" target="_blank"><img src="http://integrumtech.com/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></div>
+			<p>Roy van de Water, Jade Meskill, Derek Neighbors and Clayton Lengel-Zigich discuss:</p>
+<ul>
+<li>Agile Metrics</li>
+<li>Releasing Often</li>
+<li>Organizational Debt</li>
+</ul>
+<p><em>Transcript</em></p>
+<p><strong>Clayton Lengel‑Zigich</strong>:  Welcome to another episode of the Agile Weekly Podcast, I&#8217;m Clayton Lengel‑Zigich.</p>
+<p><strong>Derek Neighbors</strong>:  I&#8217;m Derek Neighbors.</p>
+<p><strong>Roy van de Water</strong>:  I&#8217;m Roy van de Water.</p>
+<p><strong>Jade Meskill</strong>:  I&#8217;m Jade Meskill.</p>
+<p>[laughter]</p>
+<p><strong>Clayton</strong>:  We almost forgot you are here. I want to do Agile, and I want my teams to be awesome, and go faster and be better, and do more better. What metrics can I use to measure how good I am at Agile?</p>
+<p><strong>Jade</strong>:  K‑Locks.</p>
+<p><strong>Roy</strong>:  Velocity.</p>
+<p><strong>Derek</strong>:  Velocity.</p>
+<p><strong>Roy</strong>:  I already used that one.</p>
+<p><strong>Derek</strong>:  For me, this is so difficult because in other question I always ask, &#8220;What is your company doing?&#8221; What are the goals of your company? If you&#8217;re doing the Agile, you&#8217;re succeeding at things you weren&#8217;t succeeding at before in your company, whether that&#8217;s making your customers happier, whether that&#8217;s achieving some new functionality, or gaining more users or doing something, moving in the market.</p>
+<p>But, to me, unless you are a software consultancy that is getting paid to be more agile, why on earth would use any metrics of agility to measure whether you are successful? Being more agile has no purpose if you&#8217;re just more agile‑like.</p>
+<p>If I&#8217;m a thousand percent more agile, but I don&#8217;t know what the hell to build with that new agility, what&#8217;s the point of being more agile?</p>
+<p><strong>Jade</strong>:  We are talking about problems for developers here. I&#8217;ve got to get these developers in shape. Those are problems that I need to worry about. Everything&#8217;s cool there. We&#8217;re good. Don&#8217;t worry about that stuff. The developers are what&#8217;s holding us back.</p>
+<p><strong>Derek</strong>:  One of the things I&#8217;ve started to do a little more, at least at the team level is ask that the direct manager for the teams to say, &#8220;How would you know that these teams are better? What are some things that you would know?&#8221;</p>
+<p>I, basically, right off the bat say, &#8220;If your answer is more, better, faster, I&#8217;m not interested in helping you.&#8221; What we generally started to see are things like, &#8220;We want the team to be interacting, more co‑creation to happen. We want it to be easier to on‑board new team members. We want the quality of the code or the technical debt to start to recede. We want more automation. We want to be able to deploy more often.&#8221;</p>
+<p>There&#8217;s still shallow, technical things, but they&#8217;re not velocity, or story points, or that we&#8217;re doing process X or process Y. There&#8217;s something more tangible, like, &#8220;Hey, it used to take us three days to deploy the software, now it takes us a day. We&#8217;re getting better at being able to do the deployment of the software.&#8221;</p>
+<p>To me, that&#8217;s something, and that&#8217;s better than velocity. But to me, great, if you can deploy every 30 seconds, but you don&#8217;t have anything worth deploying, what&#8217;s the point?</p>
+<p><strong>Clayton</strong>:  I had a manager tell me recently that they wanted to do agile, because they wanted people to stop leaving.</p>
+<p><strong>Derek</strong>:  I&#8217;ve seen that in a couple of the value sessions, or goal sessions that I&#8217;ve done with managers, where some of it is they identify, they want a culture that is more friendly. I&#8217;ve got one team that overtime, lot of overtime, and big pushes for major events are a problem. One of the things they really wanted was more of a sustainable pace.</p>
+<p>The reason why is because they said, &#8220;We want to stop burning people out because we&#8217;re losing good people to it.&#8221; I think those are good and noble things from a technical and team perspective. If you&#8217;ve got this great sustainable pace, but you&#8217;re crappy in the marketplace, you&#8217;re not going to be sustainable as a company.</p>
+<p><strong>Jade</strong>:  That&#8217;s why Steven Denning says, &#8220;The only thing that matters is customer&#8217;s delight.&#8221;</p>
+<p><strong>Clayton</strong>:  If I&#8217;m kind of some average manager guy, and maybe I read &#8220;Lean Startup,&#8221; the takeaway for me is you need data and experiments, the scientific kind of thing. Then I talk to kind of the run of the mill agilist, and they say, &#8220;Metrics are kind of wishy‑washy, you don&#8217;t really need those.&#8221; Do you think that&#8217;s some of it? Where people think that they need to measure something, and science is so important. I just need and data crunch numbers and have a yes or no binary answer?</p>
+<p><strong>Jade</strong>:  Look at the success of Frederick Taylor and scientific management. It&#8217;s build wonderful companies where people want to work&#8230;not.</p>
+<p><strong>Derek</strong>:  I think what happens in organizations, they want &#8220;organizational agility.&#8221; Organizational agility means everybody is &#8220;agile.&#8221; If I&#8217;m the person that&#8217;s, basically, championing that, I have to be able to tell the CEO, &#8220;Hey we&#8217;re agile now!&#8221; He&#8217;s going to go, &#8220;How do you know that?&#8221; &#8220;Because all the teams are agile!&#8221; &#8220;How do you they&#8217;re all agile?&#8221; Because of&#8230;</p>
+<p><strong>Jade</strong>:  We&#8217;re all doing Scrum!</p>
+<p><strong>Derek</strong>:  &#8230;they&#8217;ve all doubled their velocity. I think there&#8217;s a lot of that going on. People are trying to measure that binary bit, are we agile or not? Opposed to organizational agility being about, &#8220;We&#8217;re more competitive in the marketplace and we&#8217;re making our customer happy. We&#8217;ve got better employees, and we are learning more,&#8221; and all of these kind of principles and values behind that door, like nobody wants to top us on.</p>
+<p>I am all‑for the majoring stuff. It&#8217;s just be careful what you major, because we are going to give what you major, and people are going to focus on what you major. If you focus on velocity you might get some really great stories &#8220;done.&#8221; But the quality can suck ass, the automation could be horrible, and your customers could be miserable.</p>
+<p>You have to be a little bit more holistic in what it is that you are really trying to achieve, and so when I always try to do is say, &#8220;Why do you want to be agile&#8221;? More, better, faster is not a thing. If you want more, better, faster, give me a whip, and let me fire anybody who does not code up to standard right‑now‑today. I&#8217;ll beat the crap out of these people, and you&#8217;ll get the best code you&#8217;ve ever seen for twelve months, from a speed perspective. The problem is that&#8217;s not what people really want.</p>
+<p><strong>Clayton</strong>:  You might be in the checklist for agile, but you are delivering something crappier or whatever. Even from speed, I think a lot of people, ourselves included, would say that releasing frequently, and giving feedback is a good thing, so isn&#8217;t that more, better, faster? If I release every four week, or something, or at the end of every sprint?</p>
+<p><strong>Jade</strong>:  I think it comes down to what your intentions are behind doing that right? If you are doing that to make more money, or hit these quarterly deadlines that are being set for you, then that&#8217;s not the right thing. If you are doing it because you find that giving your customers more frequent access to new updates to your software provides better feedback that allows you to build a better product. Now you are actually doing more, better, faster, but you are doing it for the right reasons.</p>
+<p><strong>Derek</strong>:  I would say the big push off is, if I just want people to release faster, for the sake of releasing faster, that&#8217;s shallow crap, and nobody should do it. If people are releasing faster so that they can get feedback more quickly, and they can learn, and they believe they are getting feedback from a real experience instead of a stimulated experience, is a more valuable learning loop, and that that learning loop can be closed faster and faster allowing them to become more and more nimble.</p>
+<p>Then, I don&#8217;t think that it&#8217;s about going faster, that&#8217;s about learning faster. I think that&#8217;s totally different. If we say we want faster production, then we are going down the wrong train. If we say we want to learn faster, we want to be more quickly attuned to what our customer needs, that speaks more towards agility. You might not have to even release software to do that. You could do paper prototypes and customer surveys, and you can go out and talk to customers and something else.</p>
+<p>But you might say the problem with that is, &#8220;That&#8217;s not a real experience and I want to give somebody the real thing.&#8221; In order to do that, if I can&#8217;t produce quicker, it gives me tighter loops. I think if you are going faster just so you can say, &#8220;We are a fast team,&#8221; you are doing it wrong. If you are saying, &#8220;We want to go faster so that we can validate our hypothesis much more quickly, and respond quicker to customer demand to make them happier,&#8221; I think you start to win.</p>
+<p><strong>Clayton</strong>:  What is it that makes releasing so hard? Why is it that so many companies seem to have really hard time releasing software frequently?</p>
+<p><strong>Derek</strong>:  Lack of automation. I think that is the number one thing. They do it so infrequently. They do not know how to do it. The other thing is technical, that they are scared to release something, because if something goes wrong, it is really difficult to undo that thing.</p>
+<p><strong>Roy</strong>:  Organizationally, too, a lot of times sales tunes are set up to deal with much larger releases. They do an annual release or whatever, after spending all this time, wrapping up and selling the big new feature, because customers purchase features.</p>
+<p>If you are really thinking of service, it&#8217;s really obvious to do version increase, just because instead of as your customers they keep subscribing to your service. But if you sell a product, and especially when you want to charge a lot of money for the project, like a lot of companies do, like Adobe, or any other companies.</p>
+<p>You purchase Photoshop, and it&#8217;s really expensive, so there it has to have a lot of features in there. The inverse business model to release a product like that, does it have to reselling a cheap product really frequently, in order to make some of that money back and that they probably end up making less. You know what I mean?</p>
+<p><strong>Clayton</strong>:  Derek, you&#8217;ve mentioned automation, and the pressures of the sales people wanting to sell the big features that you&#8217;re able to upgrade kind of thing. Why hasn&#8217;t there a focus on the technical practices that a lot of agile people are talking about? When you get back to technical practices, developers have lost their way, and they don&#8217;t value that stuff anymore.</p>
+<p><strong>Derek</strong>:  For the automation side?</p>
+<p><strong>Clayton</strong>:  Sure, yeah.</p>
+<p><strong>Derek</strong>:  I think for the automation side, the problem is that people tend to get told they have to go really, really fast, and the pressure is on to ship features, so they don&#8217;t ever take the time to slow down to go fast.</p>
+<p>If I got to do something a hundred times, and it would take me an hour to automate it or it would take me 10 minutes to do it, which one is better? If somebody&#8217;s holding a bat to my head and say, &#8220;I need this right now.&#8221; I&#8217;m going to take the 10‑minute option almost every single time, because I don&#8217;t want to get hit in the head with a bat if I take an hour to do it even if it means it&#8217;s free every time after this.</p>
+<p>I think people are trained to not automate because it takes time to automate. I think a lot of the people in the industry right now are coming from environments, where they&#8217;re not very Unix based. They&#8217;re not used to toolsets and tool chains that allow for really good quality automation of passing thing from one thing to another, controlling things via command line, and a number of things.</p>
+<p>I think some of it is technology has gotten better. It&#8217;s, basically, hidden some of what&#8217;s underneath the hood to a lot of the current developers that are out there. They don&#8217;t even know it&#8217;s a possibility to do some automation.</p>
+<p><strong>Clayton</strong>:  How much of not releasing frequently is just bad product management? Like they don&#8217;t have anything to release, or they&#8217;re afraid to release something, because it&#8217;s not good enough, or there&#8217;s no innovation.</p>
+<p>Would you think a company might release more frequently, or they would push that issue if there was a ton of innovation going on, and they have all these awesome ideas, and all these awesome stuff that they could execute on?</p>
+<p><strong>Jade</strong>:  I think a lot of it is overcoming the legacy of packaged software. The Internet has radically transformed our ability to release often. That didn&#8217;t use to be a thing that existed. You go back 15 years, you couldn&#8217;t do that.</p>
+<p><strong>Derek</strong>:  It takes a couple of weeks to produce an ISO.</p>
+<p><strong>Jade</strong>:  Yeah, at least, and it costs a lot of money. The upgrade costs were very painful. A lot of people who find themselves in product management situations, they&#8217;re still tied to that legacy of thinking that way.</p>
+<p>Some of the Web startups, they embrace that right away, because it&#8217;s totally possible. They have come to the realization that that world exists, and they can do whatever they want. They can release whenever they want, and their customers won&#8217;t even really know. But that&#8217;s a relatively new thing that has happened.</p>
+<p><strong>Derek</strong>:  One of the things I&#8217;ve seen a ton of happen, and I think this is to me the equivalent of organization, if there&#8217;s technical debt, I would call some of these organizational debt. Especially in enterprises one of the things that happens is everything becomes a project. Then all projects become interdependent. Then we can never release because we&#8217;re always waiting.</p>
+<p>The example I used with somebody today from a metaphor perspective is imagine if you get off the airplane, you go down to catch the shuttle to go get your rental car. The guy pulls up, and you get in, and he sits there for four hours.</p>
+<p>You go, &#8220;Aren&#8217;t you going to take me to the car?&#8221; He&#8217;s like, &#8220;Well, look there&#8217;s other people coming off the plane. Until everybody gets off of every plane that comes in tonight, we&#8217;re not leaving.&#8221; You would be pissed off.</p>
+<p>What happens today is you get on that. Two seconds later the door shut, and he takes off. If somebody is running behind the thing and you say, &#8220;Hey, there&#8217;s somebody waiting,&#8221; his response is going to be, &#8220;That&#8217;s OK. There&#8217;s another shuttle in two minutes.&#8221;</p>
+<p>What happens in the enterprise world because they&#8217;re not having these frequent releases and because everything is interdependent, nobody can leave to go get their car until every plane has landed, and everybody is on the shuttle. I think that&#8230;</p>
+<p><strong>Jade</strong>:  Forever [laughs] .</p>
+<p><strong>Derek</strong>:  Forever. It just gets to the point where a six‑week contingent becomes a 10‑week contingent becomes a 12‑week contingent because now everybody is scared shitless to release it, because they don&#8217;t even remember what&#8217;s in it anymore.</p>
+<p>Then people starts to say, &#8220;We have to release now. We can&#8217;t wait anymore. There&#8217;s some big ad coming out. We have to do it.&#8221; Then people start tearing out half‑done features. Then they&#8217;re really nervous, because now they don&#8217;t know what they&#8217;ve added, and what they&#8217;ve removed.</p>
+<p>I think this is one of the things that automation and that doing it regularly. If you can get to the point where you say, &#8220;Just go ahead and put it into production, the next shuttle is coming in two minutes,&#8221; it really changes how you think.</p>
+<p>But I think it also requires that people stops thinking in terms of projects from a product management perspective, and think much more in terms of features. &#8220;This feature is done, lock and loaded. Go,&#8221; and not, &#8220;There&#8217;s this 60 features, and they all have to be released at the same time.&#8221;</p>
+<p><strong>Jade</strong>:  It&#8217;s being tied to the legacy of selling versions.</p>
+<p><strong>Clayton</strong>:  You made a point about this a couple of weeks ago, Derek, that you might be wanting to shift more away from that big versions or the release once a year thing. There are some people that might say, &#8220;Hey, give me every single update. I want to be bleeding edge,&#8221; and there are some existing customers that might say, &#8220;You know what, I&#8217;m fine with the one big year update.&#8221;</p>
+<p>For the most part, that would be pretty seamless for them. They&#8217;re going to get essentially all the little updates all at once, and to them, it&#8217;s going to seem like the same old big release. But the other people, they can just get the new stuff every month or whatever it is.</p>
+<p>I thought that was an interesting point, and a good way to think about transitioning from people who are in that, &#8220;I have to make a DVD, and mail it to people&#8221; mindset to more of the software&#8217;s a service but not jumping full shift into that. I think we&#8217;re out of time. Thanks guys.</p>
+<p><strong>Derek</strong>:  Thank you.</p>
+<p>[music]</p>
+<p><strong>Jade</strong>:  If there&#8217;s something you&#8217;d like to hear in the future episode, head over to Integrumtech.com/podcast where you can suggest a topic or a guest.</p>
+<p>Looking for an easy way to stay up to date with the latest news, techniques, and events in the agile community? Sign up today at Agileweekly.com. It&#8217;s the best agile content delivered weekly, for free.</p>
+<p>The Agile Weekly Podcast is brought to you by Integrum Technologies, and recorded at Gangplank Studios in Chandler, Arizona. For old episodes, check out Integrumtech.com or subscribe on iTunes.</p>
+<p><strong>Derek</strong>:  Need help with your agile transition? Have a question and need to phone a friend? Try calling the agile hotline. It&#8217;s free. Call (866) 244‑8656.</p>
+								</div>
+	</a>
+</article>
+					<nav id="nav-below" class="navigation">
+			<div class="nav-previous">PREVIOUS: <a href="http://integrumtech.com/2013/03/episode-101-working-agreements/" rel="prev">Episode #101 &#8211; Working Agreements</a></div>		<div class="nav-next">NEXT: <a href="http://integrumtech.com/2013/03/episode-103-lets-define-value/" rel="next">Episode #103 &#8211; Let&#8217;s Define Value</a></div>		</nav><!-- #nav-below -->
+						<div id="comments">
+	
+	
+		<a href="https://facebook.com/AgileWeekly">Join the conversation on Facebook</a></div><!-- #comments -->
+							</section>
+		<div id="callouts" class="whatif">
+					<div class="callout-badge" id="callout-badge-rss">
+				<p class="action"><a href="https://itunes.apple.com/us/podcast/agile-weekly-podcast/id309948372?mt=2">Subscribe to the podcast</a></p>
+			</div>
+			<aside id="text-6" class="widget widget-1 callout-light widget widget_text">			<div class="textwidget"><a href="http://www.stitcher.com/s?fid=19189&refid=stpr"><img src="http://cloudfront.assets.stitcher.com/promo.assets/stitcher-banner-300x250.jpg" width="300" height="250" alt="Listen to Stitcher"></a></div>
+		</aside>		<aside id="integrum-text-widget-12" class="widget widget-2 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Make your <strong>mark</strong></h2>				<div class="blurb">
+					Get involved with the Agile Weekly Podcast by volunteering to be a guest, recommending a speaker, submitting a question, or suggesting a topic.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="https://agileweeklypodcast.uservoice.com/">Step up to the mic</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-13" class="widget widget-3 callout-light widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Build up your <strong>toolkit</strong></h2>				<div class="blurb">
+					Learn new tips and tricks for empowering your team and transforming your business.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="/blog/">See the blog</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-14" class="widget widget-4 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Hungy for <strong>More Info?</strong></h2>				<div class="blurb">
+					Agile Weekly is a quick way to stay up-to-date with the latest news, techniques and events in the Agile community. Signup today for the best Scrum, Lean, Kanban and XP content, curated by agile practitioners.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="http://agileweekly.com">Sign up</a></li>
+									</ul>
+			</div>
+		</aside>				</div>    </div>
+    <footer id="footer-document">
+		<div id="featured-clients" class="clearfix"><h3>Recent revolutions:</h3>			<div class="textwidget"><a href="https://www.britannica.com/" title="Encyclopaedia Brittanica"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-encyclobritannica.gif" alt="Encyclopaedia Brittanica"></a>
+<a href="http://www.orbitz.com/" title="Orbitz"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-orbitz.gif" alt="Orbitz"></a>
+<a href="https://www.monster.com/" title="Monster.com"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-monster.gif" alt="Monster.com"></a>
+<a href="http://www.valleymetro.org/" title="Valley Metro"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-valleymetro.gif" alt="Valley Metro"></a>
+<a href="https://www.microsoft.com/" title="Microsoft"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-microsoft.gif" alt="Microsoft"></a>
+<a href="https://www.intel.com/" title="Intel"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-intel.gif" alt="Intel"></a>
+<a href="http://www.pearson.com/" title="Pearson"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-pearson.gif" alt="Pearson"></a></div>
+		</div>        <div id="footer-contact" class="clearfix">
+			<div id="text-2" class="widget widget_text"><h2>Take the first step towards greatness, and hire a coach today.</h2>			<div class="textwidget"><p>Send us your questions, comments, hopes, and dreams using this form, or contact us at 888-999-1246 or <a href="/cdn-cgi/l/email-protection#b3daddd5dcf3daddc7d6d4c1c6dec7d6d0db9dd0dcde"><span class="__cf_email__" data-cfemail="a4cdcac2cbe4cdcad0c1c3d6d1c9d0c1c7cc8ac7cbc98a">[email&#160;protected]</span></a></p>
+</div>
+		</div><div id="gform_widget-2" class="widget gform_widget">		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js?ver=1.9.12.7' id='gform_masked_input-js'></script>
+
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_1' ><form method='post' enctype='multipart/form-data'  id='gform_1'  action='/2013/03/episode-102-agile-metrics-and-organization-debt/'>
+                        <div class='gform_body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id='field_1_1' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_1' >Name:</label><div class='ginput_container'>
+                                    <input name='input_1' id='input_1_1' type='text' value='' class='medium' tabindex='1'  />
+                                </div></li><li id='field_1_3' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_3' >Phone number:</label><div class='ginput_container'><input name='input_3' id='input_1_3' type='tel' value='' class='medium' tabindex='2'   /></div></li><li id='field_1_2' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_2' >Email:</label><div class='ginput_container'>
+                            <input name='input_2' id='input_1_2' type='email' value='' class='medium' tabindex='3'   />
+                        </div></li><li id='field_1_4' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_4' >Speak up:</label><div class='ginput_container'>
+					<textarea name='input_4' id='input_1_4' class='textarea medium' tabindex='4'    rows='10' cols='50'></textarea>
+				</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Send my message' tabindex='5' onclick='if(window["gf_submitting_1"]){return false;}  if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  ' /> 
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjAzOTlkODFhZmZmM2ZmZjMzY2I2ZTc1OTFjZjU5Zjk5Il0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(!/(android)/i.test(navigator.userAgent)){jQuery('#input_1_3').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );}} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [1, 1]) } ); </script></div><div id="text-3" class="widget widget_text">			<div class="textwidget"><p class="site-id">Site by <a href="http://fortyagency.com" title="Forty branding + marketing">Forty</a></p></div>
+		</div>        </div> <!--/#footer-contact-->
+    </footer>
+</div> <!--/#wrapper-->
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.13-9993131' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.5.1' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.5.1' id='wp-mediaelement-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/comment-reply.min.js?ver=5.5.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/wp-embed.min.js?ver=5.5.1' id='wp-embed-js'></script>
+</body>
+</html>

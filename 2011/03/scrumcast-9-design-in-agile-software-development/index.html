@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7]><html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8]><html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!--><html lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noodp, noydir" />
+<meta name="viewport" content="width=device-width" />
+<title>Episode #09 - Design in Agile Software Development - Integrum</title>
+<link rel="shortcut icon" type="image/ico" href="http://integrumtech.com/favicon.ico" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://integrumtech.com/wp-content/themes/integrum/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="http://integrumtech.com/wp-content/themes/integrum/css/print.css" />
+<link rel="pingback" href="http://integrumtech.com/xmlrpc.php" />
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://integrumtech.com/2011/03/scrumcast-9-design-in-agile-software-development/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Episode #09 - Design in Agile Software Development - Integrum" />
+<meta property="og:description" content="Clayton Lengel-Zigich, Jade Meskill, Derek Neighbors and William Price III sit down to discuss design in agile software development. Challenges of design in iterative development &hellip;" />
+<meta property="og:url" content="http://integrumtech.com/2011/03/scrumcast-9-design-in-agile-software-development/" />
+<meta property="og:site_name" content="Integrum" />
+<meta property="article:tag" content="Clayton Lengel-Zigich,Derek Neighbors,Jade Meskill,William Price III" />
+<meta property="article:section" content="Agile Weekly Podcast" />
+<meta property="article:published_time" content="2011-03-31T14:09:21+00:00" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/integrumtech.com\/","name":"Integrum"}</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/integrumtech.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style type="text/css">
+.powerpress_player .wp-audio-shortcode { max-width: 200px; }
+</style>
+<link rel='stylesheet' id='mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.13-9993131' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://integrumtech.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='export-wp-page-to-static-html-css'  href='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/css/export-wp-page-to-static-html-public.css?ver=1.0.0' type='text/css' media='all' />
+		<script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/powerpress/player.min.js?ver=5.5.1' id='powerpress-player-js'></script>
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js?ver=5.5.1" id='jquery-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/jquery.cycle.all.js?ver=5.5.1' id='cycle-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/main.js?ver=5.5.1' id='integrum-main-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/js/export-wp-page-to-static-html-public.js?ver=1.0.0' id='export-wp-page-to-static-html-js'></script>
+<link rel="https://api.w.org/" href="http://integrumtech.com/wp-json/" /><link rel="alternate" type="application/json" href="http://integrumtech.com/wp-json/wp/v2/posts/5405" /><link rel='shortlink' href='http://integrumtech.com/?p=5405' />
+<link rel="alternate" type="application/json+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2011%2F03%2Fscrumcast-9-design-in-agile-software-development%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2011%2F03%2Fscrumcast-9-design-in-agile-software-development%2F&#038;format=xml" />
+<script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://integrumtech.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://integrumtech.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+</head>
+<body class="post-template-default single single-post postid-5405 single-format-standard">
+<div id="wrapper">
+    <div id="wrapper-header">
+    	<header id="header" role="banner">
+            <h1 id="logo"><a href="http://integrumtech.com/" title="Integrum" rel="home">Integrum</a></h1>
+            <nav id="navigation" role="navigation" class="clearfix">
+                <div class="menu-primary-container"><ul id="menu-primary" class="menu"><li id="menu-item-7406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7406"><a title="Go home" href="http://integrumtech.com/">Start</a></li>
+<li id="menu-item-7615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7615"><a title="Meet the team" href="http://integrumtech.com/crew/">Meet</a></li>
+<li id="menu-item-7407" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-7407"><a title="Listen to a scrumcast" href="http://integrumtech.com/category/agile-weekly-podcast/">Listen</a></li>
+<li id="menu-item-7614" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-7614"><a title="Read our industry insights" href="http://integrumtech.com/blog/">Read</a></li>
+<li id="menu-item-7408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7408"><a href="http://integrumtech.com/training-courses/">Learn</a></li>
+<li id="menu-item-7613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7613"><a title="Get in touch with us" href="http://integrumtech.com/contact/">Act</a></li>
+</ul></div>            </nav>
+	    </header>
+    </div>
+    <div id="main" role="main" class="clearfix">
+		<section id="content" class="container-content container-content-wide">
+					<header class="page-header">
+				<h1 class="page-title">Agile Weekly Podcast</h1>
+			</header>
+							<article id="post-5405" class="first post-5405 post type-post status-publish format-standard hentry category-agile-weekly-podcast tag-clayton-lengel-zigich tag-derek-neighbors tag-jade-meskill tag-william-price-iii odd">
+	    <header class="entry-header">
+			<h1 class="entry-title"><a href="http://integrumtech.com/2011/03/scrumcast-9-design-in-agile-software-development/" title="Permalink to Episode #09 &#8211; Design in Agile Software Development" rel="bookmark">Episode #09 &#8211; Design in Agile Software Development</a></h1>
+			<ul class="entry-meta">
+												<li class="episode">#9</li>
+								<li class="date"><time datetime="2011-03-31T14:09:21+00:00">March 31, 2011</time></li>
+				<li class="category"><ul class="post-categories">
+	<li><a href="http://integrumtech.com/category/agile-weekly-podcast/" rel="category tag">Agile Weekly Podcast</a></li></ul></li>
+	        </ul>
+	    </header>
+		<div class="entry-content">
+						<div class="entry-speakers">
+				<p>Featured speakers:</p>
+											<a href="http://integrumtech.com/crew/clayton-lengel-zigich/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/clayton.jpg" alt="Clayton Lengel-Zigich" width="84" height="84">
+								Clayton							</a>
+													<a href="http://integrumtech.com/crew/derek-neighbors/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/derek.jpg" alt="Derek Neighbors" width="84" height="84">
+								Derek							</a>
+													<a href="http://integrumtech.com/crew/jade-meskill/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/jade.jpg" alt="Jade Meskill" width="84" height="84">
+								Jade							</a>
+									</div>
+						<div class="powerpress_player" id="powerpress_player_6901"><a href="http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/scrumcast_09.mp3" title="Play" onclick="return powerpress_embed_html5a('6901','http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/scrumcast_09.mp3');" target="_blank"><img src="http://integrumtech.com/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></div>
+			<p>Clayton Lengel-Zigich, Jade Meskill, Derek Neighbors and William Price III sit down to discuss design in agile software development.</p>
+<ul>
+<li>Challenges of design in iterative development</li>
+<li>Pace and lead time</li>
+<li>Mutual respect</li>
+<li>Everyone&#8217;s a designer</li>
+<li>Design tools suck</li>
+<li>Backlog overwhelms</li>
+<li>Ship early and often</li>
+<li>Crossfunctional teams</li>
+<li>Style guides</li>
+<li>Light weight wireframes</li>
+</ul>
+<p>Notes:</p>
+<p><a href="https://thoughtbot.com/">Thoughtbot</a> article on <a href="https://robots.thoughtbot.com/post/2609622814/design-driven-development">Everyone&#8217;s a Designer</a></p>
+<p>The Mike Cohn&#8217;s <em>&#8220;I&#8217;m always right card&#8221;</em> is a joke from a training session with Mike.</p>
+<p>&nbsp;</p>
+<p><em>Transcript</em></p>
+<p><strong>Derek Neighbors</strong>:  Welcome to another episode of ScrumCast. I&#8217;m Derek Neighbors.</p>
+<p><strong>Jade Meskill</strong>:  I&#8217;m Jade Meskill.</p>
+<p><strong>Clayton Lengel‑Zigich</strong>:  I&#8217;m Clayton Lengel‑Zigich.</p>
+<p><strong>William Price III</strong>:  And I&#8217;m William Price.</p>
+<p><strong>Derek</strong>:  Today we want to talk about&#8230;</p>
+<p><strong>Jade</strong>:  The third.</p>
+<p><strong>William</strong>:  The third.</p>
+<p><strong>Derek</strong>:  Design in Agile Software Development. I just want to start an open dialog on, what are some of the challenges, of implementing design in an iterative methodology.</p>
+<p><strong>Jade</strong>:  We are talking web design specifically.</p>
+<p><strong>Derek</strong>:  Lets start with web design and if you want to go beyond that we can. But lets start there.</p>
+<p><strong>Jade</strong>:  It sucks.</p>
+<p><strong>William</strong>:  I think my experience with design for a website or whatever is that a designer comes up with some idea of something. It&#8217; like a waterfall. Everyone&#8217;s used to the designer comes up with something and makes this nice pretty PSD. Somebody else slices the PSD up and it turns it into HTML and CSS at some point in time, and then that becomes your web app.</p>
+<p>I think that&#8217;s probably like 90 percent of the people out there, their experience with doing design. When you take than and try to put that into Agile, it makes it really difficult to say, &#8220;Well, this week we&#8217;re working on this set of features, and we need to design for that now or soon or whatever,&#8221; because I don&#8217;t think that&#8217;s how most traditional designers work. They need more lead time than that.</p>
+<p><strong>Clayton</strong>:  Yeah, I think from a designer&#8217;s perspective the lead time is typically considered the biggest challenge, just the pace. I think a bigger challenge is knowledge and appreciation that overlaps as much as possible between developer and designer.</p>
+<p>You often hear people say, &#8220;Everyone is a designer.&#8221; That makes me kind of uneasy, because I think design is a craft. It&#8217;s a skill that you have to hone over time. Anyone can hone it. Anyone can learn it. Anyone can learn to draw. Anyone can learn to think well and design. The thing that makes me uneasy about everyone is a designer is that when you say that it&#8217;s like, &#8220;Oh, so now I&#8217;m a designer today, instantly.&#8221;</p>
+<p>As a designer that makes me uneasy, but what I need to do is develop relationships with developers and with product owners where I can appreciate their input and work with them as fully as possible. As a developer, being involved in that process and considering it meaningful I think is often missing.</p>
+<p>There are some developers that will say, &#8220;Oh, yeah. I think that&#8217;s important.&#8221; But do you spend time learning the fundamentals of design and things like that? Or do you just go by what you think looks good?</p>
+<p>Then as a designer, appreciating the developer&#8217;s input and not just thinking, &#8220;Whatever sexy pretty thing I come up with, is the best solution&#8221; because it may not be the best solution for the process.</p>
+<p>It may be a huge nightmare for everyone involved. It may be far more expensive than it&#8217;s worth. You might be developing something that looks great, feels great, to the product owner but gets torn out a month later because users don&#8217;t use it. Working together and having a tight relationship, that&#8217;s the biggest challenge in my opinion.</p>
+<p><strong>Jade</strong>:  Well, I think to address something you said. You&#8217;re talking about everyone is a designer. Some of that came from a Thoughtbot article that we read as a team and had some discussion about. What I think he&#8217;s&#8230;</p>
+<p><strong>Clayton</strong>:  Or is it, Derek who said as a team like three years ago?</p>
+<p><strong>Jade</strong>:  Yeah, yeah, yeah. Where&#8217;s your Mike Cohen I‑know‑everything card? Can you pull that out right now?</p>
+<p><strong>Clayton</strong>:  [laughs]</p>
+<p><strong>Jade</strong>:  Now I just lost my train of thought. Thanks.</p>
+<p><strong>Clayton</strong>:  [laughs]</p>
+<p><strong>Derek</strong>:  Thoughtbot.</p>
+<p><strong>Jade</strong>:  Yes, Thoughtbot. So I think what they&#8217;re trying to drive at is not that everyone is a professional designer in the sense that we think but that everyone plays a role and should be conscientious of design, right? It&#8217;s not acceptable for developers to just say, &#8220;Well, I don&#8217;t know anything about that because I just write code&#8221; and crank out some really crappy‑looking interface.</p>
+<p>We should be at least conscientious of the basics of what we&#8217;re doing and that it should be professional and not, like I said, some hack job that you know a developer put together because you can just tell. I think that&#8217;s what they&#8217;re driving at.</p>
+<p><strong>Clayton</strong>:  Yeah, so I think an analogy would be I wouldn&#8217;t be able to figure out a good color scheme and whatnot for, say, my house. I&#8217;d probably paint the walls white and leave them some stupid color, and I wouldn&#8217;t bother decorating. But when it came to arranging the furniture, I wouldn&#8217;t put the couch in the middle of the room facing away from the TV or something stupid.</p>
+<p>So I think there&#8217;s something to be said for maybe you&#8217;re not very good with the design theory or color theory or some of the things that may be more traditional design when you think of design are. But in terms of maybe the user interface or how things flow or just sensible decisions, I think that&#8217;s the kind of designer that everyone could be. Just take a step back and say, &#8220;Does this make sense? Yes or no.&#8221;</p>
+<p><strong>Derek</strong>:  Analogy wise maybe it&#8217;s similar to, I expect most adults to be able to drive a car. I don&#8217;t necessarily expect most adults to be able to race formula one, or race NASCAR, or race the Baja 500.</p>
+<p>I think that there&#8217;s definitely a difference of level of, and I think there should be expectation of people who are developing software to understand, like you said Clayto, to not put the couch facing the opposite direction of the TV in a functional living room space where 90 percent of the time people will be watching TV.</p>
+<p>I think we see developers do that every single day, do things that make absolute no sense. I think to me I&#8217;ve got two additional questions on a design in iterative fashion.</p>
+<p>One is we start to see iterations become shorter and shorter. I know one time in a Scrum that was pretty much a given that a sprint was a 30 day or month long function or iteration, and now we&#8217;re seeing sprints down to, a week are pretty normal. Two weeks are probably now the standard.</p>
+<p>In some days we&#8217;re pushing more towards Kanban where it really is a sprint might be, an iteration might be, in a day, or less than a day. How&#8217;s it feasible to, not even talking about coming up with the design, but how&#8217;s it even functional to implement the design in that quick of a time frame.</p>
+<p>What are some of the challenges? We&#8217;re starting a sprint on Monday, we&#8217;re ending a sprint on Friday and we&#8217;ve got to go from design implantation in five days. What are some of the challenges around that?</p>
+<p><strong>William</strong>:  I think one of the challenges is the tools. Just to make an excuse for designers, that I think is legitimate, is that the tools suck. There&#8217;s been a push to do all your design and development in the browser. Then there&#8217;s this push to handle it all CSS3.</p>
+<p>Do everything you possibly can CSS3. Granted the great designers out there are able to be really involved in the front end development and do minimal stuff in Photoshop. In general to work fast is difficult with the tools that we have. I would love to see that improved.</p>
+<p>One thing I&#8217;ve been trying to get in a project that we would do here from a designer is to as much as possible think on a feature oriented level, instead of a site wide level. To design just for what needs to be designed, you don&#8217;t need to design a whole page.</p>
+<p>If you&#8217;re developing a feature and it&#8217;s a widget in the corner of a page, the whole page could be a wire‑frame and that widget could be designed. The challenge there is to be consistent throughout, to have a good vision of where you&#8217;re going.</p>
+<p>I think a designer that has good skills should be able to do that, should be able to stay consistent throughout, to keep going within the same vein of things. To keep the look and feel going but be able to turn around a widget fairly quickly and not to get so concerned about the whole page.</p>
+<p>I&#8217;d be really interested to see a project go from conception to launch with that whole process. So far it&#8217;s been a challenge to see that. I think that could be a potential solution.</p>
+<p><strong>Jade</strong>:  That&#8217;s one of the complaints that I&#8217;ve heard from a lot of designers. I need to understand the big picture. I need to understand the world before we can start implementing some of these designs. If we start on sprint one, let&#8217;s just say with no design in place, we didn&#8217;t do a design iteration or anything like that.</p>
+<p>How do you see that developing? How do you maintain that vision of the bigger picture and the bigger idea when you&#8217;re doing it week long sprints?</p>
+<p><strong>William</strong>:  That&#8217;s not a rhetorical question? You want me to actually answer that?</p>
+<p><strong>Jade</strong>:  No I want you to.</p>
+<p><strong>William</strong>:  [laughs] That&#8217;s a difficult thing to ask. I think there&#8217;s different scenarios. Are we talking about sprint one is a true sprint one and there isn&#8217;t this backlog of things that have been predetermined. I think that&#8217;s one thing that weighs designers down is when there&#8217;s already a whole bunch of stuff predetermined, and they&#8217;re saying, &#8220;Wait, I can&#8217;t think about this. If this is going to happen, I need to think about this.&#8221;</p>
+<p>I think a great example of success is Tumblr, which is founded by two guys who had a division of labor between them, but they had a major overlap. They were both very invested. One was a developer and one did business and design and stuff like that as far as I know.</p>
+<p>And they worked iteratively. I think Tumblr has a beautiful interface. It&#8217;s very usable. It&#8217;s very simple. I don&#8217;t know what their sprints were, but they worked a portion at a time. They kept maintaining. I think whenever they came to a big impasse, as far as I can tell, where there&#8217;s going to be a major shift, that&#8217;s where you look at, &#8220;Do we refactor design?&#8221;</p>
+<p>I think there has to be a willingness to say, &#8220;OK. We&#8217;re going along. We&#8217;re consistent. We&#8217;re going a certain direction. OK now, we&#8217;re going to make a big leap in a different direction, or a change. We&#8217;re doing something we never foresaw doing, and so that means that we need to go back and rethink what we&#8217;ve already done.&#8221;</p>
+<p>I think the big fear is, &#8220;We&#8217;ll never get a chance to do that, and if we don&#8217;t got it right the first time, we&#8217;ll never be able to improve.&#8221;</p>
+<p><strong>Jade</strong>:  I think that&#8217;s a little bit easier to accomplish when it&#8217;s a couple of people, and you&#8217;re personally invested in&#8230;You&#8217;re not only just the developer. You&#8217;re also a stakeholder and product owner and all those things. It&#8217;s easier to manage that relationship because the relationship is with yourself.</p>
+<p>In a typical scrum team of five to nine people, that gets a lot messier and a lot harder to deal with. I don&#8217;t know what the answer is to try to do design at the same time as development. You see a lot of people trying to run design ahead of the game, but that leaves some opportunity for mistakes and waste.</p>
+<p>&#8220;If we don&#8217;t do that story next sprint, now what?&#8221; The world changes, and we&#8217;ve got to re‑prioritize the backlog because some new business requirement came up or some new opportunity showed up, and now, there&#8217;s no design for that. Now, it&#8217;s chaos and panic.</p>
+<p><strong>Clayton</strong>:  I think that as we get towards the shorter iterations, the idea of doing work in Photoshop and then slicing it and chopping them off into a lot of stuff, I think that totally goes out the window.</p>
+<p>The same way that I don&#8217;t think you can go forward from, today, being a developer who just writes code, you have to have other skill sets. I don&#8217;t think that you can be a designer who doesn&#8217;t know HTML and CSS.</p>
+<p>I think that if you can get to a point where you are getting out of Photoshop as early as possible, that gives you the ability&#8230;I think there&#8217;s something to be said for having a Photoshop mockup of something to show people because people think that way or they like that stuff.</p>
+<p>If you can do design upfront or at least do a week ahead, whatever sprint ahead, where you&#8217;re not designing specific features that you might not do, but if you&#8217;re doing things where you say, &#8220;Here is the overall look and feel of the site&#8230;&#8221;</p>
+<p>Personally, I think that if we got towards where people are using style guides where you could say, &#8220;Here is the overall look and feel of the site, and here&#8217;s the style guide for 80 percent of what you&#8217;re going to run into as you&#8217;re developing the feature,&#8221; then the developers can hit the ground running with their iteration, not having specific design for every single feature, but they could have enough to get by where they&#8217;re not going to get hung up on something.</p>
+<p>And if they do, it&#8217;s probably just a quick fix. They could just talk to the designer about what&#8217;s the best way to handle this. Then, now that that frees up the designer to work on&#8230;If there are specific feature things, you could do something where they&#8217;re one step ahead of you where the world isn&#8217;t going to change that much perhaps.</p>
+<p><strong>William</strong>:  Yeah, I think a style guide is a great way going back to what I&#8217;m saying later about keeping that consistency. You could spend that time upfront developing that style guide of colors and padding and margins and things like that, grid, all that kind of stuff, and then live inside that model, that framework.</p>
+<p>Designers do great inside a framework. I don&#8217;t know a single designer that resents having a framework to work with within. It&#8217;s actually freeing. I think another thing that can speed up the process is, I agree with Clayton totally. That you ought to have that ability to be a front‑end developer at least the HTML and CSS and to do that.</p>
+<p>But instead of spending all your time in Photoshop, maybe spend more time with pencil and paper. One of the first things that they&#8217;ll teach you in your design fundamentals class in art college is your first idea usually seems great and almost always sucks. Sometimes your first 10 ideas suck.</p>
+<p>One of the first assignments I ever did was I had to do a logo of my initials a hundred times, a hundred different logos. It was bang your head against the wall annoying. After 50, 60, 70 of them, you can&#8217;t think of any new way to do it.</p>
+<p>As a designer, you learn to be that way. So if you go straight to Photoshop, it&#8217;s a struggle to do that because it takes time. But if you go straight to the browser, it&#8217;s even more frightening because it&#8217;s like, &#8220;Well, if I do all these and I get it but it&#8217;s not the best solution, I have to rip it all out and start over and rip it all out and start over.&#8221;</p>
+<p>But maybe if we spend more time as designers with pencil and paper going through that mental process of bad idea, bad idea, bad idea, decent idea, bad idea, bad idea, bad idea, there&#8217;s the one, and then go straight to the browser and implement. Or like you said, minimal time in Photoshop creating an element like a tiled background image or an icon or something like that, and then get that in there.</p>
+<p>I think that could be a great process for a designer where they know their style guide. They know their framework. They hash through all the ideas on pencil and paper. Then they get to the browser as quickly as possible.</p>
+<p><strong>Derek</strong>:  One thing I thought that was interesting at the beginning, as you said, it&#8217;s really difficult when you see the entire backlog and to not think about everything in that backlog. I think that developers fall in that same trap. &#8220;We&#8217;ve got an architect for the 491st thing in the backlog even though we&#8217;re on sprint one.&#8221;</p>
+<p>In the back of my head, I&#8217;m wondering, &#8220;Is this one of the reasons that maybe Kanban has taken a little bit of frontrunner approach, and that a lot of people are liking it is that it tries to move so quick and obfuscate more than the next 10 items? Does it give a calming effect to designers and developers that they&#8217;re only worrying about the next two or three things as opposed to item number 391?&#8221;</p>
+<p>I think it&#8217;s part of a different discussion but interesting nonetheless. So product owners hide as much of your backlog from your developers and your designers, and you might see their velocities go up perhaps. It&#8217;s a theory. You might try it out, but you might try it out.</p>
+<p>The next question I have, and this starts to go into a different element of design and what we&#8217;ve been talking about here which is probably more of the visual design and that is&#8230;I hear a lot of people say and really talk about, &#8220;How do you do usability or discovery?&#8221;</p>
+<p>&#8220;How are you going to ask an audience of people? How do you really get these questions answered about what the product is really supposed to do and how it&#8217;s supposed to work?&#8221; I think a lot of people even ask, &#8220;What happens to the business analyst?&#8221;</p>
+<p>We used to have this business analyst. Now, we&#8217;re in this Scrum team. How does a business analyst go gather data for a particular user story during the actual sprint?</p>
+<p>If I&#8217;ve got a 5‑day sprint, how do we do discovery on what the best way to solve this problem is within a 5‑day sprint or a 10‑day sprint, opposed to being able to gather some of that information up front to understand that? Maybe talk a little bit about some of the challenges or some of the things that we lose by not doing that as much anymore as we used to, or how we can incorporate that into a shorter sprint length or sprint cycle.</p>
+<p><strong>Clayton</strong>:  I guess I&#8217;ve never really been convinced that&#8230;Even if you had a business analyst and you had people that were out doing a bunch of research and interviewing potential users and blah‑blah‑blah, you&#8217;re never going to come up with a great solution on the first go anyway. It seems like you have to go take that leap of faith into Scrum or Agile or whatever and say, &#8220;I&#8217;m not going to get it right the first time, but I&#8217;m going to get something out there that we can start working with and gathering feedback on.&#8221;</p>
+<p>I feel like it&#8217;s like an &#8220;emperor has no clothes&#8221; thing, because there&#8217;s a lot of people that are probably thinking, &#8220;That might work for your project, but, trust me, I really need to know all these details for my project.&#8221; I don&#8217;t think that is the case in almost any instance.</p>
+<p><strong>Derek</strong>:  Let me, maybe, rephrase it to make sure I&#8217;m understanding. You&#8217;re suggesting a way to combat this is to actually release shippable software as often as possible and use the shipped project as the way to collect that information. Once you get that information, reiterate and make the changes necessary, based on the feedback you got from real customers.</p>
+<p><strong>Clayton</strong>:  Right. Yeah. Actually use the point of Scrum or some other process.</p>
+<p><strong>Jade</strong>:  I think that&#8217;s pretty interesting. Maybe that is some of the source of the problem. We&#8217;re OK with not getting development exactly right, right out of the gate, but a lot of the projects I&#8217;ve worked with, they&#8217;re obsessed with the design being correct the first time out of the gate.</p>
+<p>&#8220;We&#8217;ve got to get it right. We can&#8217;t afford to mess this up, because then nobody will ever come back and use the system again.&#8221; We&#8217;re psyching ourselves out, because we feel like we&#8217;ve got to nail this thing the first time around. We completely forget to be Agile about the design itself.</p>
+<p><strong>William</strong>:  Yeah. It&#8217;s a lot like the whole Flash mentality of, what, the early 2000s, which was, come out with this Flash app that&#8217;s your whole site, that&#8217;s so fun and there&#8217;s things flying and noise being made. The Internet was so new to people that they went and used it and were like, &#8220;Oh, my&#8230;You can do this on the computer? This is amazing!&#8221;</p>
+<p>Then, it lost luster because people were like, &#8220;I just need to get this data. I just need to know how to get there. I just want to know what the hours are. Just tell me.&#8221; Now, obviously, with mobile, everyone knows the implications of that.</p>
+<p>Point being is there was this ability that people had, developers and designers to shock and awe people and to get them really thrilled. That was mostly because the Internet was so new to most people. That&#8217;s over now. It&#8217;s done. You&#8217;re rarely going to put something out that is going to excite someone just because they looked at it.</p>
+<p>If you&#8217;re a designer, you&#8217;re going to look at design and be excited by people&#8217;s good work. If you&#8217;re a developer, you&#8217;re going to look at ideas and concepts in development and be excited by their elegant solutions and things like&#8230;</p>
+<p><strong>Jade</strong>:  APIs.</p>
+<p><strong>William</strong>:  And APIs. Yes.</p>
+<p><strong>Jade</strong>:  [laughs] Their sexy, sexy APIs.</p>
+<p><strong>William</strong>:  And their fables.</p>
+<p><strong>Derek</strong>:  Shiny.</p>
+<p><strong>Jade</strong>:  [laughs]</p>
+<p><strong>William</strong>:  But your common user doesn&#8217;t care. I mean, they do but they don&#8217;t. It&#8217;s really a combination of everything that matters to them. Can they get what they want quickly? Can they get through it easily? Is it confusing or not? Does it look good? Meaning, good to the layman, decent, not look bad. Does it look broken? Does it look inviting? Does it communicate the brand?</p>
+<p>Those kind of things are the big pile of influence on whether or not a user wants to keep using it. The big temptation, I think, with design is that a lot of times, product owners that have an eye for design and designers want it to be so attractive and so exciting that anyone who looks at it is going to be really impressed.</p>
+<p>I don&#8217;t even think it&#8217;s an ego thing most of the time. It is sometimes, but most of the time, it&#8217;s a business value thing. It&#8217;s like, &#8220;I think that if this gets perfect, then people will be thrilled and excited and think it&#8217;s the best thing that&#8217;s ever happened.&#8221; But it&#8217;s not that simple. Users don&#8217;t work that way.</p>
+<p><strong>Clayton</strong>:  I think another big part of it is that if you&#8217;re the product owner for some start‑up or even just a product owner, maybe you don&#8217;t understand the technical details, but you know what looks good and what doesn&#8217;t, according to you. I think that&#8217;s why everyone gets so caught up on the design stuff.</p>
+<p>It&#8217;s like, &#8220;I don&#8217;t really know how this workflow should work, and I don&#8217;t really understand what you&#8217;re doing in the &#8216;backend,&#8217; but I can look at this and say, &#8216;Wow, that&#8217;s really pretty.&#8217; There&#8217;s other websites that I like, and they look kind of like this, too. The people that I want to attract on my website, they look at those websites, too.&#8221;</p>
+<p>It&#8217;s just something&#8230;It&#8217;s simple. It&#8217;s a high‑level thing, but everyone has an opinion about it. Product owners generally don&#8217;t have an opinion about how you implemented that technical thing, but they have an opinion about how it looks.</p>
+<p><strong>Jade</strong>:  I think it&#8217;s a trap, too, because it might look really good, and it&#8217;s a total disaster from a functional standpoint. It might look shiny and pretty, but when you go to implement it, users just can&#8217;t understand it. &#8220;But, man, it looked so good on that comp that I got.&#8221;</p>
+<p><strong>Derek</strong>:  I think the biggest trap that people fall into is, everything was an overnight success. If you look at ‑‑ I use an example of Twitter. If you were to look at Twitter today, it looks pretty reasonable. It&#8217;s got some pretty sexy UI elements. It&#8217;s got some nice UX layouts, where they&#8217;ve got some sliding drawers and some techniques that are a little bit more cutting‑edge.</p>
+<p>If I were to try to create something that competed with Twitter or had functionality similar to Twitter, I wanted a timeline feed, perhaps. And I said, &#8220;I need my timeline feed to look just like Twitter, because people will not accept a timeline feed that&#8217;s not as good as Twitter&#8217;s timeline feed.&#8221; What we forget is, rewind back five, six years to when Twitter started and look at what Twitter&#8217;s timeline&#8230;</p>
+<p><strong>Jade</strong>:  Look at the first release of Twitter. Ugh. [laughs]</p>
+<p><strong>Derek</strong>:  The new, and I&#8217;m doing air quotes here, Twitter didn&#8217;t come out until a few years ago, after or, not even a few years ago. Less than 12 months ago, after they&#8217;d already taken almost $60 million in funding.</p>
+<p>I think, with it, that people get obsessed on, &#8220;I have to compare myself to the thing that is fully funded and has been out for a better part of five, six years and has hundreds of millions of users on it. That&#8217;s my benchmark.&#8221; Instead of saying, &#8220;We&#8217;ve been working on something for three months, and we want to release the first version within the next quarter. We need to iterate over how our users use this product.&#8221;</p>
+<p>I think you&#8217;re absolutely right. People get way too fixated on, &#8220;We have to ship finished, and we can&#8217;t iterate, but code wise, you can do whatever you want. If we need to add a feature here and there, that&#8217;s great.</p>
+<p>But the minute we put a feature out the door, it has to be perfect, because we can never come back and visually make it different, functionally make it different, or aesthetically make it different, or people are going to say that we failed and we didn&#8217;t work.&#8221; I think that that&#8217;s a mistake.</p>
+<p><strong>Jade</strong>:  I think there is some challenge in that, though. Because the Internet is moving at such a fast pace, there are some pretty revolutionary things that come out, that do become almost mandatory, that do become expectations of how things should work. I think that is a challenge that we&#8217;re always going to be faced with, is how to keep up with the things that are now mandatory, that six months ago were nice‑to‑haves.</p>
+<p><strong>William</strong>:  I agree with you, Derek. I think, I would challenge a little bit the idea that people, product owners in particular are comfortable with not having all the functionality as well.</p>
+<p><strong>Derek</strong>:  Yeah, I agree that a lot of them don&#8217;t do that.</p>
+<p><strong>William</strong>:  You go, &#8220;I want to go up against this x thing that&#8217;s been around for six years.&#8221; They&#8217;ve had six years to develop all their features. When I come out of the gate, I want to be at par with them, in six months.</p>
+<p>I think that&#8217;s a major issue for design, because what you end up doing is just, as quickly as you can, designing everything. It over‑accelerates the pace of development. You shouldn&#8217;t be trying to develop. The one that product owners love to reference, Facebook.</p>
+<p><strong>Jade</strong>:  Facebook. Yup.</p>
+<p><strong>William</strong>:  In six months.</p>
+<p><strong>Jade</strong>:  But it&#8217;s already been done, Billy.</p>
+<p><strong>William</strong>:  &#8220;But it&#8217;s already been done.&#8221; Yeah. So why are you doing it again?</p>
+<p>[laughter]</p>
+<p><strong>Derek</strong>:  My idea&#8217;s different.</p>
+<p><strong>William</strong>:  Here&#8217;s the thing about really great design. Going beyond the skin of it, going beyond even the couch analogy, is, it takes time to really understand whatever your problem is ‑‑ however you want to look at it. Your problem, your problem‑solution analogy, your friend, your creation, whatever. It takes time to sit with it.</p>
+<p>Going from an iterative perspective, allowing things to come out of the gate less than perfect, and building from the ground up. I&#8217;m not talking about slowing down development or doing it deliberately more slowly, but increasing the amount of releases you have, and accepting that you&#8217;re not going to make a world‑changing design on day one.</p>
+<p>What that does is, it allows your design team to really get to know the brand the way the users encounter it, to get to know the way the users want to use it. You get that time to realize, what people are doing with Twitter is not what we thought they were going to do with it. The way people are using this or that product, this was not what we expected, but this is what they believe we are and what they want us to be for.</p>
+<p>Then, it allows you to go back and do what new Twitter did when they said, &#8220;We&#8217;re not a social network. We&#8217;re an information network. From now on, that&#8217;s what we&#8217;re focusing on. We&#8217;re going to design for that.&#8221; Then, you can come out with something that&#8217;s sexy and impressive and great.</p>
+<p><strong>Jade</strong>:  And functional, and accomplishes the business goals.</p>
+<p><strong>William</strong>:  Yeah. It&#8217;s not contingent on success, that you come out of the gate at that point. Which is the big fear, is that if we don&#8217;t come out of the gate at this level that&#8217;s way up here, then we&#8217;re going to fail, because no one is going to want to look at it. But you don&#8217;t even know where people are at with it yet.</p>
+<p><strong>Derek</strong>:  Thank you, guys, for your time. I think, hopefully, in the next quarter or so, we&#8217;ll do another one of these on design and talk about some of what we&#8217;ve learned and where we&#8217;re going with it and maybe invite in a couple of outside guests and see how some other shops are doing it. Until next time, we&#8217;ll see you. Thanks.</p>
+								</div>
+	</a>
+</article>
+					<nav id="nav-below" class="navigation">
+			<div class="nav-previous">PREVIOUS: <a href="http://integrumtech.com/2011/03/integrum-team-to-speak-at-desert-code-camp/" rel="prev">Integrum Team To Speak at Desert Code Camp</a></div>		<div class="nav-next">NEXT: <a href="http://integrumtech.com/2011/04/scrumcast-special-episode-code-retreat/" rel="next">Special Episode : Code Retreat</a></div>		</nav><!-- #nav-below -->
+						<div id="comments">
+	
+	
+		<a href="https://facebook.com/AgileWeekly">Join the conversation on Facebook</a></div><!-- #comments -->
+							</section>
+		<div id="callouts" class="whatif">
+					<div class="callout-badge" id="callout-badge-rss">
+				<p class="action"><a href="https://itunes.apple.com/us/podcast/agile-weekly-podcast/id309948372?mt=2">Subscribe to the podcast</a></p>
+			</div>
+			<aside id="text-6" class="widget widget-1 callout-light widget widget_text">			<div class="textwidget"><a href="http://www.stitcher.com/s?fid=19189&refid=stpr"><img src="http://cloudfront.assets.stitcher.com/promo.assets/stitcher-banner-300x250.jpg" width="300" height="250" alt="Listen to Stitcher"></a></div>
+		</aside>		<aside id="integrum-text-widget-12" class="widget widget-2 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Make your <strong>mark</strong></h2>				<div class="blurb">
+					Get involved with the Agile Weekly Podcast by volunteering to be a guest, recommending a speaker, submitting a question, or suggesting a topic.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="https://agileweeklypodcast.uservoice.com/">Step up to the mic</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-13" class="widget widget-3 callout-light widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Build up your <strong>toolkit</strong></h2>				<div class="blurb">
+					Learn new tips and tricks for empowering your team and transforming your business.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="/blog/">See the blog</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-14" class="widget widget-4 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Hungy for <strong>More Info?</strong></h2>				<div class="blurb">
+					Agile Weekly is a quick way to stay up-to-date with the latest news, techniques and events in the Agile community. Signup today for the best Scrum, Lean, Kanban and XP content, curated by agile practitioners.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="http://agileweekly.com">Sign up</a></li>
+									</ul>
+			</div>
+		</aside>				</div>    </div>
+    <footer id="footer-document">
+		<div id="featured-clients" class="clearfix"><h3>Recent revolutions:</h3>			<div class="textwidget"><a href="https://www.britannica.com/" title="Encyclopaedia Brittanica"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-encyclobritannica.gif" alt="Encyclopaedia Brittanica"></a>
+<a href="http://www.orbitz.com/" title="Orbitz"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-orbitz.gif" alt="Orbitz"></a>
+<a href="https://www.monster.com/" title="Monster.com"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-monster.gif" alt="Monster.com"></a>
+<a href="http://www.valleymetro.org/" title="Valley Metro"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-valleymetro.gif" alt="Valley Metro"></a>
+<a href="https://www.microsoft.com/" title="Microsoft"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-microsoft.gif" alt="Microsoft"></a>
+<a href="https://www.intel.com/" title="Intel"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-intel.gif" alt="Intel"></a>
+<a href="http://www.pearson.com/" title="Pearson"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-pearson.gif" alt="Pearson"></a></div>
+		</div>        <div id="footer-contact" class="clearfix">
+			<div id="text-2" class="widget widget_text"><h2>Take the first step towards greatness, and hire a coach today.</h2>			<div class="textwidget"><p>Send us your questions, comments, hopes, and dreams using this form, or contact us at 888-999-1246 or <a href="/cdn-cgi/l/email-protection#056c6b636a456c6b7160627770687160666d2b666a68"><span class="__cf_email__" data-cfemail="533a3d353c133a3d27363421263e2736303b7d303c3e7d">[email&#160;protected]</span></a></p>
+</div>
+		</div><div id="gform_widget-2" class="widget gform_widget">		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js?ver=1.9.12.7' id='gform_masked_input-js'></script>
+
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_1' ><form method='post' enctype='multipart/form-data'  id='gform_1'  action='/2011/03/scrumcast-9-design-in-agile-software-development/'>
+                        <div class='gform_body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id='field_1_1' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_1' >Name:</label><div class='ginput_container'>
+                                    <input name='input_1' id='input_1_1' type='text' value='' class='medium' tabindex='1'  />
+                                </div></li><li id='field_1_3' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_3' >Phone number:</label><div class='ginput_container'><input name='input_3' id='input_1_3' type='tel' value='' class='medium' tabindex='2'   /></div></li><li id='field_1_2' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_2' >Email:</label><div class='ginput_container'>
+                            <input name='input_2' id='input_1_2' type='email' value='' class='medium' tabindex='3'   />
+                        </div></li><li id='field_1_4' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_4' >Speak up:</label><div class='ginput_container'>
+					<textarea name='input_4' id='input_1_4' class='textarea medium' tabindex='4'    rows='10' cols='50'></textarea>
+				</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Send my message' tabindex='5' onclick='if(window["gf_submitting_1"]){return false;}  if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  ' /> 
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjAzOTlkODFhZmZmM2ZmZjMzY2I2ZTc1OTFjZjU5Zjk5Il0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(!/(android)/i.test(navigator.userAgent)){jQuery('#input_1_3').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );}} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [1, 1]) } ); </script></div><div id="text-3" class="widget widget_text">			<div class="textwidget"><p class="site-id">Site by <a href="http://fortyagency.com" title="Forty branding + marketing">Forty</a></p></div>
+		</div>        </div> <!--/#footer-contact-->
+    </footer>
+</div> <!--/#wrapper-->
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.13-9993131' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.5.1' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.5.1' id='wp-mediaelement-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/comment-reply.min.js?ver=5.5.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/wp-embed.min.js?ver=5.5.1' id='wp-embed-js'></script>
+</body>
+</html>

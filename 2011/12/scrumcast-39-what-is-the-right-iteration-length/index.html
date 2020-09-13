@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7]><html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8]><html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!--><html lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noodp, noydir" />
+<meta name="viewport" content="width=device-width" />
+<title>Episode #39 – What is the Right Iteration Length - Integrum</title>
+<link rel="shortcut icon" type="image/ico" href="http://integrumtech.com/favicon.ico" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://integrumtech.com/wp-content/themes/integrum/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="http://integrumtech.com/wp-content/themes/integrum/css/print.css" />
+<link rel="pingback" href="http://integrumtech.com/xmlrpc.php" />
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://integrumtech.com/2011/12/scrumcast-39-what-is-the-right-iteration-length/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Episode #39 – What is the Right Iteration Length - Integrum" />
+<meta property="og:description" content="Jade Meskill, Derek Neighbors, Chris Coneybeer and Roy van de Water discuss an article by Todd Landry titled &#8220;What is the Right Iteration Length&#8221; Is &hellip;" />
+<meta property="og:url" content="http://integrumtech.com/2011/12/scrumcast-39-what-is-the-right-iteration-length/" />
+<meta property="og:site_name" content="Integrum" />
+<meta property="article:tag" content="Chris Coneybeer,Derek Neighbors,Jade Meskill,Roy van de Water" />
+<meta property="article:section" content="Agile Weekly Podcast" />
+<meta property="article:published_time" content="2011-12-22T05:00:03+00:00" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/integrumtech.com\/","name":"Integrum"}</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/integrumtech.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style type="text/css">
+.powerpress_player .wp-audio-shortcode { max-width: 200px; }
+</style>
+<link rel='stylesheet' id='mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.13-9993131' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://integrumtech.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='export-wp-page-to-static-html-css'  href='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/css/export-wp-page-to-static-html-public.css?ver=1.0.0' type='text/css' media='all' />
+		<script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/powerpress/player.min.js?ver=5.5.1' id='powerpress-player-js'></script>
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js?ver=5.5.1" id='jquery-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/jquery.cycle.all.js?ver=5.5.1' id='cycle-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/main.js?ver=5.5.1' id='integrum-main-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/js/export-wp-page-to-static-html-public.js?ver=1.0.0' id='export-wp-page-to-static-html-js'></script>
+<link rel="https://api.w.org/" href="http://integrumtech.com/wp-json/" /><link rel="alternate" type="application/json" href="http://integrumtech.com/wp-json/wp/v2/posts/6031" /><link rel='shortlink' href='http://integrumtech.com/?p=6031' />
+<link rel="alternate" type="application/json+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2011%2F12%2Fscrumcast-39-what-is-the-right-iteration-length%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2011%2F12%2Fscrumcast-39-what-is-the-right-iteration-length%2F&#038;format=xml" />
+<script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://integrumtech.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://integrumtech.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+</head>
+<body class="post-template-default single single-post postid-6031 single-format-standard">
+<div id="wrapper">
+    <div id="wrapper-header">
+    	<header id="header" role="banner">
+            <h1 id="logo"><a href="http://integrumtech.com/" title="Integrum" rel="home">Integrum</a></h1>
+            <nav id="navigation" role="navigation" class="clearfix">
+                <div class="menu-primary-container"><ul id="menu-primary" class="menu"><li id="menu-item-7406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7406"><a title="Go home" href="http://integrumtech.com/">Start</a></li>
+<li id="menu-item-7615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7615"><a title="Meet the team" href="http://integrumtech.com/crew/">Meet</a></li>
+<li id="menu-item-7407" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-7407"><a title="Listen to a scrumcast" href="http://integrumtech.com/category/agile-weekly-podcast/">Listen</a></li>
+<li id="menu-item-7614" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-7614"><a title="Read our industry insights" href="http://integrumtech.com/blog/">Read</a></li>
+<li id="menu-item-7408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7408"><a href="http://integrumtech.com/training-courses/">Learn</a></li>
+<li id="menu-item-7613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7613"><a title="Get in touch with us" href="http://integrumtech.com/contact/">Act</a></li>
+</ul></div>            </nav>
+	    </header>
+    </div>
+    <div id="main" role="main" class="clearfix">
+		<section id="content" class="container-content container-content-wide">
+					<header class="page-header">
+				<h1 class="page-title">Agile Weekly Podcast</h1>
+			</header>
+							<article id="post-6031" class="first post-6031 post type-post status-publish format-standard hentry category-agile-weekly-podcast tag-chris-coneybeer tag-derek-neighbors tag-jade-meskill tag-roy-van-de-water odd">
+	    <header class="entry-header">
+			<h1 class="entry-title"><a href="http://integrumtech.com/2011/12/scrumcast-39-what-is-the-right-iteration-length/" title="Permalink to Episode #39 – What is the Right Iteration Length" rel="bookmark">Episode #39 – What is the Right Iteration Length</a></h1>
+			<ul class="entry-meta">
+												<li class="episode">#39</li>
+								<li class="date"><time datetime="2011-12-22T05:00:03+00:00">December 22, 2011</time></li>
+				<li class="category"><ul class="post-categories">
+	<li><a href="http://integrumtech.com/category/agile-weekly-podcast/" rel="category tag">Agile Weekly Podcast</a></li></ul></li>
+	        </ul>
+	    </header>
+		<div class="entry-content">
+						<div class="entry-speakers">
+				<p>Featured speakers:</p>
+											<a href="http://integrumtech.com/crew/derek-neighbors/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/derek.jpg" alt="Derek Neighbors" width="84" height="84">
+								Derek							</a>
+													<a href="http://integrumtech.com/crew/jade-meskill/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/jade.jpg" alt="Jade Meskill" width="84" height="84">
+								Jade							</a>
+													<a href="http://integrumtech.com/crew/roy-van-de-water/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/roy.jpg" alt="Roy van de Water" width="84" height="84">
+								Roy							</a>
+									</div>
+						<div class="powerpress_player" id="powerpress_player_2378"><a href="http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/scrumcast_39.mp3" title="Play" onclick="return powerpress_embed_html5a('2378','http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/scrumcast_39.mp3');" target="_blank"><img src="http://integrumtech.com/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></div>
+			<p>Jade Meskill, Derek Neighbors, Chris Coneybeer and Roy van de Water discuss an article by Todd Landry titled <a href="http://www.klocwork.com/blog/2011/11/whats-the-right-iteration-length/">&#8220;What is the Right Iteration Length&#8221;</a></p>
+<ul>
+<li>Is it better to have a shorter iteration and close the feedback loop</li>
+<li>Is it better to have a longer iteration to decrease the overhead of the Scrum Ceremonies?</li>
+<li>Sprint Review seems to be the only ceremony not proportionally decreased with sprint length</li>
+<li>Retrospectives do not have to occur every week, or perhaps have an extended retro every other sprint</li>
+<li>The cost of deploying is sometimes an argument for longer sprints</li>
+<li>Deployments and releases should be unhinged from sprints</li>
+<li>The team agrees that shorter sprints are generally better</li>
+</ul>
+<p><em>Transcript</em></p>
+<p><strong>Jade Meskill</strong>:  Hi. Welcome to another episode of the Scrumcast. I&#8217;m Jade Meskill.</p>
+<p><strong>Roy van de Water</strong>:  I&#8217;m Roy van de Water.</p>
+<p><strong>Chris Conagher</strong>:  I&#8217;m Chris Conagher.</p>
+<p><strong>Derek Neighbors</strong>:  I&#8217;m Derek Neighbors.</p>
+<p><strong>Chris</strong>:  I was reading an article this morning by Todd Landry, called &#8220;What is the right duration length?&#8221; He was bringing up some experiences that he had in trying to discover what the correct duration length is. He says that when they first started forming an agile team, they were new to the concept. They figured they&#8217;d do one week iterations. They&#8217;d have a really quick feedback loop and be able to adjust as quickly as possible.</p>
+<p>He says they did that for a little bit. They felt that the overhead of all of the scrum ceremonies for one iteration, got out of hand, so they increased it to two week iterations. He felt that that worked a lot better for him. He says around the holidays they started an iteration where they said, &#8220;Well, we can&#8217;t really do a real iteration, so we&#8217;re going to start now, and we&#8217;re going to end when the last person leaves the building.&#8221;</p>
+<p>It ended up being about a four week iteration, and he says that that was a complete nightmare.</p>
+<p><strong>Roy</strong>:  Yeah, it sounds that way. I was about to unleash on that one, but&#8230;</p>
+<p>[laughter]</p>
+<p><strong>Roy</strong>:  At Integrum we have done a lot of one‑week sprints, and you guys have all been a part of those one‑week sprints. What do you think, what was the positives from doing one‑week sprint?</p>
+<p><strong>Chris</strong>:  I think some of the positives were that the ceremonies were very targeted. We had to learn how to keep them under control. I think that&#8217;s something the teams go through is that they don&#8217;t do a good job of making sure they keep those ceremonies under control, and that&#8217;s why they get so much overhead from them.</p>
+<p><strong>Derek</strong>:  Yeah, I tend to agree. The number one thing that I hear from people is that the overhead on one week sprints is too high. The only ceremony that I believe has that amount of overhead is, really, the sprint review including the retrospective. The main reason that I say that is planning should be a rough estimate of a percentage of time in your sprint.</p>
+<p>If you&#8217;re doing a four‑week sprint, you might spend an entire day. If you&#8217;re doing a two‑week sprint, you might spend a half‑day. If you&#8217;re doing a one‑week sprint, maybe you&#8217;re doing two hours. I think that what happens is a lot of teams doing one‑week sprint spend a whole day planning, and that&#8217;s where they feel the overhead is. I think they&#8217;re just being inefficient in how they plan. I, actually, think it&#8217;s poor planning that hurts one‑week sprints, not that there&#8217;s too much overhead.</p>
+<p>We&#8217;ve played with this on and off. On the retrospective side of the fence, say, we&#8217;ll only do the retrospective every other week, or do a light version of the retrospective, where we at least catalog real quickly some high level frustrations, but don&#8217;t dig too deep. Then, on the opposite week, dig a little bit deeper, and spend a little bit more time during that.</p>
+<p>From a demo perspective, which is really the other element of it, you should be demoing your work pretty much as you complete it. You shouldn&#8217;t be building up a whole lot of sprint demo time to begin with, so&#8230;</p>
+<p><strong>Roy</strong>:  I think there&#8217;s a lot of teams that don&#8217;t follow that particular piece of advice, where they&#8217;re demoing constantly.</p>
+<p><strong>Jade</strong>:  But even if they&#8217;re not demoing constantly, if they are only demoing one week&#8217;s worth of stuff, then their demo shouldn&#8217;t take the same length of time.</p>
+<p><strong>Derek</strong>:  I think another thing that kills people too is there&#8217;s this really bad stigmatism that you have to deploy when you have an end of a sprint. A lot of teams, deploying is very painful, and so that eats up a lot of time. It&#8217;s actually getting things deployed so that they can actually demo. It&#8217;s why I find, when there&#8217;s a poor build environment that, generally speaking, teams are less likely to want to do one week sprints, because the deployment for demoing takes up half a sprint.</p>
+<p><strong>Roy</strong>:  I always tell people that they need to unhinge deployment and releases from their sprints.</p>
+<p><strong>Jade</strong>:  However, I kind of feel like, if you&#8217;re doing the deployment every two sprints, then that kind of builds up a cadence. It does almost feel like it would make sense to&#8230;</p>
+<p><strong>Roy</strong>:  I think it&#8217;s nice, and it&#8217;s good if you can get there. But I don&#8217;t think they should be solely dependent on each other.</p>
+<p><strong>Jade</strong>:  I think in an ideal situation, you&#8217;re deploying as often as you&#8217;re demoing, which is daily, and you don&#8217;t have to worry about it.</p>
+<p><strong>Roy</strong>:  I think that&#8217;s a pretty highly evolved product or organization that can live in that continuous deployment world.</p>
+<p><strong>Derek</strong>:  I guess where I get really concerned is, I&#8217;m even OK, as much as I might bag on it, on a 30 day sprint, or a four week sprint, as long as a team understands that that&#8217;s a segment of where they&#8217;re at, not where they should be going.</p>
+<p>I get concerned when somebody starts with a one week sprint and then pulls back to a two week sprint, and says, &#8220;For us, just a two week sprint works better.&#8221; Because what they&#8217;re really not acknowledging is all the problems that are keeping them from being able to do a one week sprint. I see teams do one week sprints all the time, really, really effectively, which means it&#8217;s doable.</p>
+<p>If it&#8217;s not doable for your team, there&#8217;s probably other symptoms that are happening. Either you&#8217;ve got poor deployment practices. You have bad product ownership. You have poor planning meetings. A myriad of different things can be coming up that are preventing it from it.</p>
+<p>Sometimes when people kind of roll back to this less‑than‑ideal state, if they don&#8217;t do it with a, &#8220;We&#8217;re only doing this for right now until we can get better at the other things,&#8221; then I think that that&#8217;s dangerous.</p>
+<p><strong>Jade</strong>:  I think that there&#8217;s some huge downsides, too, to doing one‑week sprints. I&#8217;m sorry. Downsides to not doing a one‑week sprint, specifically when it comes to regards to research tasks. If I&#8217;m doing commitment during planning and during my planning meeting, I find out that I don&#8217;t have enough information and I need to write research tasks.</p>
+<p>If have a one‑week sprint, then it&#8217;s relatively low‑cost. I spend one‑week doing the research. In the following week, I can immediately do that task. If I have a four‑week sprint, that means I do the research task. That even means it&#8217;s four weeks until I do the research task. Then I don&#8217;t commit to getting it done until four weeks after that.</p>
+<p>It&#8217;s going to be eight‑weeks until that story gets done. Or I do the research task immediately, but then it would be four weeks before I, actually, address the story. Then it&#8217;s four‑weeks between research tasks.</p>
+<p><strong>Derek</strong>:  But, if it takes you nine weeks to deploy, that&#8217;s all OK.</p>
+<p>[laughter]</p>
+<p><strong>Chris</strong>:  Something that we&#8217;re talking about is that some of these teams that we hear when they&#8217;re doing one‑week and then they go to two‑week, how many times do we hear it&#8217;s right in the very beginning? You&#8217;re talking about retrospecting, realizing, &#8220;What do we need to change,&#8221; where they&#8217;re getting used to this, so it&#8217;s probably talking them longer than it would.</p>
+<p>Are they really retrospecting, going, &#8220;Are we getting better at this? Can we stay at one week?&#8221; I have some questions in regards of what did the team think of and why did they go to two weeks?</p>
+<p><strong>Derek</strong>:  Too much overhead.</p>
+<p><strong>Roy</strong>:  I think it&#8217;s reduces that pressure like Derek&#8217;s saying. Doing a one‑week sprint requires a lot of discipline, and a lot of willingness to introspect and really pay attention to yourself. When you see people getting really uncomfortable with that, it&#8217;s because they&#8217;re trying to get a little bit more of a buffer to feel a little bit safer.</p>
+<p>I think that&#8217;s OK in the early adoption phase. But like Derek said, if you just get stuck in that rut because, &#8220;Well, that&#8217;s just what we do,&#8221; I think that&#8217;s a bad place to be. You should really be trying to challenge yourself, but I think that&#8217;s reserved for teams that are a little bit more mature.</p>
+<p><strong>Jade</strong>:  With longer sprint‑sizes, you&#8217;re increasing the risk in a self‑organizing team. Because when a self‑organizing team comes up into retrospect, and comes up with an idea and they try it, in a one‑week sprint, they can cancel out that new thing to try within one week. But if you have a four‑week sprint, you&#8217;re stuck with that for four weeks. That can be devastating to the company.</p>
+<p><strong>Roy</strong>:  You could also do retrospectives disconnected from your sprint.</p>
+<p><strong>Chris</strong>:  That&#8217;s true.</p>
+<p><strong>Derek</strong>:  I think, as an industry, most people are doing two‑week sprints. I don&#8217;t know many people that are really on a 30‑day or four‑week cycle, but one thing I&#8217;ll say that I noticed with almost every team I encounter. The teams that like two weeks sprints only can pull in two or three stories, generally, per sprint. When they task out to do their commitments, it&#8217;s usually in terms of days.</p>
+<p>I don&#8217;t mean ideal days. I mean, &#8220;Well, I&#8217;m going to work on this task today. Tomorrow, I&#8217;m going to work on that task.&#8221; When I see teams that are OK with one week sprints, and actually prefer one week sprints, I usually seeing them pulling in three or four stories, at least per sprint. They&#8217;re pulling in tasks down to a 15 minute, nothing bigger than hour or two.</p>
+<p>I think that that gives them a lot more fine grain control over, are they ahead or behind schedule. It really helps to pick up pace. That&#8217;s not to say that people doing one‑week sprints complete more stories. That&#8217;s not the goal of bringing in more stories.</p>
+<p>But, they have a habit of decomposing things to a smaller level which gets them a better accuracy from a standpoint of when something&#8217;s going wrong, they know that&#8217;s it&#8217;s going wrong a lot sooner. It&#8217;s not because they&#8217;re in a one week sprint. It&#8217;s because they&#8217;re not having to wait until the end of the day to figure out, &#8220;Oh, I&#8217;m kind of behind schedule.&#8221; They know that by lunchtime of the first day.</p>
+<p>&#8220;I&#8217;m an hour behind. Or the team&#8217;s three hours behind.&#8221; It allows kind of those course corrections to happen within an hour of a sprint opposed at the end of a week, or at the end of two weeks.</p>
+<p><strong>Jade</strong>:  I think that we all agree that it seems like the shorter the sprint length or, at least in our case, we feel that a one‑week sprint provides the greatest ability to react to change to minimize the risk and offers a lot more advantages. Oftentimes, a desire to go for longer term sprints are a result of other pains on the team. Or other malfunctions within the team that cause them to shy away from that.</p>
+<p><strong>Roy</strong>:  I think you need to take the rest of the organization into account as well. I see a lot of challenges, sometimes, for development teams that are willing, and able, to go to one week sprints, but there&#8217;s some impediment at the organizational level that&#8217;s preventing them from doing that. I think&#8230;</p>
+<p><strong>Jade</strong>:  Product Managers.</p>
+<p><strong>Roy</strong>:  [laughs] . I wasn&#8217;t going to name names, but I think that does factor into that as well. It&#8217;s important for teams to be cognizant of that. Also, I think, try to work towards solving that. What&#8217;s wrong, or what&#8217;s happening inside the organization that&#8217;s preventing the other part of the team, the product donor, from being as responsive as the development team.</p>
+<p><strong>Derek</strong>:  It&#8217;s not just product donors, design too.</p>
+<p><strong>Roy</strong>:  That&#8217;s a whole other Podcast.</p>
+<p>[laughter]</p>
+<p><strong>Jade</strong>:  I think that&#8217;s it. Thank you for joining us.</p>
+<p><strong>Chris</strong>:  See you next time.</p>
+<p>[music]</p>
+<p><strong>Mark Graban</strong>:  Hi, this is Mark Graban, from leanblog.org. I am looking forward to being a future guest, on Scrumcast. You can also listen to my Podcast, if you go to leanpodcast.org. I cover &#8220;lean&#8221; from a pretty broad perspective, including manufacturing, healthcare, startups, and software. You can listen to Podcasts that I&#8217;ve done with Eric Ries, with Brant Cooper, and Patrick Vlaskovits, on customer development.</p>
+<p>You can find all of these on iTunes, if you search for leanblog, or go to leanpodcast.org.</p>
+								</div>
+	</a>
+</article>
+					<nav id="nav-below" class="navigation">
+			<div class="nav-previous">PREVIOUS: <a href="http://integrumtech.com/2011/12/user-story-class-interview-with-rose-hess-nunn/" rel="prev">Special Episode : User Story Class Interview with Rose Hess-Nunn</a></div>		<div class="nav-next">NEXT: <a href="http://integrumtech.com/2011/12/scrumcast-40-management-inbreeding-with-darrin-ladd/" rel="next">Episode #40 – Management Inbreeding with Darrin Ladd</a></div>		</nav><!-- #nav-below -->
+						<div id="comments">
+	
+	
+		<a href="https://facebook.com/AgileWeekly">Join the conversation on Facebook</a></div><!-- #comments -->
+							</section>
+		<div id="callouts" class="whatif">
+					<div class="callout-badge" id="callout-badge-rss">
+				<p class="action"><a href="https://itunes.apple.com/us/podcast/agile-weekly-podcast/id309948372?mt=2">Subscribe to the podcast</a></p>
+			</div>
+			<aside id="text-6" class="widget widget-1 callout-light widget widget_text">			<div class="textwidget"><a href="http://www.stitcher.com/s?fid=19189&refid=stpr"><img src="http://cloudfront.assets.stitcher.com/promo.assets/stitcher-banner-300x250.jpg" width="300" height="250" alt="Listen to Stitcher"></a></div>
+		</aside>		<aside id="integrum-text-widget-12" class="widget widget-2 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Make your <strong>mark</strong></h2>				<div class="blurb">
+					Get involved with the Agile Weekly Podcast by volunteering to be a guest, recommending a speaker, submitting a question, or suggesting a topic.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="https://agileweeklypodcast.uservoice.com/">Step up to the mic</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-13" class="widget widget-3 callout-light widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Build up your <strong>toolkit</strong></h2>				<div class="blurb">
+					Learn new tips and tricks for empowering your team and transforming your business.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="/blog/">See the blog</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-14" class="widget widget-4 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Hungy for <strong>More Info?</strong></h2>				<div class="blurb">
+					Agile Weekly is a quick way to stay up-to-date with the latest news, techniques and events in the Agile community. Signup today for the best Scrum, Lean, Kanban and XP content, curated by agile practitioners.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="http://agileweekly.com">Sign up</a></li>
+									</ul>
+			</div>
+		</aside>				</div>    </div>
+    <footer id="footer-document">
+		<div id="featured-clients" class="clearfix"><h3>Recent revolutions:</h3>			<div class="textwidget"><a href="https://www.britannica.com/" title="Encyclopaedia Brittanica"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-encyclobritannica.gif" alt="Encyclopaedia Brittanica"></a>
+<a href="http://www.orbitz.com/" title="Orbitz"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-orbitz.gif" alt="Orbitz"></a>
+<a href="https://www.monster.com/" title="Monster.com"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-monster.gif" alt="Monster.com"></a>
+<a href="http://www.valleymetro.org/" title="Valley Metro"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-valleymetro.gif" alt="Valley Metro"></a>
+<a href="https://www.microsoft.com/" title="Microsoft"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-microsoft.gif" alt="Microsoft"></a>
+<a href="https://www.intel.com/" title="Intel"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-intel.gif" alt="Intel"></a>
+<a href="http://www.pearson.com/" title="Pearson"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-pearson.gif" alt="Pearson"></a></div>
+		</div>        <div id="footer-contact" class="clearfix">
+			<div id="text-2" class="widget widget_text"><h2>Take the first step towards greatness, and hire a coach today.</h2>			<div class="textwidget"><p>Send us your questions, comments, hopes, and dreams using this form, or contact us at 888-999-1246 or <a href="/cdn-cgi/l/email-protection#11787f777e51787f65747663647c657472793f727e7c"><span class="__cf_email__" data-cfemail="670e090108270e0913020015120a1302040f4904080a49">[email&#160;protected]</span></a></p>
+</div>
+		</div><div id="gform_widget-2" class="widget gform_widget">		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js?ver=1.9.12.7' id='gform_masked_input-js'></script>
+
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_1' ><form method='post' enctype='multipart/form-data'  id='gform_1'  action='/2011/12/scrumcast-39-what-is-the-right-iteration-length/'>
+                        <div class='gform_body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id='field_1_1' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_1' >Name:</label><div class='ginput_container'>
+                                    <input name='input_1' id='input_1_1' type='text' value='' class='medium' tabindex='1'  />
+                                </div></li><li id='field_1_3' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_3' >Phone number:</label><div class='ginput_container'><input name='input_3' id='input_1_3' type='tel' value='' class='medium' tabindex='2'   /></div></li><li id='field_1_2' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_2' >Email:</label><div class='ginput_container'>
+                            <input name='input_2' id='input_1_2' type='email' value='' class='medium' tabindex='3'   />
+                        </div></li><li id='field_1_4' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_4' >Speak up:</label><div class='ginput_container'>
+					<textarea name='input_4' id='input_1_4' class='textarea medium' tabindex='4'    rows='10' cols='50'></textarea>
+				</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Send my message' tabindex='5' onclick='if(window["gf_submitting_1"]){return false;}  if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  ' /> 
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjAzOTlkODFhZmZmM2ZmZjMzY2I2ZTc1OTFjZjU5Zjk5Il0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(!/(android)/i.test(navigator.userAgent)){jQuery('#input_1_3').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );}} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [1, 1]) } ); </script></div><div id="text-3" class="widget widget_text">			<div class="textwidget"><p class="site-id">Site by <a href="http://fortyagency.com" title="Forty branding + marketing">Forty</a></p></div>
+		</div>        </div> <!--/#footer-contact-->
+    </footer>
+</div> <!--/#wrapper-->
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.13-9993131' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.5.1' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.5.1' id='wp-mediaelement-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/comment-reply.min.js?ver=5.5.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/wp-embed.min.js?ver=5.5.1' id='wp-embed-js'></script>
+</body>
+</html>

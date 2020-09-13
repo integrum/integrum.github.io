@@ -1,0 +1,73 @@
+* {
+	font-family: Helvetica, Arial, sans-serif;
+}
+body {
+	background: white;
+	font-size: 12pt;
+	padding: 0;
+}
+#header {
+	background: white;
+	padding: 0;
+	height: auto;
+}
+#logo a {
+	background: none;
+	margin: 0;
+	text-indent: 0;
+	width: auto;
+}
+#mission h1,
+#mission h2 {
+	float: none;
+	font-size: 18pt !important;
+	margin: 0;
+	text-align: left;
+	width: auto;
+}
+#content .post {
+	float: none !important;
+	width: auto;
+}
+#navigation,
+#footer-document,
+#callouts,
+#quote-rotator {
+	display: none;
+}
+#wrapper,
+#main,
+#content {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0 !important;
+	border: 0;
+	float: none !important;
+	color: black;
+	background: transparent none;
+}
+#wrapper {
+	margin: 0 5%;
+}
+#content a:link,
+#content a:visited {
+	color: #520;
+	background: transparent;
+	font-weight: bold;
+	text-decoration: underline;
+}
+#content a:link:after,
+#content a:visited:after {
+	content: " (" attr(href) ") ";
+	font-size: 90%;
+}
+#content a[href^="/"]:after {
+	content: " (http://integrumtech.com" attr(href) ") ";
+}
+#content a[href^="#"] {
+	display: none;
+}

@@ -1,0 +1,24 @@
+/*
+Theme Name: Integrum Tech
+Theme URI: http://integrumtech.com
+Author: Forty Agency
+Author URI: http://fortyagency.com/
+Description: WordPress theme for Integrum
+*/
+
+@import url('css/reset.css');
+@import url('css/screen.css');
+@import url('css/media.css');
+
+ul li strong {
+font-family: 'Gibson-SemiBold';
+}
+
+#main blockquote {
+padding: 12px 25px;
+}
+
+#main blockquote cite {
+display: block;
+padding-top: 10px;
+}

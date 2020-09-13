@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7]><html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8]><html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!--><html lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noodp, noydir" />
+<meta name="viewport" content="width=device-width" />
+<title>Episode #97 - Product Owners, INVEST, Continuous Delivery - Integrum</title>
+<link rel="shortcut icon" type="image/ico" href="http://integrumtech.com/favicon.ico" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://integrumtech.com/wp-content/themes/integrum/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="http://integrumtech.com/wp-content/themes/integrum/css/print.css" />
+<link rel="pingback" href="http://integrumtech.com/xmlrpc.php" />
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://integrumtech.com/2013/02/episode-97-product-owners-invest-continuous-delivery/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Episode #97 - Product Owners, INVEST, Continuous Delivery - Integrum" />
+<meta property="og:description" content="Clayton Lengel-Zigich, Roy van de Water and Derek Neighbors discuss: Product Owner Availability Delivering Value Continuous Delivery vs Deployment Backlog Gardening Transcript Clayton Lengel‑Zigich:  Welcome &hellip;" />
+<meta property="og:url" content="http://integrumtech.com/2013/02/episode-97-product-owners-invest-continuous-delivery/" />
+<meta property="og:site_name" content="Integrum" />
+<meta property="article:tag" content="Clayton Lengel-Zigich,Derek Neighbors,Roy van de Water" />
+<meta property="article:section" content="Agile Weekly Podcast" />
+<meta property="article:published_time" content="2013-02-14T06:00:05+00:00" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/integrumtech.com\/","name":"Integrum"}</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/integrumtech.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style type="text/css">
+.powerpress_player .wp-audio-shortcode { max-width: 200px; }
+</style>
+<link rel='stylesheet' id='mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.13-9993131' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://integrumtech.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='export-wp-page-to-static-html-css'  href='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/css/export-wp-page-to-static-html-public.css?ver=1.0.0' type='text/css' media='all' />
+		<script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/powerpress/player.min.js?ver=5.5.1' id='powerpress-player-js'></script>
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js?ver=5.5.1" id='jquery-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/jquery.cycle.all.js?ver=5.5.1' id='cycle-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/main.js?ver=5.5.1' id='integrum-main-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/js/export-wp-page-to-static-html-public.js?ver=1.0.0' id='export-wp-page-to-static-html-js'></script>
+<link rel="https://api.w.org/" href="http://integrumtech.com/wp-json/" /><link rel="alternate" type="application/json" href="http://integrumtech.com/wp-json/wp/v2/posts/7150" /><link rel='shortlink' href='http://integrumtech.com/?p=7150' />
+<link rel="alternate" type="application/json+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2013%2F02%2Fepisode-97-product-owners-invest-continuous-delivery%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2013%2F02%2Fepisode-97-product-owners-invest-continuous-delivery%2F&#038;format=xml" />
+<script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://integrumtech.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://integrumtech.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+</head>
+<body class="post-template-default single single-post postid-7150 single-format-standard">
+<div id="wrapper">
+    <div id="wrapper-header">
+    	<header id="header" role="banner">
+            <h1 id="logo"><a href="http://integrumtech.com/" title="Integrum" rel="home">Integrum</a></h1>
+            <nav id="navigation" role="navigation" class="clearfix">
+                <div class="menu-primary-container"><ul id="menu-primary" class="menu"><li id="menu-item-7406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7406"><a title="Go home" href="http://integrumtech.com/">Start</a></li>
+<li id="menu-item-7615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7615"><a title="Meet the team" href="http://integrumtech.com/crew/">Meet</a></li>
+<li id="menu-item-7407" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-7407"><a title="Listen to a scrumcast" href="http://integrumtech.com/category/agile-weekly-podcast/">Listen</a></li>
+<li id="menu-item-7614" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-7614"><a title="Read our industry insights" href="http://integrumtech.com/blog/">Read</a></li>
+<li id="menu-item-7408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7408"><a href="http://integrumtech.com/training-courses/">Learn</a></li>
+<li id="menu-item-7613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7613"><a title="Get in touch with us" href="http://integrumtech.com/contact/">Act</a></li>
+</ul></div>            </nav>
+	    </header>
+    </div>
+    <div id="main" role="main" class="clearfix">
+		<section id="content" class="container-content container-content-wide">
+					<header class="page-header">
+				<h1 class="page-title">Agile Weekly Podcast</h1>
+			</header>
+							<article id="post-7150" class="first post-7150 post type-post status-publish format-standard hentry category-agile-weekly-podcast tag-clayton-lengel-zigich tag-derek-neighbors tag-roy-van-de-water odd">
+	    <header class="entry-header">
+			<h1 class="entry-title"><a href="http://integrumtech.com/2013/02/episode-97-product-owners-invest-continuous-delivery/" title="Permalink to Episode #97 &#8211; Product Owners, INVEST, Continuous Delivery" rel="bookmark">Episode #97 &#8211; Product Owners, INVEST, Continuous Delivery</a></h1>
+			<ul class="entry-meta">
+												<li class="episode">#97</li>
+								<li class="date"><time datetime="2013-02-14T06:00:05+00:00">February 14, 2013</time></li>
+				<li class="category"><ul class="post-categories">
+	<li><a href="http://integrumtech.com/category/agile-weekly-podcast/" rel="category tag">Agile Weekly Podcast</a></li></ul></li>
+	        </ul>
+	    </header>
+		<div class="entry-content">
+						<div class="entry-speakers">
+				<p>Featured speakers:</p>
+											<a href="http://integrumtech.com/crew/clayton-lengel-zigich/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/clayton.jpg" alt="Clayton Lengel-Zigich" width="84" height="84">
+								Clayton							</a>
+													<a href="http://integrumtech.com/crew/derek-neighbors/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/derek.jpg" alt="Derek Neighbors" width="84" height="84">
+								Derek							</a>
+													<a href="http://integrumtech.com/crew/roy-van-de-water/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/roy.jpg" alt="Roy van de Water" width="84" height="84">
+								Roy							</a>
+									</div>
+						<div class="powerpress_player" id="powerpress_player_5160"><a href="http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/episode_97.mp3" title="Play" onclick="return powerpress_embed_html5a('5160','http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/episode_97.mp3');" target="_blank"><img src="http://integrumtech.com/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></div>
+			<p>Clayton Lengel-Zigich, Roy van de Water and Derek Neighbors discuss:</p>
+<ul>
+<li>Product Owner Availability</li>
+<li>Delivering Value</li>
+<li>Continuous Delivery vs Deployment</li>
+<li>Backlog Gardening</li>
+</ul>
+<p><em>Transcript</em></p>
+<p><strong>Clayton Lengel‑Zigich</strong>:  Welcome to another episode of the Agile Weekly Podcast. I&#8217;m Clayton Lengel‑Zigich.</p>
+<p><strong>Derek Neighbors</strong>:  I&#8217;m Derek Neighbors.</p>
+<p><strong>Roy van de Water</strong>:  I&#8217;m Roy van de Water.</p>
+<p><strong>Clayton</strong>:  We&#8217;ve got a few topics today. The first one we start out with is Product Owner Availability on a Scrum team. If I&#8217;m a product owner, how available should I be to the team? Should I be sitting there, waiting for them to ask me something?</p>
+<p><strong>Roy</strong>:  In my perfect world, yeah. You&#8217;ll be sitting with the rest of the team, not necessarily waiting to be asked something but you&#8217;re available if something is needing to be asked. In the mean time, there&#8217;re some of the other things that you can do, like backlog grooming and communication with stakeholders, that type of thing.</p>
+<p><strong>Clayton</strong>:  You&#8217;re saying actually be available&#8230;if the team needs something from me, I should be available almost immediate?</p>
+<p><strong>Roy</strong>:  I don&#8217;t know about should. If I was a team member, that&#8217;s what I would want. I don&#8217;t know if that&#8217;s realistic to set an expectation like that. I don&#8217;t know if I can say, &#8220;You need to be available within two minutes of me having a question&#8221;. That might be a bit excessive.</p>
+<p><strong>Derek</strong>:  I would say as close to immediate as possible, is desired. What is doable is an entirely different story, probably for every team, every organization.</p>
+<p><strong>Roy</strong>:  Every product owner.</p>
+<p><strong>Derek</strong>:  Every product owner. Part of availability is&#8230;we were talking about Jim McCarthy before we came in here, and the core protocols. One of them is presence. Physical presence of a product owner is key to availability because its not just about being able to ask questions, but there&#8217;s also a fear of how do we talk about product.</p>
+<p>There&#8217;re so many times as a developer where you&#8217;re working on something, and you&#8217;re really talking not about code, but you&#8217;re talking about experience or you&#8217;re talking about a functionality or interpretation of conditions of satisfaction or acceptance criteria, whatever you want to call them. Where if there is that kind of physical proximity or presence, it allows for a product owner to say, &#8220;Hey, that doesn&#8217;t really matter, don&#8217;t bother arguing about it. Just go ahead and implement it.&#8221;</p>
+<p>Or, it allows them to basically jump into the conversation almost immediately. One of the things that developers tend to do is not talk the product because they think they&#8217;re not allowed. When we come from this world of requirements, once a product owner tells us A or B, like we are incompetent if we have to go back for clarification. I think that availability to clarify is monumentally important.</p>
+<p><strong>Clayton</strong>:  What are some maybe dysfunctions? A lot of product owners probably are not that dedicated to the team and they probably spend a lot of time in meetings or on the phone or doing whatever. What are some problems you might encounter if you don&#8217;t have that presence of the product owner?</p>
+<p><strong>Roy</strong>:  What I usually see is it really screws up the planning meeting for multiple different reasons. The first being, is that because the product owner wasn&#8217;t available throughout the week, I&#8217;ve seen a lot of teams wait until the planning meeting to get acceptance.</p>
+<p><strong>Clayton</strong>:  Is that like wait until the retrospective to talk about things?</p>
+<p><strong>Roy</strong>:  Right, because it&#8217;s the last minute that you could technically get acceptance before the next thing. Obviously, you should be doing it as soon as you finish feature, like as close to that as possible. I&#8217;ve seen a lot of teams wait until they are in planning.</p>
+<p>The other thing that happens during planning is because the team is so fearful of needing to ask the product owner questions throughout the week and knowing that the product owner is going to be available, they&#8217;re going to want to like squeeze the product owner dry during the planning session which makes it really arduous. They try to think of everything that could possibly go wrong ever because when it does happen, if it does happen, they might not have that product owner there to ask.</p>
+<p><strong>Derek</strong>:  I definitely think that you get a sense of people get fearful when they&#8217;re making commitments, if they don&#8217;t think they have all the information, if they think they&#8217;re only getting one chance to get the information. If you have a lot of uncertainty in product ownership during a sprint, teams tend to be more fearful to actually committing to work.</p>
+<p>Where I think if you&#8217;ve got the higher certainty, teams tend to be a little more willing to commit to things knowing that they&#8217;re not going to be blocked by something out of their control, in essence.</p>
+<p><strong>Clayton</strong>:  We have been talking about product ownership. Kind of related to that are stories. I was asking Derek today about that the new moniker for &#8220;INVEST&#8221; about stories. The V in there is for value. We talked a lot about delivering value to the customer.</p>
+<p>What do you guys think about stories that might deliver value in the future but if it were shipped tomorrow no one would use it. No one would get any value out of it. Is that even worth doing? Even if it&#8217;s maybe a building block to something?</p>
+<p><strong>Roy</strong>:  That sounds dangerous. Usually, when I hear of somebody think of a story as a building block, they&#8217;re slicing the cake the wrong way. You know what I mean? That would be my primary concern. If it&#8217;s not really adding value to the user now, then why are we building it now?</p>
+<p><strong>Derek</strong>:  For me, I hate this whole value discussion more than anything in so many ways, because nobody can really define value. I&#8217;ve gotten into Twitter arguments over this that made me want to pound my face into the concrete.</p>
+<p>For me the question becomes like, &#8220;What are the goals?&#8221; What are you trying to do with this product? Are you trying to make money with the product? Are you trying to influence people with the product? Are you trying to get more users with the product? Are you trying to not lose users with the product?</p>
+<p>What is it you&#8217;re trying to do? For me, where&#8217;s the data that backs up that this particular story helps you get closer to that goal? If it&#8217;s a building block, &#8220;Hey, we need to do this so that we can do that,&#8221; I&#8217;m OK with that.</p>
+<p>I get worried if it&#8217;s a technical building block like, &#8220;Hey, we need this technical building block in order to do this.&#8221; If it&#8217;s not really a technical building block but rather, &#8220;Hey, we need to implement this so that we can track this or so that we can add this additional feature, and that&#8217;s what we really want, and we believe that&#8217;s what we get there,&#8221; I&#8217;m OK with some of that.</p>
+<p>To me, most product owners can&#8217;t tell you shit. &#8220;We&#8217;re just doing this because it feels good or because the users are screaming about it or because it&#8217;s what we pulled out of our rear end before we came into this planning meeting,&#8221; which is probably not delivering value.</p>
+<p>If people came in and said, &#8220;We&#8217;re doing this because we&#8217;re losing users, and we really need this functionality in order to keep those users,&#8221; or &#8220;Hey, we&#8217;re trying to get into this new market or this new piece, and we need to add this functionality to compete with so and so, so we don&#8217;t lose market share of that,&#8221; then we&#8217;re having a different discussion.</p>
+<p>I&#8217;d say if product owners aren&#8217;t talking in that kind of language, they&#8217;re probably not doing due diligence around value delivery.</p>
+<p><strong>Clayton</strong>:  Do you think there&#8217;s some amount of&#8230;maybe fear is not the right word, but if you got a bunch of stuff in your backlog, and maybe you&#8217;re not thinking on those terms about that way of thinking about value. If you were to actually do that, it might mean that you would have to throw away almost everything.</p>
+<p>You might have to get rid of a lot of stuff, which is scary. Is it better to keep prodding along and hopefully you can find a few things here and there that actually do deliver value, and then it&#8217;s OK that you did some stuff that maybe wasn&#8217;t so important?</p>
+<p><strong>Roy</strong>:  So you&#8217;re getting value out of having a large backlog? That&#8217;s what it sounds like to me.</p>
+<p><strong>Clayton</strong>:  It lets you fly under the radar to someplace&#8230;</p>
+<p>[crosstalk]</p>
+<p><strong>Roy</strong>:  Right, because you can say, &#8220;Hey, we need to extend the budget for this team because look how much work is left.&#8221;</p>
+<p><strong>Derek</strong>:  Some of it is, a lot of teams or a lot of product owners get fearful of &#8220;if the backlog&#8217;s not really big, then the product&#8217;s not important.&#8221; There is something to say that there is value in being biased towards action.</p>
+<p>Sometimes maybe if you don&#8217;t know what&#8217;s valuable, not doing anything could be detrimental in the sense that you&#8217;re not moving forward at all. However, if you&#8217;re moving forward and saying, &#8220;Hey! Action, we&#8217;re delivering stories,&#8221; you fall in the potential of iterating to nowhere where the product is just spinning its wheels.</p>
+<p>It&#8217;s very similar to developers in the sense of, developers really get nervous about measurements. If you talk about velocity or estimating or anything, most developers freak out on that and want nothing to do with it because they think it&#8217;s going to be used against them or that they might be seen as failures. You name it.</p>
+<p>Product owners are the same way. If you start to say, &#8220;Hey, this feature should drive revenue by X,&#8221; and it doesn&#8217;t. &#8220;I was wrong. I failed.&#8221; Or, &#8220;Hey, this is going to land us a new customer,&#8221; and it doesn&#8217;t. &#8220;Shit! I failed.&#8221;</p>
+<p>There&#8217;s that same mental block of, &#8220;I don&#8217;t want to do the research and make predictions about what functionality is going to do for this product because what happens if I&#8217;m wrong?&#8221;</p>
+<p><strong>Roy</strong>:  Regarding the idea of having that big backlog just to keep the big backlog around, there can also be a difference between having a cluttered backlog and a large backlog because what I&#8217;ve seen is&#8230; and what you described, keeping a bunch of random stories thrown in there that may or may not actually add value.</p>
+<p><strong>Derek</strong>:  That would be moved to the bottom every week.</p>
+<p><strong>Roy</strong>:  Right, exactly. You can still have a large backlog and still say, &#8220;We have a year&#8217;s worth of work or whatever in the backlog,&#8221; but have really large epics.</p>
+<p>Let&#8217;s say you want to build out a whole new component. Instead of breaking that down early, don&#8217;t waste your time on that, just say, &#8220;We&#8217;re going to have this gigantic new component at some point or deliver that giant piece of value.&#8221;</p>
+<p>If you get to it and it becomes a priority, then you start to break it down as it gets closer and closer to when you actually work on it. That allows you to keep a really clean backlog because most of your really far out stuff are abstract ideas that haven&#8217;t been worked out.</p>
+<p><strong>Clayton</strong>:  If we agreed that things that are further out time‑wise are maybe not worth spending a lot of time breaking down, world changes kind of thing, do you think that the frequency of your delivery or your deployment makes a big difference?</p>
+<p>If I only deploy once every four months, does it even make sense for me to worry about defining things that I want to do in 9 months or 12 months because I&#8217;m only really ever going to deploy four times a year? Maybe&#8230;</p>
+<p><strong>Derek</strong>:  I could see that.</p>
+<p><strong>Clayton</strong>:  Does that make a difference at all?</p>
+<p><strong>Roy</strong>:  There are companies that do budgeting on an annual basis. You might need it for that, to be able to justify your budget for an entire year&#8217;s worth of work. I could see a product owner needing to do that.</p>
+<p><strong>Derek</strong>:  For me, it&#8217;s probably less about when you release and more about what are release plans. There are a lot of people that do release plans, but don&#8217;t really release.</p>
+<p>When you start to do more continuous delivery, it starts to make your release plan, a hell of a lot more real. You are actually owning what you&#8217;re releasing because you&#8217;re releasing consistently.</p>
+<p>Where when you release infrequently or you deploy infrequently, you can constantly move your release date around. You can start to say, &#8220;Oh, it was supposed to be six weeks, but now, it&#8217;s going to be 8 weeks or it&#8217;s going to be 10 weeks or it&#8217;s going to be 12.&#8221;</p>
+<p>You can keep moving that stick and have that perpetual, &#8220;Let&#8217;s just add more shit into the product before the next release.&#8221; Where if you have that continuous deployment happening, you don&#8217;t get the ability to say, &#8220;Let&#8217;s keep dicking around with our release date. It&#8217;s going to our customers at the end of the week, at the end of the&#8230;,&#8221; whatever&#8230;</p>
+<p>[crosstalk]</p>
+<p><strong>Roy</strong>:  With or without this feature.</p>
+<p><strong>Derek</strong>:  No matter what.</p>
+<p><strong>Clayton</strong>:  You mentioned continuous delivery or deployment, there was a good infographic that was going on that simplified those two terms. I believe that continuous delivery was, everything&#8217;s automated from my checking the code, and the tests run on the CI server and maybe it gets deployed to some staging place and acceptance tests run.</p>
+<p>The action of actually deploying that to the customer is a manual step. Whereas, continuous delivery was more of&#8230;</p>
+<p><strong>Roy</strong>:  Continuous deployment.</p>
+<p><strong>Clayton</strong>:  &#8230;the whole thing was all automated. Sorry, deployment, yeah.</p>
+<p><strong>Derek</strong>:  Integration versus deployment, right?</p>
+<p><strong>Clayton</strong>:  The idea, and you had mentioned maybe Twitter and Facebook have a model that&#8217;s like this, where I make some code changes and it goes out. It doesn&#8217;t necessarily go out to facebook.com, but maybe, it goes out to some subset of the server so that some part of the user base might get that, and that kind of thing.</p>
+<p><strong>Roy</strong>:  Roll that out to everybody outside, and know that it is completely automated.</p>
+<p><strong>Clayton</strong>:  No, I would guess most people, especially if you consider yourself an enterprise kind of company, the idea of pricing commit and your search control and having that go out..</p>
+<p><strong>Roy</strong>:  So any developer could commit a code directly to our users?</p>
+<p><strong>Clayton</strong>:  Yeah, and the idea that everything is green, we ship, is probably pretty scary. Do you think a lot of people could gain from having a system like that?</p>
+<p><strong>Roy</strong>:  Man, talking about having to own your work. Talk about pride in the work.</p>
+<p><strong>Clayton</strong>:  That&#8217;s true.</p>
+<p><strong>Roy</strong>:  I mean, seriously. One of the early stories that had came from Twitter and had impressed me is they had gone online live with Oprah. Biz, or one of them, was on&#8230;maybe with Ev was on Oprah and they were doing deploys during the airing of that show.</p>
+<p>That would be normally completely crazy if I&#8217;m some big company, if I&#8217;m Ford or something, and we have this big Super Bowl ad running, I probably am going to tell everybody, &#8220;No deployments for the next two weeks because we have to deal with all this traffic where&#8230;&#8221;</p>
+<p><strong>Clayton</strong>:  Future freeze.</p>
+<p><strong>Roy</strong>:  With a company, like Twitter, the problem is they had to. They didn&#8217;t have a choice. Their system was growing so dynamically that adding an extra million users during an Oprah show had a real effect to the performance of their system to where, &#8220;OK, yeah, we could wait until the west coast showing views,&#8221; and then, start screwing around with things.</p>
+<p>But then, the experience is crappy for everybody. Or &#8220;We could go in and see this performance bottleneck that we see right this minute, make the change, deploy it to a small subset of users, make sure that nothing is coming back failing. Then, let it propagate into the entire base.&#8221;</p>
+<p>Which is a worse move? Looking bad performance‑wise or trying to fix those on the fly and then, if something goes wrong, having to recover.</p>
+<p>Part of it is when you got to continuous deployment, you are a whole lot less afraid of doing those things because you do it all the time. If you&#8217;re deploying every commit, your process is probably pretty damn solid if something goes wrong, being able to roll back.</p>
+<p>If you only release once a year, your process is probably so crappy, that if something goes wrong, it is like&#8230;</p>
+<p><strong>Clayton</strong>:  A week‑long thing.</p>
+<p><strong>Roy</strong>:  &#8230;catastrophe for months to clean it up. That plays a lot into it as well.</p>
+<p><strong>Clayton</strong>:  One of the things I really like about continuous integration is the idea of having the code, basically, be able to compile and run all the tests. All the benefit you get from that is so far beyond the fact that you have a good CI server, but all the work that goes into making that actually happen, I think the same thing is true for continuous deployment.</p>
+<p>Although, at a much larger scale. If you only deliver once a year, it&#8217;s OK if everyone spends two weeks doing a bunch of manual stuff because it doesn&#8217;t seem that painful.</p>
+<p>If you&#8217;re doing it every two weeks or something, that subsequently going to get automated real quick and you&#8217;re going to fix a whole bunch of stuff. Especially, the roll back stuff, the fear just goes out the window at that point.</p>
+<p><strong>Roy</strong>:  If you&#8217;re doing continuous deployment where it&#8217;s going out as a constant stream, then it becomes even more so. Then, if you check‑in some bad code that breaks a build and I need my feature to go live now, we need to have that conversation now because it needs to be out by the end of the day, so none of that stuff gets postponed.</p>
+<p><strong>Clayton</strong>:  Probably, the chances of people breaking the build as casually as they would, otherwise, is probably much lower.</p>
+<p>I think that wraps it up. We&#8217;re at our 15 minutes here. Thanks you guys.</p>
+<p><strong>Derek</strong>:  Thanks.</p>
+<p><strong>Roy</strong>:  Bye‑bye.</p>
+<p>[music]</p>
+<p><strong>Announcer 1</strong>:  If there&#8217;s something you&#8217;d like to hear in a future episode, get over to integramtech.com/podcast where you can suggest a topic or a guest.</p>
+<p><strong>Announcer 2</strong>:  Looking for an easy way to stay up‑to‑date with the latest news, techniques and events in the Agile community? Sign up today at agileweekly.com.</p>
+<p>It&#8217;s the best Agile content delivered weekly for free.</p>
+<p><strong>Announcer 3</strong>:  The Agile weekly podcast is brought to you by Integram Technologies and recorded in Gangplank Studios in Chandler, Arizona. For old episodes, check out integramtech.com or subscribe on iTunes.</p>
+<p><strong>Announcer 4</strong>:  Need help with your Agile transition? Have a question and need to phone a friend? Try calling the Agile hotline. It&#8217;s free. Call 866‑244‑8656.</p>
+								</div>
+	</a>
+</article>
+					<nav id="nav-below" class="navigation">
+			<div class="nav-previous">PREVIOUS: <a href="http://integrumtech.com/2013/01/episode-96-a-backlog-of-topics/" rel="prev">Episode #96 &#8211; A Backlog of Topics</a></div>		<div class="nav-next">NEXT: <a href="http://integrumtech.com/2013/02/episode-98-storming-teams/" rel="next">Episode #98 &#8211; Storming Teams</a></div>		</nav><!-- #nav-below -->
+						<div id="comments">
+	
+	
+		<a href="https://facebook.com/AgileWeekly">Join the conversation on Facebook</a></div><!-- #comments -->
+							</section>
+		<div id="callouts" class="whatif">
+					<div class="callout-badge" id="callout-badge-rss">
+				<p class="action"><a href="https://itunes.apple.com/us/podcast/agile-weekly-podcast/id309948372?mt=2">Subscribe to the podcast</a></p>
+			</div>
+			<aside id="text-6" class="widget widget-1 callout-light widget widget_text">			<div class="textwidget"><a href="http://www.stitcher.com/s?fid=19189&refid=stpr"><img src="http://cloudfront.assets.stitcher.com/promo.assets/stitcher-banner-300x250.jpg" width="300" height="250" alt="Listen to Stitcher"></a></div>
+		</aside>		<aside id="integrum-text-widget-12" class="widget widget-2 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Make your <strong>mark</strong></h2>				<div class="blurb">
+					Get involved with the Agile Weekly Podcast by volunteering to be a guest, recommending a speaker, submitting a question, or suggesting a topic.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="https://agileweeklypodcast.uservoice.com/">Step up to the mic</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-13" class="widget widget-3 callout-light widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Build up your <strong>toolkit</strong></h2>				<div class="blurb">
+					Learn new tips and tricks for empowering your team and transforming your business.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="/blog/">See the blog</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-14" class="widget widget-4 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Hungy for <strong>More Info?</strong></h2>				<div class="blurb">
+					Agile Weekly is a quick way to stay up-to-date with the latest news, techniques and events in the Agile community. Signup today for the best Scrum, Lean, Kanban and XP content, curated by agile practitioners.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="http://agileweekly.com">Sign up</a></li>
+									</ul>
+			</div>
+		</aside>				</div>    </div>
+    <footer id="footer-document">
+		<div id="featured-clients" class="clearfix"><h3>Recent revolutions:</h3>			<div class="textwidget"><a href="https://www.britannica.com/" title="Encyclopaedia Brittanica"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-encyclobritannica.gif" alt="Encyclopaedia Brittanica"></a>
+<a href="http://www.orbitz.com/" title="Orbitz"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-orbitz.gif" alt="Orbitz"></a>
+<a href="https://www.monster.com/" title="Monster.com"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-monster.gif" alt="Monster.com"></a>
+<a href="http://www.valleymetro.org/" title="Valley Metro"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-valleymetro.gif" alt="Valley Metro"></a>
+<a href="https://www.microsoft.com/" title="Microsoft"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-microsoft.gif" alt="Microsoft"></a>
+<a href="https://www.intel.com/" title="Intel"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-intel.gif" alt="Intel"></a>
+<a href="http://www.pearson.com/" title="Pearson"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-pearson.gif" alt="Pearson"></a></div>
+		</div>        <div id="footer-contact" class="clearfix">
+			<div id="text-2" class="widget widget_text"><h2>Take the first step towards greatness, and hire a coach today.</h2>			<div class="textwidget"><p>Send us your questions, comments, hopes, and dreams using this form, or contact us at 888-999-1246 or <a href="/cdn-cgi/l/email-protection#93fafdf5fcd3fafde7f6f4e1e6fee7f6f0fbbdf0fcfe"><span class="__cf_email__" data-cfemail="91f8fff7fed1f8ffe5f4f6e3e4fce5f4f2f9bff2fefcbf">[email&#160;protected]</span></a></p>
+</div>
+		</div><div id="gform_widget-2" class="widget gform_widget">		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js?ver=1.9.12.7' id='gform_masked_input-js'></script>
+
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_1' ><form method='post' enctype='multipart/form-data'  id='gform_1'  action='/2013/02/episode-97-product-owners-invest-continuous-delivery/'>
+                        <div class='gform_body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id='field_1_1' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_1' >Name:</label><div class='ginput_container'>
+                                    <input name='input_1' id='input_1_1' type='text' value='' class='medium' tabindex='1'  />
+                                </div></li><li id='field_1_3' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_3' >Phone number:</label><div class='ginput_container'><input name='input_3' id='input_1_3' type='tel' value='' class='medium' tabindex='2'   /></div></li><li id='field_1_2' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_2' >Email:</label><div class='ginput_container'>
+                            <input name='input_2' id='input_1_2' type='email' value='' class='medium' tabindex='3'   />
+                        </div></li><li id='field_1_4' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_4' >Speak up:</label><div class='ginput_container'>
+					<textarea name='input_4' id='input_1_4' class='textarea medium' tabindex='4'    rows='10' cols='50'></textarea>
+				</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Send my message' tabindex='5' onclick='if(window["gf_submitting_1"]){return false;}  if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  ' /> 
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjAzOTlkODFhZmZmM2ZmZjMzY2I2ZTc1OTFjZjU5Zjk5Il0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(!/(android)/i.test(navigator.userAgent)){jQuery('#input_1_3').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );}} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [1, 1]) } ); </script></div><div id="text-3" class="widget widget_text">			<div class="textwidget"><p class="site-id">Site by <a href="http://fortyagency.com" title="Forty branding + marketing">Forty</a></p></div>
+		</div>        </div> <!--/#footer-contact-->
+    </footer>
+</div> <!--/#wrapper-->
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.13-9993131' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.5.1' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.5.1' id='wp-mediaelement-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/comment-reply.min.js?ver=5.5.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/wp-embed.min.js?ver=5.5.1' id='wp-embed-js'></script>
+</body>
+</html>

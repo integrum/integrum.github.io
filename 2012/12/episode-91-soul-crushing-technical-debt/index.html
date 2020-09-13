@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7]><html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8]><html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!--><html lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noodp, noydir" />
+<meta name="viewport" content="width=device-width" />
+<title>Episode #91 - Soul Crushing Technical Debt - Integrum</title>
+<link rel="shortcut icon" type="image/ico" href="http://integrumtech.com/favicon.ico" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://integrumtech.com/wp-content/themes/integrum/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="http://integrumtech.com/wp-content/themes/integrum/css/print.css" />
+<link rel="pingback" href="http://integrumtech.com/xmlrpc.php" />
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://integrumtech.com/2012/12/episode-91-soul-crushing-technical-debt/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Episode #91 - Soul Crushing Technical Debt - Integrum" />
+<meta property="og:description" content="Clayton Lengel-Zigich, Derek Neighbors, Jade Meskill and Roy van de Water discuss: Staying sane in the face of massive debt Bighting it off one bite &hellip;" />
+<meta property="og:url" content="http://integrumtech.com/2012/12/episode-91-soul-crushing-technical-debt/" />
+<meta property="og:site_name" content="Integrum" />
+<meta property="article:tag" content="Clayton Lengel-Zigich,Derek Neighbors,Jade Meskill,Roy van de Water" />
+<meta property="article:section" content="Agile Weekly Podcast" />
+<meta property="article:published_time" content="2012-12-06T06:00:12+00:00" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/integrumtech.com\/","name":"Integrum"}</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/integrumtech.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style type="text/css">
+.powerpress_player .wp-audio-shortcode { max-width: 200px; }
+</style>
+<link rel='stylesheet' id='mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.13-9993131' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://integrumtech.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='export-wp-page-to-static-html-css'  href='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/css/export-wp-page-to-static-html-public.css?ver=1.0.0' type='text/css' media='all' />
+		<script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/powerpress/player.min.js?ver=5.5.1' id='powerpress-player-js'></script>
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js?ver=5.5.1" id='jquery-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/jquery.cycle.all.js?ver=5.5.1' id='cycle-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/main.js?ver=5.5.1' id='integrum-main-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/js/export-wp-page-to-static-html-public.js?ver=1.0.0' id='export-wp-page-to-static-html-js'></script>
+<link rel="https://api.w.org/" href="http://integrumtech.com/wp-json/" /><link rel="alternate" type="application/json" href="http://integrumtech.com/wp-json/wp/v2/posts/7093" /><link rel='shortlink' href='http://integrumtech.com/?p=7093' />
+<link rel="alternate" type="application/json+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2012%2F12%2Fepisode-91-soul-crushing-technical-debt%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2012%2F12%2Fepisode-91-soul-crushing-technical-debt%2F&#038;format=xml" />
+<script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://integrumtech.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://integrumtech.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+</head>
+<body class="post-template-default single single-post postid-7093 single-format-standard">
+<div id="wrapper">
+    <div id="wrapper-header">
+    	<header id="header" role="banner">
+            <h1 id="logo"><a href="http://integrumtech.com/" title="Integrum" rel="home">Integrum</a></h1>
+            <nav id="navigation" role="navigation" class="clearfix">
+                <div class="menu-primary-container"><ul id="menu-primary" class="menu"><li id="menu-item-7406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7406"><a title="Go home" href="http://integrumtech.com/">Start</a></li>
+<li id="menu-item-7615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7615"><a title="Meet the team" href="http://integrumtech.com/crew/">Meet</a></li>
+<li id="menu-item-7407" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-7407"><a title="Listen to a scrumcast" href="http://integrumtech.com/category/agile-weekly-podcast/">Listen</a></li>
+<li id="menu-item-7614" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-7614"><a title="Read our industry insights" href="http://integrumtech.com/blog/">Read</a></li>
+<li id="menu-item-7408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7408"><a href="http://integrumtech.com/training-courses/">Learn</a></li>
+<li id="menu-item-7613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7613"><a title="Get in touch with us" href="http://integrumtech.com/contact/">Act</a></li>
+</ul></div>            </nav>
+	    </header>
+    </div>
+    <div id="main" role="main" class="clearfix">
+		<section id="content" class="container-content container-content-wide">
+					<header class="page-header">
+				<h1 class="page-title">Agile Weekly Podcast</h1>
+			</header>
+							<article id="post-7093" class="first post-7093 post type-post status-publish format-standard hentry category-agile-weekly-podcast tag-clayton-lengel-zigich tag-derek-neighbors tag-jade-meskill tag-roy-van-de-water odd">
+	    <header class="entry-header">
+			<h1 class="entry-title"><a href="http://integrumtech.com/2012/12/episode-91-soul-crushing-technical-debt/" title="Permalink to Episode #91 &#8211; Soul Crushing Technical Debt" rel="bookmark">Episode #91 &#8211; Soul Crushing Technical Debt</a></h1>
+			<ul class="entry-meta">
+												<li class="episode">#91</li>
+								<li class="date"><time datetime="2012-12-06T06:00:12+00:00">December 6, 2012</time></li>
+				<li class="category"><ul class="post-categories">
+	<li><a href="http://integrumtech.com/category/agile-weekly-podcast/" rel="category tag">Agile Weekly Podcast</a></li></ul></li>
+	        </ul>
+	    </header>
+		<div class="entry-content">
+						<div class="entry-speakers">
+				<p>Featured speakers:</p>
+											<a href="http://integrumtech.com/crew/clayton-lengel-zigich/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/clayton.jpg" alt="Clayton Lengel-Zigich" width="84" height="84">
+								Clayton							</a>
+													<a href="http://integrumtech.com/crew/derek-neighbors/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/derek.jpg" alt="Derek Neighbors" width="84" height="84">
+								Derek							</a>
+													<a href="http://integrumtech.com/crew/jade-meskill/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/jade.jpg" alt="Jade Meskill" width="84" height="84">
+								Jade							</a>
+													<a href="http://integrumtech.com/crew/roy-van-de-water/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/roy.jpg" alt="Roy van de Water" width="84" height="84">
+								Roy							</a>
+									</div>
+						<div class="powerpress_player" id="powerpress_player_9702"><a href="http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/episode_91.mp3" title="Play" onclick="return powerpress_embed_html5a('9702','http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/episode_91.mp3');" target="_blank"><img src="http://integrumtech.com/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></div>
+			<p>Clayton Lengel-Zigich, Derek Neighbors, Jade Meskill and Roy van de Water discuss:</p>
+<ul>
+<li>Staying sane in the face of massive debt</li>
+<li>Bighting it off one bite at a time</li>
+<li>Cutting your losses and starting over</li>
+</ul>
+<p><em>Transcript</em></p>
+<p><strong>Clayton Lengel‑Zigich</strong>:  Welcome to another episode of the &#8220;Agile Weekly Podcast&#8221;. I&#8217;m Clayton Lengel‑Zigich.</p>
+<p><strong>Jade Meskill</strong>:  I&#8217;m Jade Meskill.</p>
+<p><strong>Derek Neighbors</strong>:  I&#8217;m Derek Neighbors.</p>
+<p><strong>Roy van de Water</strong>:  And I&#8217;m Roy van de Water.</p>
+<p><strong>Clayton</strong>:  And today we are talking about Soul‑Crushing Technical Debt.</p>
+<p>[groan of disgust]</p>
+<p><strong>Clayton</strong>:  [laughs] Yes. Times a thousand.</p>
+<p>[laughter]</p>
+<p><strong>Clayton</strong>:  Roy, you coined that phrase, moments ago. Can you explain that a little bit more?</p>
+<p><strong>Roy</strong>:  I&#8217;m just thinking of the technical debt where it feels like it&#8217;s so intimidating that you don&#8217;t even know where to begin. Every effort feels like you&#8217;re blowing into the wind, or trying to push a mountain with your pinky toe, or something.</p>
+<p><strong>Clayton</strong>:  Yes. I was looking at some code with someone today, pairing, and trying to work through some stuff. There was some code where no one really knew how this thing worked. If you changed the seventh constructor argument, there were 10 total, if you changed the seventh constructor argument from an empty string to null, then it did something totally different, and it blew up everywhere.</p>
+<p>I kind of was feeling the same way. There&#8217;s this core part of the application that nobody understands how to use it, and unless you&#8217;re sitting there with the clips open where you can actually look, and it will tell you all the different crazy details, you would have no idea how anything works.</p>
+<p>[laughter]</p>
+<p><strong>Derek</strong>:  That&#8217;s OK. I&#8217;m winning [inaudible 00:01:21] grudging technical [inaudible 00:01:23] GOTO statement in Java, so there.</p>
+<p>[laughter]</p>
+<p><strong>Clayton</strong>:  We didn&#8217;t see that.</p>
+<p><strong>Roy</strong>:  That was pretty intense, but it makes you want to do the big rewrite, but some of these applications are so gigantic. First off, the big rewrite is always a mistake. I&#8217;ve never seen that go well. But, even a tiny, it feels so big that I don&#8217;t know where to start. I feel like anything I do just does nothing.</p>
+<p><strong>Clayton</strong>:  I think also this is when you get into the habit, or where people mistakenly call it refactoring.</p>
+<p>[laughter]</p>
+<p><strong>Clayton</strong>:  They say, &#8220;Oh, we just [crosstalk] need to refactor that,&#8221; which is &#8220;We need to rewrite that.&#8221; Especially even if they have a test suite, I don&#8217;t think you&#8217;re refactoring. Even if you have a test suite, if you just go through and just rewrite a big swath of the code.</p>
+<p><strong>Derek</strong>:  We&#8217;d have to rewrite every test. I refactored it and now it works better!</p>
+<p><strong>Roy</strong>:  Red, green, wait a decade, refactor.</p>
+<p>[laughter]</p>
+<p><strong>Roy</strong>:  Is that how it works?</p>
+<p><strong>Clayton</strong>:  I guess the thing I&#8217;m concerned, or I&#8217;m curious about, is it a reasonable strategy to say we don&#8217;t want to do the rewrite, but we know that there&#8217;s parts of this application that we don&#8217;t like. Can I take Boy Scout rule and when I&#8217;m in some part of the code just try and make it a little bit better?</p>
+<p>If, for instance I&#8217;m trying to use some PC application that doesn&#8217;t really work very well, can I just make some new endpoint or some new interface. And I can just use that thing and I can slowly piece it together. And if I do that over and over and at the end of the day, I would have this natural thing that one can use. But it doesn&#8217;t feel like a rewrite.</p>
+<p><strong>Derek</strong>:  No! Even that feel like is marginally better. I feel like it will take years and years before even, be able to notice the changes.</p>
+<p><strong>Jade</strong>:  Sometimes it does, right.</p>
+<p><strong>Roy</strong>:  That&#8217;s the author of a lot of technical data.</p>
+<p><strong>Derek</strong>:  That is so crash‑y.</p>
+<p><strong>Roy</strong>:  I can say that, we have to take that strategy before, or we make small incremental improvements as we go. What I tried to do in later days as I realized how bad things were is do the strategic rewrite. Rewrite small pieces at a time, try to make them a Modular. It still have to fit into the overall mess or nightmare. But those pieces will be nice and clean.</p>
+<p>It was really more of a mindset than necessarily a whole bunch of Codes that we had to rewrite. We have to start thinking about things in different ways in order to overcome not so crushing technical data. We have to get a whole new religion to get over our depression from what we have before.</p>
+<p><strong>Jade</strong>:  Such really tough too. I can hear a whole bunch of people never seen any Code other than this, one project. They don&#8217;t any other way, they don&#8217;t even understand that there is a better way.</p>
+<p><strong>Derek</strong>:  To me, is really most technical that people have created monsters. And they keep adding more, and adding more, and adding more. And I think what Jade might be talking a little bit more about is when you start to take a more unique approach instead of saying, let&#8217;s have a big monolithic Operating System that does just everything.</p>
+<p>We have this things that have series of tools that we can change the tools altogether. We can [inaudible 00:04:23] and we can do so really complicated things but by using some very really simple things.</p>
+<p>A lot of time, you have to take these big giant monolithic applications that nobody really understands from cradle of the grave and start to say, &#8220;Can we take a little bitty piece of it, this little component out of it?&#8221; And we pull that out and make it an API or a Library or something that is more independent and everybody can understand what that thing does. You kind of do that one at a time, one at time, until pretty soon, you&#8217;ve now got several smaller applications or some applications or some Libraries. So different things.</p>
+<p>But now it&#8217;s much more testable, much more readable, much less interdependent on everything. That&#8217;s where technical debt kills, where everybody is afraid to touch it because they have no idea what actually been impacted by.</p>
+<p><strong>Roy</strong>:  Like we had that GOTO today that we were arguing about like why even sit and make fun of it, why don&#8217;t we just fix it. It&#8217;s like, everybody is too scare to touch because who knows what the hell they were thinking when they did that.</p>
+<p><strong>Clayton</strong>:  Well and that&#8217;s like the big thing that Bob Martin goes over is, you get code rot and you get all these bad practices because people are afraid. That&#8217;s like the fear of changing that code is probably the worst that you can have in your [inaudible 00:05:32] .</p>
+<p><strong>Jade</strong>:  I agree.</p>
+<p><strong>Derek</strong>:  Well and I think that is the smell of technical debt, right.</p>
+<p><strong>Clayton</strong>:  Right.</p>
+<p><strong>Derek</strong>:  The minute that you are afraid to change your code; you probably have some form of technical debt. The more afraid you are, the more soul sucking, soul crashing that, that has become.</p>
+<p><strong>Clayton</strong>:  How much technical debt or maybe how bad does it have to be or do you think before the average team is realizing that that&#8217;s inhibiting them from either being more successful or having more &#8220;progress&#8221; and how you will you measure that? Maybe shipping more features or being able to deploy more frequently or having a 10 minute [inaudible 00:06:07] or whatever it is?</p>
+<p><strong>Roy</strong>:  I don&#8217;t know but a month ago my opinion would have been way different than today.</p>
+<p><strong>Clayton</strong>:  I think it&#8217;s right about the time you got a business.</p>
+<p>[laughter]</p>
+<p><strong>Clayton</strong>:  That&#8217;s probably realistic.</p>
+<p><strong>Roy</strong>:  I&#8217;m willing the team whatever realize it on their own because they&#8217;ve been boiled into it slowly.</p>
+<p><strong>Derek</strong>:  The only time I ever see teams come to that realization is if they have somebody new added to the team that says, &#8220;Oh my goodness, what are you doing?&#8221; Or if they get to a point where they keep adding crap on and somebody asks&#8230;You think of a Christmas tree and it goes up to a point and then somebody says, &#8220;I&#8217;ve got a 7,000 pound star I want to put it on top of the tree,&#8221; and they go &#8220;Ugh! We need to rewrite this so that it can support a seven&#8230;&#8221;</p>
+<p>And that&#8217;s usually what it comes down to is, &#8220;Yes, we can do the 7000 pound star but we&#8217;re going to need three years to rewrite the application to accommodate that.&#8221; If it really is a 7000 pound star very often the business says, &#8220;It&#8217;s worth a whole lot of money, so I guess we&#8217;re going to give you three years to rewrite it.&#8221;</p>
+<p><strong>Clayton</strong>:  And then it doesn&#8217;t support the star and it takes six years.</p>
+<p><strong>Derek</strong>:  Right.</p>
+<p><strong>Jade</strong>:  [inaudible 00:07:13] deal with a 100 pound star.</p>
+<p><strong>Clayton</strong>:  Well and then we just build up a whole other set of technical debt, right.</p>
+<p><strong>Derek</strong>:  Correct, because we didn&#8217;t learn anything from [crosstalk] . We never had to deal with fixing the problem; we just got to start it from scratch.</p>
+<p><strong>Clayton</strong>:  How do you get enlightenment?</p>
+<p>[silence]</p>
+<p><strong>Jade</strong>:  That&#8217;s a tough question.</p>
+<p><strong>Clayton</strong>:  I was just waiting for that to be totally silent there for a second.</p>
+<p><strong>Jade</strong>:  [laughs] Good thing we have all the answers on this podcast.</p>
+<p><strong>Derek</strong>:  I know.</p>
+<p><strong>Clayton</strong>:  I think some it&#8230;</p>
+<p><strong>Roy</strong>:  I needed the answer out.</p>
+<p>[laughter]</p>
+<p><strong>Jade</strong>:  It&#8217;s a secret.</p>
+<p><strong>Derek</strong>:  For a mere $3000 dollars for a minute we can tell you things&#8230;</p>
+<p><strong>Jade</strong>:  Get out of technical debt.</p>
+<p><strong>Clayton</strong>:  I think there&#8217;s two kind of elements to it, one is I think that people have to be ready to hear it, have to be ready recognize it. Sometimes I think people are in kind of that mind set or that thing of, &#8220;Who are you to tell me that I&#8217;m potentially doing something wrong.&#8221; If I&#8217;m not ready to be there it doesn&#8217;t matter.</p>
+<p><strong>Roy</strong>:  It&#8217;s a 12 step program?</p>
+<p><strong>Derek</strong>:  You have to be able to make you have a problem.</p>
+<p><strong>Roy</strong>:  There&#8217;s a higher power and the higher power has control over the code.</p>
+<p><strong>Derek</strong>:  I think the other thing is until you kind of get a little promiscuous in other code basis, I don&#8217;t think you understand the deficiencies that you have. I know from myself the big thing we&#8217;re starting to participate in open source and free software, that really gave me an introduction to a whole bunch of developers working with them and hearing their opinions and hearing how they thought this was damn or that was great or this was&#8230;</p>
+<p><strong>Clayton</strong>:  They reject your patch?</p>
+<p><strong>Derek</strong>:  They reject your patch. I think that that opened up a whole new world outside of the limited scope. Even though I might have been in a company that had 100 other programmers, there&#8217;s a bunch of group think within that group of 100 programmers.</p>
+<p>The minute I started to step out and deal with different platforms and different countries and different ages and all sorts of different demographics about they viewed things, it started to open me up to like, &#8220;Wow, maybe I&#8217;m doing some things that are really stupid, maybe I&#8217;m doing some great things, maybe I&#8217;m doing some bad things.&#8221; It was the first time that I actually reflected and said, &#8220;Wow, maybe I should look at what I&#8217;m doing.&#8221;</p>
+<p><strong>Jade</strong>:  I had a similar more experience, I came mostly from a self taught, but a kind of isolated path right to development and once I really started getting into supporting free software and kind of drinking the kool aid there, that really opened my eyes to another whole other world of doing things and really an intolerance for crappy code.</p>
+<p><strong>Roy</strong>:  I think pairing helps a ton with that too, but even with pairing somebody in the group of people that are pairing need to know some different practices.</p>
+<p><strong>Jade</strong>:  If we both don&#8217;t care&#8230;</p>
+<p><strong>Roy</strong>:  Right, we both don&#8217;t care or we both&#8230;even if we care but we both only ever worked on the same code base and we don&#8217;t know any other way like, &#8220;We&#8217;re never going to be able to teach other good things.&#8221;</p>
+<p><strong>Derek</strong>:  I think a lot of it is getting out the same technology. If I program in .NET all the time and I have no concept of what UNIX is, there are some huge paradigm differences between those two operating systems and platforms. There are good things and bad things about both of them, but if I only know one of them, I am totally ignorant of the other.</p>
+<p>Same with languages. If I&#8217;ve never used a dynamic language or a statically typed language or a compiled language aversion, interpreted language, I have no idea how the other half lives. I think you can take so many things back, even if you just go play around with the project or with some code for a couple of days and figure out how some things work.</p>
+<p>You can take that experience back to what you&#8217;re currently doing and I think that is the thing that is really difficult. Until you&#8217;re doing that, I think you have no self‑awareness. I think you have to actively seek to be self‑aware about how you write software.</p>
+<p><strong>Clayton</strong>:  So how do you go about paying off the debt? Is that something that you do?</p>
+<p><strong>Derek</strong>:  Add more people.</p>
+<p>[laughter]</p>
+<p><strong>Clayton</strong>:  Assuming you added infinity people&#8230;</p>
+<p><strong>Roy</strong>:  [laughs]</p>
+<p><strong>Clayton</strong>:  &#8230;and your project is good.</p>
+<p><strong>Derek</strong>:  I would rewrite it then, because now you&#8217;ve got lots of people to rewrite it.</p>
+<p><strong>Jade</strong>:  Skunk or a kitten?</p>
+<p><strong>Clayton</strong>:  Do you try and just take the incremental approach and do it? Maybe you inflate everything, like every new feature you inflate because you&#8217;re going to try and tackle with the debt. You kind of, &#8220;Hush, hush.&#8221; You don&#8217;t tell anybody you&#8217;re doing it, but you do it anyway.</p>
+<p><strong>Jade</strong>:  How do you pay down normal debt? No, I&#8217;m really asking. I need to know.</p>
+<p>[laughter]</p>
+<p><strong>Clayton</strong>:  You don&#8217;t normally share a normal debt amongst a bunch of people, like you share it amongst your family.</p>
+<p><strong>Roy</strong>:  That&#8217;s why my wife [inaudible 00:11:46] .</p>
+<p><strong>Clayton</strong>:  But, with a team, many teams don&#8217;t even see themselves as that much of a team, so they don&#8217;t even think of the debt as a team ownership thing. They think of like their own specific screw‑ups a maybe a small part of their debt, but they don&#8217;t own the code base because, &#8220;I didn&#8217;t touch your part of it. That&#8217;s your problem.&#8221;</p>
+<p><strong>Roy</strong>:  I think that&#8217;s a good point. I don&#8217;t think you want to lie about it because what&#8217;s going to happen is I&#8217;m just going to end up trading all sorts of other problems and team dynamic issues and trust issues and everything else. But if you were to look at normal debt, you would say, &#8220;The first thing we have to know is, &#8220;How bad is it? How much do we owe?&#8221;</p>
+<p>Then, you have to know, &#8220;How much do we make?&#8221; Then, you have to know, &#8220;What&#8217;s an acceptable timeline to pay it back?&#8221; Based on that you&#8217;re going to have to make all sorts of decisions. So if you say, &#8220;I&#8217;m X‑thousands of dollars in debt. I make X‑amount and it needs to be paid in the next 12 months.&#8221; I know how much I need to cut my spending or increase my revenue in order to pay that in that time.</p>
+<p><strong>Derek</strong>:  What happens if you can&#8217;t? What happens if your income is not enough to cover the debt in that timeline?</p>
+<p><strong>Clayton</strong>:  If you&#8217;re listening to this podcast and you have a manager who treats it like, &#8220;Man, if you have technical debt, you screwed that up. That&#8217;s your bad. You&#8217;re going to have to figure that out on your own because you still need to make up. You need to deliver all these features. You need to have 20 velocity.&#8221;</p>
+<p><strong>Derek</strong>:  That&#8217;s what I put on my resume. At some point, you have to be realistic. There are some projects that are so far in the technical debt that it would probably be beneficial for people to say, &#8220;We&#8217;re going to ride this product out to its death and we&#8217;re not going to add more code to it.&#8221;</p>
+<p><strong>Jade</strong>:  Adjust the partner.</p>
+<p><strong>Derek</strong>:  We call it end‑of‑life in a product for a reason. There are times where a product has run its course. Meaning if the product is not able to boost revenue enough to pay to remove the technical debt, it&#8217;s probably not a product worth continuing to operate.</p>
+<p><strong>Roy</strong>:  That&#8217;s a good point.</p>
+<p><strong>Jade</strong>:  Sometimes the cost benefit ratio is so out‑sized because it takes so much effort to add the smallest feature because of all of this technical debt.</p>
+<p><strong>Roy</strong>:  Right.</p>
+<p><strong>Jade</strong>:  I think that becomes your compelling selling point. If you&#8217;re trying to maybe turn the corner before it&#8217;s too late. You really need to look at and measure, &#8220;How hard is it to add a feature? How many defects get generated every time we add a new feature because of intended consequences? How do we start to mitigate those things?&#8221; But you need some metrics around that.</p>
+<p><strong>Clayton</strong>:  I think it&#8217;s really difficult to measure how the technical debt and the coupling of the code and all that other stuff impacts the feature adding. I think that&#8217;s a difficult skill to acquire and a lot of teams really don&#8217;t have that.</p>
+<p><strong>Derek</strong>:  It&#8217;s not teams, it&#8217;s poor product ownership. This is a classic case of I&#8217;ve got a product that&#8217;s making $10 million a year and it&#8217;s been making the same $10 million a year for the last three years, i.e. it&#8217;s got no growth. But, I&#8217;ve got a team of 10 people that I&#8217;m paying to add new features to it.</p>
+<p>If I&#8217;m paying three teams worth of people to add features and I&#8217;m not getting any additional revenue, I have to ask myself, &#8220;Why am I not having two or three people maintain this program and let it ride itself out for the next two, three years making $10 million, take those other three teams and go build something new. Not rewrite this out again, but go build something new that could be a potential new revenue generator.&#8221; I think people are just afraid to admit those kinds of things.</p>
+<p><strong>Clayton</strong>:  I think we are out of time. I hope we have adequately addressed the soul crushing technical debt.</p>
+<p><strong>Roy</strong>:  My soul feels kind of crushed and under pressure.</p>
+<p>[background noise]</p>
+<p><strong>Clayton</strong>:  We&#8217;ll leave like 11 hours of silence on the podcast.</p>
+<p>[laughter]</p>
+<p><strong>Clayton</strong>:  Somewhere in there, we&#8217;ll answer the question about how you solve this problem.</p>
+<p><strong>Roy</strong>:  We&#8217;ll come back in with it.</p>
+<p><strong>Clayton</strong>:  So keep listening.</p>
+<p>[laughter]</p>
+<p><strong>Derek</strong>:  I&#8217;ll end at 17.</p>
+<p><strong>Clayton</strong>:  Thank you.</p>
+<p>[silence]</p>
+<p>[background noise]</p>
+<p><strong>Clayton</strong>:  My soul still feels kind of crushed.</p>
+<p><strong>Recording</strong>:  The answer is 42.</p>
+<p>[music]</p>
+<p><strong>Announcer 1</strong>:  If there is something you&#8217;d like to hear in a future episode, get over to integramtech.com/podcast where you can suggest a topic or a guest.</p>
+<p><strong>Announcer 2</strong>:  Looking for an easy way to stay up‑to‑date with the latest news, techniques and events in the Agile community? Sign up today at agileweekly.com. It&#8217;s the best Agile content delivered weekly for free.</p>
+<p><strong>Announcer 1</strong>:  The Agile Weekly Podcast is brought to you by Integram Technologies and recorded in Gangplank Studios in Chandler, Arizona. For old episodes, check out integramtech.com or subscribe on iTunes.</p>
+<p><strong>Announcer 3</strong>:  Need help with your Agile transition? Have a question and need to phone a friend? Try calling the Agile hotline. It&#8217;s free. Call 866‑244‑8656</p>
+								</div>
+	</a>
+</article>
+					<nav id="nav-below" class="navigation">
+			<div class="nav-previous">PREVIOUS: <a href="http://integrumtech.com/2012/11/episode-90-a-thanksgiving-potluck-of-topics/" rel="prev">Episode #90 &#8211; A Thanksgiving Potluck of Topics</a></div>		<div class="nav-next">NEXT: <a href="http://integrumtech.com/2012/12/episode-94-hiring-for-agile-teams/" rel="next">Episode #92 &#8211; Hiring For Agile Teams</a></div>		</nav><!-- #nav-below -->
+						<div id="comments">
+	
+	
+		<a href="https://facebook.com/AgileWeekly">Join the conversation on Facebook</a></div><!-- #comments -->
+							</section>
+		<div id="callouts" class="whatif">
+					<div class="callout-badge" id="callout-badge-rss">
+				<p class="action"><a href="https://itunes.apple.com/us/podcast/agile-weekly-podcast/id309948372?mt=2">Subscribe to the podcast</a></p>
+			</div>
+			<aside id="text-6" class="widget widget-1 callout-light widget widget_text">			<div class="textwidget"><a href="http://www.stitcher.com/s?fid=19189&refid=stpr"><img src="http://cloudfront.assets.stitcher.com/promo.assets/stitcher-banner-300x250.jpg" width="300" height="250" alt="Listen to Stitcher"></a></div>
+		</aside>		<aside id="integrum-text-widget-12" class="widget widget-2 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Make your <strong>mark</strong></h2>				<div class="blurb">
+					Get involved with the Agile Weekly Podcast by volunteering to be a guest, recommending a speaker, submitting a question, or suggesting a topic.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="https://agileweeklypodcast.uservoice.com/">Step up to the mic</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-13" class="widget widget-3 callout-light widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Build up your <strong>toolkit</strong></h2>				<div class="blurb">
+					Learn new tips and tricks for empowering your team and transforming your business.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="/blog/">See the blog</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-14" class="widget widget-4 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Hungy for <strong>More Info?</strong></h2>				<div class="blurb">
+					Agile Weekly is a quick way to stay up-to-date with the latest news, techniques and events in the Agile community. Signup today for the best Scrum, Lean, Kanban and XP content, curated by agile practitioners.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="http://agileweekly.com">Sign up</a></li>
+									</ul>
+			</div>
+		</aside>				</div>    </div>
+    <footer id="footer-document">
+		<div id="featured-clients" class="clearfix"><h3>Recent revolutions:</h3>			<div class="textwidget"><a href="https://www.britannica.com/" title="Encyclopaedia Brittanica"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-encyclobritannica.gif" alt="Encyclopaedia Brittanica"></a>
+<a href="http://www.orbitz.com/" title="Orbitz"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-orbitz.gif" alt="Orbitz"></a>
+<a href="https://www.monster.com/" title="Monster.com"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-monster.gif" alt="Monster.com"></a>
+<a href="http://www.valleymetro.org/" title="Valley Metro"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-valleymetro.gif" alt="Valley Metro"></a>
+<a href="https://www.microsoft.com/" title="Microsoft"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-microsoft.gif" alt="Microsoft"></a>
+<a href="https://www.intel.com/" title="Intel"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-intel.gif" alt="Intel"></a>
+<a href="http://www.pearson.com/" title="Pearson"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-pearson.gif" alt="Pearson"></a></div>
+		</div>        <div id="footer-contact" class="clearfix">
+			<div id="text-2" class="widget widget_text"><h2>Take the first step towards greatness, and hire a coach today.</h2>			<div class="textwidget"><p>Send us your questions, comments, hopes, and dreams using this form, or contact us at 888-999-1246 or <a href="/cdn-cgi/l/email-protection#9df4f3fbf2ddf4f3e9f8faefe8f0e9f8fef5b3fef2f0"><span class="__cf_email__" data-cfemail="c9a0a7afa689a0a7bdacaebbbca4bdacaaa1e7aaa6a4e7">[email&#160;protected]</span></a></p>
+</div>
+		</div><div id="gform_widget-2" class="widget gform_widget">		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js?ver=1.9.12.7' id='gform_masked_input-js'></script>
+
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_1' ><form method='post' enctype='multipart/form-data'  id='gform_1'  action='/2012/12/episode-91-soul-crushing-technical-debt/'>
+                        <div class='gform_body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id='field_1_1' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_1' >Name:</label><div class='ginput_container'>
+                                    <input name='input_1' id='input_1_1' type='text' value='' class='medium' tabindex='1'  />
+                                </div></li><li id='field_1_3' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_3' >Phone number:</label><div class='ginput_container'><input name='input_3' id='input_1_3' type='tel' value='' class='medium' tabindex='2'   /></div></li><li id='field_1_2' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_2' >Email:</label><div class='ginput_container'>
+                            <input name='input_2' id='input_1_2' type='email' value='' class='medium' tabindex='3'   />
+                        </div></li><li id='field_1_4' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_4' >Speak up:</label><div class='ginput_container'>
+					<textarea name='input_4' id='input_1_4' class='textarea medium' tabindex='4'    rows='10' cols='50'></textarea>
+				</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Send my message' tabindex='5' onclick='if(window["gf_submitting_1"]){return false;}  if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  ' /> 
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjAzOTlkODFhZmZmM2ZmZjMzY2I2ZTc1OTFjZjU5Zjk5Il0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(!/(android)/i.test(navigator.userAgent)){jQuery('#input_1_3').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );}} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [1, 1]) } ); </script></div><div id="text-3" class="widget widget_text">			<div class="textwidget"><p class="site-id">Site by <a href="http://fortyagency.com" title="Forty branding + marketing">Forty</a></p></div>
+		</div>        </div> <!--/#footer-contact-->
+    </footer>
+</div> <!--/#wrapper-->
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.13-9993131' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.5.1' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.5.1' id='wp-mediaelement-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/comment-reply.min.js?ver=5.5.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/wp-embed.min.js?ver=5.5.1' id='wp-embed-js'></script>
+</body>
+</html>

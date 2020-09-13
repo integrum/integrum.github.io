@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7]><html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8]><html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!--><html lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noodp, noydir" />
+<meta name="viewport" content="width=device-width" />
+<title>Design Principles Are Fundamental to Web Application Development - Integrum</title>
+<link rel="shortcut icon" type="image/ico" href="http://integrumtech.com/favicon.ico" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://integrumtech.com/wp-content/themes/integrum/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="http://integrumtech.com/wp-content/themes/integrum/css/print.css" />
+<link rel="pingback" href="http://integrumtech.com/xmlrpc.php" />
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://integrumtech.com/2010/07/design-principles-are-fundamental-to-web-application-development/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Design Principles Are Fundamental to Web Application Development - Integrum" />
+<meta property="og:description" content="If you are programming web applications you should be constantly trying to improve your quality of decision making when it comes to design implementation. Why &hellip;" />
+<meta property="og:url" content="http://integrumtech.com/2010/07/design-principles-are-fundamental-to-web-application-development/" />
+<meta property="og:site_name" content="Integrum" />
+<meta property="article:tag" content="design,fundamentals,principles,web programming" />
+<meta property="article:section" content="Propaganda" />
+<meta property="article:published_time" content="2010-07-08T11:08:40+00:00" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/integrumtech.com\/","name":"Integrum"}</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/integrumtech.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style type="text/css">
+.powerpress_player .wp-audio-shortcode { max-width: 200px; }
+</style>
+<link rel='stylesheet' id='mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.13-9993131' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://integrumtech.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='export-wp-page-to-static-html-css'  href='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/css/export-wp-page-to-static-html-public.css?ver=1.0.0' type='text/css' media='all' />
+		<script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/powerpress/player.min.js?ver=5.5.1' id='powerpress-player-js'></script>
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js?ver=5.5.1" id='jquery-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/jquery.cycle.all.js?ver=5.5.1' id='cycle-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/main.js?ver=5.5.1' id='integrum-main-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/js/export-wp-page-to-static-html-public.js?ver=1.0.0' id='export-wp-page-to-static-html-js'></script>
+<link rel="https://api.w.org/" href="http://integrumtech.com/wp-json/" /><link rel="alternate" type="application/json" href="http://integrumtech.com/wp-json/wp/v2/posts/4781" /><link rel='shortlink' href='http://integrumtech.com/?p=4781' />
+<link rel="alternate" type="application/json+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2010%2F07%2Fdesign-principles-are-fundamental-to-web-application-development%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2010%2F07%2Fdesign-principles-are-fundamental-to-web-application-development%2F&#038;format=xml" />
+<script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://integrumtech.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://integrumtech.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+</head>
+<body class="post-template-default single single-post postid-4781 single-format-standard">
+<div id="wrapper">
+    <div id="wrapper-header">
+    	<header id="header" role="banner">
+            <h1 id="logo"><a href="http://integrumtech.com/" title="Integrum" rel="home">Integrum</a></h1>
+            <nav id="navigation" role="navigation" class="clearfix">
+                <div class="menu-primary-container"><ul id="menu-primary" class="menu"><li id="menu-item-7406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7406"><a title="Go home" href="http://integrumtech.com/">Start</a></li>
+<li id="menu-item-7615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7615"><a title="Meet the team" href="http://integrumtech.com/crew/">Meet</a></li>
+<li id="menu-item-7407" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7407"><a title="Listen to a scrumcast" href="http://integrumtech.com/category/agile-weekly-podcast/">Listen</a></li>
+<li id="menu-item-7614" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-7614"><a title="Read our industry insights" href="http://integrumtech.com/blog/">Read</a></li>
+<li id="menu-item-7408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7408"><a href="http://integrumtech.com/training-courses/">Learn</a></li>
+<li id="menu-item-7613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7613"><a title="Get in touch with us" href="http://integrumtech.com/contact/">Act</a></li>
+</ul></div>            </nav>
+	    </header>
+    </div>
+    <div id="main" role="main" class="clearfix">
+		<section id="content" class="container-content container-content-wide">
+					<header class="page-header">
+				<h1 class="page-title">Integrum insights</h1>
+			</header>
+							
+<article id="post-4781" class="post-4781 post type-post status-publish format-standard hentry category-propaganda tag-design tag-fundamentals tag-principles tag-web-programming odd">
+	<header class="entry-header">
+		<h1 class="entry-title">Design Principles Are Fundamental to Web Application Development</h1>
+					<ul class="entry-meta">
+				<li class="date"><time datetime="2010-07-08T11:08:40+00:00">July 8, 2010</time></li>
+				<li class="comments"><a href="http://integrumtech.com/2010/07/design-principles-are-fundamental-to-web-application-development/#comments">6 Comments</a></li>
+	        </ul>
+			</header><!-- .entry-header -->
+	<div class="entry-content">
+		<p>If you are programming web applications you should be constantly trying to  improve your quality of decision making when it comes to design  implementation.</p>
+<p>Why design is fundamental to web application development for us:</p>
+<p>1. Design is important. Perfect functionality without good design  is, at best, ugly— at worst, entirely unusable. If we pride ourselves on  quality functionality, let’s dress in up in suit and tie. The impact on  clients and users will be multiplied.</p>
+<p>2. “Pixel perfect” implementation is a lackluster way to  approach web design. First of all, the reality of browsers will never  allow that to happen in every view without major cost bloat to product  owners. Second of all, the concept exists almost solely because  designers don’t trust you. Designers do a lot of legitimate work making a  lot of decisions about how things should sit on the page. When those  decisions aren’t translated to the web page, they feel slighted and  frustrated. So they hang the idea of pixel perfection over our heads.  Instead, let’s respect the designers position in the process. We can do  this by learning about the craft of UX, Typography and Grid-based  Design— as well as Color Theory. We can also do this by communicating to  the product owner that we know that their design is important and that  we intend to be faithful to it. Rather than blindly committing to pixel  perfection, let’s commit to understanding the style guide, layout, and  type decisions and budgeting meaningful time and effort to implement the  site correctly.</p>
+<p>3. By understanding design fundamentals and <span>CSS</span> techniques, doing our jobs well will become  easier. Pixel perfection can be a cop-out for us too. We think that we  will just match the design perfectly without thought. But how many of us are surprised at our inaccuracies when we overlay our work with that of the designer? By understanding design basics, we can mentally categorize  design decisions that our clients have made and more accurately predict  such things as fonts, font size, padding, margins, widths, etc.</p>
+<p>@<a href="https://twitter.com/williampriceiii">williampriceiii</a></p>
+	</div><!-- .entry-content -->
+</article><!-- #post-4781 -->
+					<nav id="nav-below" class="navigation">
+			<div class="nav-previous">PREVIOUS: <a href="http://integrumtech.com/2010/06/xp-tip-of-the-week-theory-of-constraints/" rel="prev">XP Tip of the Week: Theory of Constraints</a></div>		<div class="nav-next">NEXT: <a href="http://integrumtech.com/2010/08/integrum-makes-nascar-debut/" rel="next">Integrum Makes NASCAR Debut</a></div>		</nav><!-- #nav-below -->
+						<div id="comments">
+	
+	
+			<h2 id="comments-title">
+			6 thoughts on &ldquo;<span>Design Principles Are Fundamental to Web Application Development</span>&rdquo;		</h2>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-101">
+		<article id="comment-101" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt='' src="https://0.gravatar.com/avatar/38471f090a4ae53c38b3c295bfa33928?s=40&#038;d=mm&#038;r=g" srcset='http://0.gravatar.com/avatar/38471f090a4ae53c38b3c295bfa33928?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' />					<cite class="fn"><a href='http://buzaz.com' rel='external nofollow ugc' class='url'>Chris Young</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://integrumtech.com/2010/07/design-principles-are-fundamental-to-web-application-development/#comment-101"><time pubdate datetime="2010-07-08T11:46:08+00:00">
+					July 8, 2010 at 11:46 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Bravo!  This is spot on &#8211; most all of us think in pictures, so visual design is the de-facto interface between us programmers and the people who pay us to build software.  Frameworks and standards allow the design to be as dynamic as a good conversation.</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://integrumtech.com/2010/07/design-principles-are-fundamental-to-web-application-development/?replytocom=101#respond' data-commentid="101" data-postid="4781" data-belowelement="comment-101" data-respondelement="respond" data-replyto="Reply to Chris Young" aria-label='Reply to Chris Young'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-102">
+		<article id="comment-102" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt='' src="https://2.gravatar.com/avatar/bf4fa27c21576d31a8edde60d923c7e1?s=40&#038;d=mm&#038;r=g" srcset='http://2.gravatar.com/avatar/bf4fa27c21576d31a8edde60d923c7e1?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' />					<cite class="fn">Kyle</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://integrumtech.com/2010/07/design-principles-are-fundamental-to-web-application-development/#comment-102"><time pubdate datetime="2010-07-08T13:14:48+00:00">
+					July 8, 2010 at 1:14 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>There is no room for bad design on a competitive website. If you don&#8217;t apply UX basics and good design, your customers can switch to another website in seconds. A good book that goes over the basics is Beautiful Web Design by Jason Beaird. There are tons of other good resources on the web too so there is no excuse for ulgy web design.</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://integrumtech.com/2010/07/design-principles-are-fundamental-to-web-application-development/?replytocom=102#respond' data-commentid="102" data-postid="4781" data-belowelement="comment-102" data-respondelement="respond" data-replyto="Reply to Kyle" aria-label='Reply to Kyle'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-103">
+		<article id="comment-103" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt='' src="https://2.gravatar.com/avatar/e5718f64e184e269b607e79e1b4980de?s=40&#038;d=mm&#038;r=g" srcset='http://2.gravatar.com/avatar/e5718f64e184e269b607e79e1b4980de?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' />					<cite class="fn"><a href='http://markdudlik.com' rel='external nofollow ugc' class='url'>Mark Dudlik</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://integrumtech.com/2010/07/design-principles-are-fundamental-to-web-application-development/#comment-103"><time pubdate datetime="2010-07-09T09:05:35+00:00">
+					July 9, 2010 at 9:05 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>1. …&#8221;If we pride ourselves on quality functionality, let’s dress in up in suit and tie.&#8221;</p>
+<p>Apparently I&#8217;m reading the tone on this wrong, but I hope you aren&#8217;t implying that all design does is dress things up in pretty clothes. </p>
+<p>2. “Pixel perfect” implementation is a lackluster way to approach web design. First of all, the reality of browsers will never allow that to happen in every view without major cost bloat to product owners. Second of all, the concept exists almost solely because designers don’t trust you. </p>
+<p>&#8211; What are you basing this on? I personally take pixel-perfection off the plate for anything outside of flash applications. I think its a small subset of designers who would demand things be static and not fluidly adjust based on a variety of parameters such as browser or accessibility. </p>
+<p>…Designers do a lot of legitimate work making a lot of decisions about how things should sit on the page. When those decisions aren’t translated to the web page, they feel slighted and frustrated. So they hang the idea of pixel perfection over our heads…</p>
+<p>&#8211; Again, why this generalization of the bitter designer who gets his feelings hurt and can&#8217;t accept things not going his way? I think the article&#8217;s argument that developers need to be more aware of the design process is also saying that designers don&#8217;t understand the dev process either, which I don&#8217;t think is as frequent a problem.  </p>
+<p>So, when I tweeted earlier about how &#8220;off the mark&#8221; this was, I was reading the tone as something like &#8220;We can do design too, its not that hard to figure it out&#8221; but apparently, and I hope this is right, this is more about working more closely with designers and understanding what they do, not as a replacement, but as a way to be able to have the same conversation with mutual understanding. If its the 2nd interpretation, good.</p>
+<p>Other than the few generalizations about how designers work, and how they think about devs and the development process from a design viewpoint, I suppose this is mostly right.</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://integrumtech.com/2010/07/design-principles-are-fundamental-to-web-application-development/?replytocom=103#respond' data-commentid="103" data-postid="4781" data-belowelement="comment-103" data-respondelement="respond" data-replyto="Reply to Mark Dudlik" aria-label='Reply to Mark Dudlik'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment odd alt depth-2" id="li-comment-105">
+		<article id="comment-105" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt='' src="https://2.gravatar.com/avatar/86e5f121658cc9f6b3f707157f73f676?s=40&#038;d=mm&#038;r=g" srcset='http://2.gravatar.com/avatar/86e5f121658cc9f6b3f707157f73f676?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' />					<cite class="fn">William</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://integrumtech.com/2010/07/design-principles-are-fundamental-to-web-application-development/#comment-105"><time pubdate datetime="2010-07-27T09:46:52+00:00">
+					July 27, 2010 at 9:46 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Mark,</p>
+<p>There is no reason to take any offense. My intention was to quickly make a case for the importance of understanding design fundamentals as a development team so that we can execute designs most effectively, not so that we can replace designers.</p>
+<p>The prerogative of the article was to speak empathy for the design profession to and from within a development team. Generalities are necessary to move quickly through my proposition.</p>
+<p>Of course, I don’t prejudice designers as bitter, broken-ego contrarians. But based on your reply, I can tell that you are one. I’M KIDDING!!!</p>
+<p>Thank you for the refining feedback.</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://integrumtech.com/2010/07/design-principles-are-fundamental-to-web-application-development/?replytocom=105#respond' data-commentid="105" data-postid="4781" data-belowelement="comment-105" data-respondelement="respond" data-replyto="Reply to William" aria-label='Reply to William'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-derek bypostauthor even thread-odd thread-alt depth-1" id="li-comment-104">
+		<article id="comment-104" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt='' src="https://2.gravatar.com/avatar/?s=40&#038;d=mm&#038;r=g" srcset='http://1.gravatar.com/avatar/?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo avatar-default' height='40' width='40' loading='lazy' />					<cite class="fn"><a href='http://derekneighbors.com' rel='external nofollow ugc' class='url'>derek</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://integrumtech.com/2010/07/design-principles-are-fundamental-to-web-application-development/#comment-104"><time pubdate datetime="2010-07-09T09:23:48+00:00">
+					July 9, 2010 at 9:23 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>This is entirely about working more closely with designers and understanding what they do.  Integrum works with a number of 3rd party designers.  Billy is one of our front end developers and has been doing a design series to help build a bridge between our development team and the designers we work with.  Your second interpretation is the correct one.</p>
+<p>I think it is extremely common that designers don&#8217;t understand development.  It is even more common that developers do not understand design.</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://integrumtech.com/2010/07/design-principles-are-fundamental-to-web-application-development/?replytocom=104#respond' data-commentid="104" data-postid="4781" data-belowelement="comment-104" data-respondelement="respond" data-replyto="Reply to derek" aria-label='Reply to derek'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-106">
+		<article id="comment-106" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt='' src="https://0.gravatar.com/avatar/087dd21ae1fbed4760bb9e167702b22b?s=40&#038;d=mm&#038;r=g" srcset='http://0.gravatar.com/avatar/087dd21ae1fbed4760bb9e167702b22b?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' />					<cite class="fn"><a href="https://www.myspace.com/526067581" rel='external nofollow ugc' class='url'>Robbi Binkowski</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://integrumtech.com/2010/07/design-principles-are-fundamental-to-web-application-development/#comment-106"><time pubdate datetime="2010-10-12T14:04:04+00:00">
+					October 12, 2010 at 2:04 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>It would depend on the way you look at it and wherever you will be coming from on the topic really. Ultimately beauty is in the eye of the beholder, but Now i am with you on this one.</p>
+</div>
+
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='http://integrumtech.com/2010/07/design-principles-are-fundamental-to-web-application-development/?replytocom=106#respond' data-commentid="106" data-postid="4781" data-belowelement="comment-106" data-respondelement="respond" data-replyto="Reply to Robbi Binkowski" aria-label='Reply to Robbi Binkowski'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+			<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Step up to the mic. <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2010/07/design-principles-are-fundamental-to-web-application-development/#respond" style="display:none;">Cancel reply</a></small></h3><form action="http://integrumtech.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p>Your email address will not be published.</p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='4781' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="574c389538" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="129"/></p></form>	</div><!-- #respond -->
+	</div><!-- #comments -->
+							</section>
+		<div id="callouts" class="whatif">
+						<aside id="crew-information">
+					<h1>About the author</h1>
+					<h2 class="crew-name">Crew</h2>
+										<p>
+															</p>
+										<hr />
+				</aside>
+							<div class="callout-badge" id="callout-badge-rss">
+				<p class="action"><a href="/feed/">Subscribe to the blog</a></p>
+			</div>
+			<aside id="integrum-scrumcast-widget" class="widget callout-light widget integrum-scrumcast-widget">			<h2 class="widget-title">Get inspired with an Agile Weekly Podcast</h2>			<div class="container-callout clearfix">
+				<div class="blurb">
+					<p>Derek, Clayton and Chris slowly remember what they were talking about&#8230; Oh ya! Culture Fit! Including mono-cultures, hiring, diversity of ideas and behaviors enforcing culture.</p>
+					<div class="powerpress_player" id="powerpress_player_5209"><a href="http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/aw-episode-148.mp3" title="Play" onclick="return powerpress_embed_html5a('5209','http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/aw-episode-148.mp3');" target="_blank"><img src="http://integrumtech.com/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></div>
+				</div>
+				<ul class="callout-action-list clearfix">
+					<li class="action action-subscribe"><a href="https://itunes.apple.com/us/podcast/agile-weekly-podcast/id309948372?mt=2">Subscribe</a></li>
+					<li class="action action-go"><a href="http://integrumtech.com/category/agile-weekly-podcast/">See More</a></li>
+				</ul>
+			</div>
+		</aside>		</div>    </div>
+    <footer id="footer-document">
+		<div id="featured-clients" class="clearfix"><h3>Recent revolutions:</h3>			<div class="textwidget"><a href="https://www.britannica.com/" title="Encyclopaedia Brittanica"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-encyclobritannica.gif" alt="Encyclopaedia Brittanica"></a>
+<a href="http://www.orbitz.com/" title="Orbitz"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-orbitz.gif" alt="Orbitz"></a>
+<a href="https://www.monster.com/" title="Monster.com"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-monster.gif" alt="Monster.com"></a>
+<a href="http://www.valleymetro.org/" title="Valley Metro"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-valleymetro.gif" alt="Valley Metro"></a>
+<a href="https://www.microsoft.com/" title="Microsoft"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-microsoft.gif" alt="Microsoft"></a>
+<a href="https://www.intel.com/" title="Intel"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-intel.gif" alt="Intel"></a>
+<a href="http://www.pearson.com/" title="Pearson"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-pearson.gif" alt="Pearson"></a></div>
+		</div>        <div id="footer-contact" class="clearfix">
+			<div id="text-2" class="widget widget_text"><h2>Take the first step towards greatness, and hire a coach today.</h2>			<div class="textwidget"><p>Send us your questions, comments, hopes, and dreams using this form, or contact us at 888-999-1246 or <a href="/cdn-cgi/l/email-protection#472e292128072e2933222035322a3322242f6924282a"><span class="__cf_email__" data-cfemail="dbb2b5bdb49bb2b5afbebca9aeb6afbeb8b3f5b8b4b6f5">[email&#160;protected]</span></a></p>
+</div>
+		</div><div id="gform_widget-2" class="widget gform_widget">		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js?ver=1.9.12.7' id='gform_masked_input-js'></script>
+
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_1' ><form method='post' enctype='multipart/form-data'  id='gform_1'  action='/2010/07/design-principles-are-fundamental-to-web-application-development/'>
+                        <div class='gform_body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id='field_1_1' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_1' >Name:</label><div class='ginput_container'>
+                                    <input name='input_1' id='input_1_1' type='text' value='' class='medium' tabindex='1'  />
+                                </div></li><li id='field_1_3' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_3' >Phone number:</label><div class='ginput_container'><input name='input_3' id='input_1_3' type='tel' value='' class='medium' tabindex='2'   /></div></li><li id='field_1_2' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_2' >Email:</label><div class='ginput_container'>
+                            <input name='input_2' id='input_1_2' type='email' value='' class='medium' tabindex='3'   />
+                        </div></li><li id='field_1_4' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_4' >Speak up:</label><div class='ginput_container'>
+					<textarea name='input_4' id='input_1_4' class='textarea medium' tabindex='4'    rows='10' cols='50'></textarea>
+				</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Send my message' tabindex='5' onclick='if(window["gf_submitting_1"]){return false;}  if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  ' /> 
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjAzOTlkODFhZmZmM2ZmZjMzY2I2ZTc1OTFjZjU5Zjk5Il0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(!/(android)/i.test(navigator.userAgent)){jQuery('#input_1_3').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );}} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [1, 1]) } ); </script></div><div id="text-3" class="widget widget_text">			<div class="textwidget"><p class="site-id">Site by <a href="http://fortyagency.com" title="Forty branding + marketing">Forty</a></p></div>
+		</div>        </div> <!--/#footer-contact-->
+    </footer>
+</div> <!--/#wrapper-->
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.13-9993131' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.5.1' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.5.1' id='wp-mediaelement-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/comment-reply.min.js?ver=5.5.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/wp-embed.min.js?ver=5.5.1' id='wp-embed-js'></script>
+<script async="async" type='text/javascript' src='http://integrumtech.com/wp-content/plugins/akismet/_inc/form.js?ver=4.1.6' id='akismet-form-js'></script>
+</body>
+</html>

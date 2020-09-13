@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7]><html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8]><html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!--><html lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noodp, noydir" />
+<meta name="viewport" content="width=device-width" />
+<title>Episode #113 - High Costs and Negative Value of Pair Programming - Integrum</title>
+<link rel="shortcut icon" type="image/ico" href="http://integrumtech.com/favicon.ico" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://integrumtech.com/wp-content/themes/integrum/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="http://integrumtech.com/wp-content/themes/integrum/css/print.css" />
+<link rel="pingback" href="http://integrumtech.com/xmlrpc.php" />
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://integrumtech.com/2013/07/episode-113-high-costs-and-negative-value-of-pair-programming/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Episode #113 - High Costs and Negative Value of Pair Programming - Integrum" />
+<meta property="og:description" content="Roy van de Water and Clayton Lengel-Zigich provide a rebuttal to an article that has been circulating within the Agile community this week: High Costs &hellip;" />
+<meta property="og:url" content="http://integrumtech.com/2013/07/episode-113-high-costs-and-negative-value-of-pair-programming/" />
+<meta property="og:site_name" content="Integrum" />
+<meta property="article:tag" content="Clayton Lengel-Zigich,Roy van de Water" />
+<meta property="article:section" content="Agile Weekly Podcast" />
+<meta property="article:published_time" content="2013-07-04T06:00:42+00:00" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/integrumtech.com\/","name":"Integrum"}</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/integrumtech.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style type="text/css">
+.powerpress_player .wp-audio-shortcode { max-width: 200px; }
+</style>
+<link rel='stylesheet' id='mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.13-9993131' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://integrumtech.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='export-wp-page-to-static-html-css'  href='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/css/export-wp-page-to-static-html-public.css?ver=1.0.0' type='text/css' media='all' />
+		<script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/powerpress/player.min.js?ver=5.5.1' id='powerpress-player-js'></script>
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js?ver=5.5.1" id='jquery-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/jquery.cycle.all.js?ver=5.5.1' id='cycle-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/main.js?ver=5.5.1' id='integrum-main-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/js/export-wp-page-to-static-html-public.js?ver=1.0.0' id='export-wp-page-to-static-html-js'></script>
+<link rel="https://api.w.org/" href="http://integrumtech.com/wp-json/" /><link rel="alternate" type="application/json" href="http://integrumtech.com/wp-json/wp/v2/posts/7293" /><link rel='shortlink' href='http://integrumtech.com/?p=7293' />
+<link rel="alternate" type="application/json+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2013%2F07%2Fepisode-113-high-costs-and-negative-value-of-pair-programming%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2013%2F07%2Fepisode-113-high-costs-and-negative-value-of-pair-programming%2F&#038;format=xml" />
+<script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://integrumtech.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://integrumtech.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+</head>
+<body class="post-template-default single single-post postid-7293 single-format-standard">
+<div id="wrapper">
+    <div id="wrapper-header">
+    	<header id="header" role="banner">
+            <h1 id="logo"><a href="http://integrumtech.com/" title="Integrum" rel="home">Integrum</a></h1>
+            <nav id="navigation" role="navigation" class="clearfix">
+                <div class="menu-primary-container"><ul id="menu-primary" class="menu"><li id="menu-item-7406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7406"><a title="Go home" href="http://integrumtech.com/">Start</a></li>
+<li id="menu-item-7615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7615"><a title="Meet the team" href="http://integrumtech.com/crew/">Meet</a></li>
+<li id="menu-item-7407" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-7407"><a title="Listen to a scrumcast" href="http://integrumtech.com/category/agile-weekly-podcast/">Listen</a></li>
+<li id="menu-item-7614" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-7614"><a title="Read our industry insights" href="http://integrumtech.com/blog/">Read</a></li>
+<li id="menu-item-7408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7408"><a href="http://integrumtech.com/training-courses/">Learn</a></li>
+<li id="menu-item-7613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7613"><a title="Get in touch with us" href="http://integrumtech.com/contact/">Act</a></li>
+</ul></div>            </nav>
+	    </header>
+    </div>
+    <div id="main" role="main" class="clearfix">
+		<section id="content" class="container-content container-content-wide">
+					<header class="page-header">
+				<h1 class="page-title">Agile Weekly Podcast</h1>
+			</header>
+							<article id="post-7293" class="first post-7293 post type-post status-publish format-standard hentry category-agile-weekly-podcast tag-clayton-lengel-zigich tag-roy-van-de-water odd">
+	    <header class="entry-header">
+			<h1 class="entry-title"><a href="http://integrumtech.com/2013/07/episode-113-high-costs-and-negative-value-of-pair-programming/" title="Permalink to Episode #113 &#8211; High Costs and Negative Value of Pair Programming" rel="bookmark">Episode #113 &#8211; High Costs and Negative Value of Pair Programming</a></h1>
+			<ul class="entry-meta">
+												<li class="episode">#113</li>
+								<li class="date"><time datetime="2013-07-04T06:00:42+00:00">July 4, 2013</time></li>
+				<li class="category"><ul class="post-categories">
+	<li><a href="http://integrumtech.com/category/agile-weekly-podcast/" rel="category tag">Agile Weekly Podcast</a></li></ul></li>
+	        </ul>
+	    </header>
+		<div class="entry-content">
+						<div class="entry-speakers">
+				<p>Featured speakers:</p>
+											<a href="http://integrumtech.com/crew/clayton-lengel-zigich/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/clayton.jpg" alt="Clayton Lengel-Zigich" width="84" height="84">
+								Clayton							</a>
+													<a href="http://integrumtech.com/crew/roy-van-de-water/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/roy.jpg" alt="Roy van de Water" width="84" height="84">
+								Roy							</a>
+									</div>
+						<div class="powerpress_player" id="powerpress_player_859"><a href="http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/20130703.mp3" title="Play" onclick="return powerpress_embed_html5a('859','http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/20130703.mp3');" target="_blank"><img src="http://integrumtech.com/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></div>
+			<p>Roy van de Water and Clayton Lengel-Zigich provide a rebuttal to an article that has been circulating within the Agile community this week: <a href="http://namcookanalytics.com/high-costs-and-negative-value-of-pair-programming/">High Costs and Negative Value of Pair Programming</a></p>
+<p>&nbsp;</p>
+<p><em>Transcript</em></p>
+<p><strong>Clayton Lengel‑Zigich</strong>:  Welcome to another episode of the &#8220;Agile Weekly Podcast.&#8221; I&#8217;m Clayton Lengel‑Zigich.</p>
+<p><strong>Roy van de Water</strong>:  And I&#8217;m Roy van de Water.</p>
+<p><strong>Clayton</strong>:  Today we&#8217;re talking about an article that we came across, it was this week. It&#8217;s called the High Costs and Negative Value of Pair Programming. It&#8217;s by Capers Jones at the Namcook Analytics blog, we&#8217;ll put that in the iTune net.</p>
+<p>Basically, it&#8217;s, like a white paper almost, about why pair programming is harmful, and it&#8217;s not really a good idea, and you shouldn&#8217;t do it, or at least, you shouldn&#8217;t do it yet, until you do lots of research about it. It struck a chord, I guess. We came across the post on Twitter, and it kind of generated some buzz on there. Then, we talked about it internally, so we were hoping to share our ideas.</p>
+<p>The first point that I thought was, that resonated with me was the author makes mention that para‑programming is something that came out of the non‑scientific. It wasn&#8217;t measured very well in the Agile community. I would probably give him that, that the Agile community has lots of things that we do that are not necessarily based on hard scientific evidence, a lot of its just anecdotal experience. That&#8217;s probably a fair statement.</p>
+<p><strong>Roy</strong>:  It becomes very difficult, too, though. I think we&#8217;ve had something that we&#8217;ve run into in the past, right? Where it becomes, because of the nature of every team being different, different projects being different, the codes bases being different, like a lot of the para‑programming and not just para‑programming, a lot of the types of practices that teams are experiencing with are very difficult to measure in a scientific way. It&#8217;s very difficult to have a control group that&#8217;s identical except for this one variable.</p>
+<p><strong>Clayton</strong>:  The thing that was&#8230;while I agree with that general idea that the Agile community is very unscientific about how they measure things, I felt the way that they went on about, goes without measuring things in the article was kind of lame because they just made up a bunch of stuff and put it in Excel it seems like. I don&#8217;t know. My guess is you have to take a healthy grain of salt.</p>
+<p><strong>Roy</strong>:  The thing that I thought was most interesting in the beginning is that the author tries to make the point that there are a lot of different scenarios about para‑programming that were not considered in most cases. He goes through all these different examples of single programmers using static analysis versus expert single programmers compared to average pairs and novice pairs compared to all these ten different permutations of all these different things.</p>
+<p>Which, I guess, there are probably not many organizations that have all of these things and they are only going to have two or three at most. I thought it was odd that you go so far out of your way to make a big point of not comparing all these things, especially when there probably isn&#8217;t a whole lot of opportunity to compare them all?</p>
+<p><strong>Clayton</strong>:  I thought the static analysis bit was interesting because he specifically talks about the number of defects that a single programmer using static analysis produces versus two pair of programming produce. I think the ratio is something like a single programmer using static analysis develops one defect for every 15 that the pair programmers develop? I guess maybe I don&#8217;t understand what static analysis is, because I don&#8217;t understand. Do you mind explaining real quick?</p>
+<p><strong>Roy</strong>:  The idea that static analysis is going to evaluate your code and find defects for you? I have written plenty of defects that static analysis wouldn&#8217;t have caught. There&#8217;re plenty of things that static analysis would tell you that wouldn&#8217;t be defect that you could spend a bunch of time fixing. That seems like it&#8217;s just a silly thing to even bring up.</p>
+<p>Static analysis can be important and it can hint you in the right direction and help you find different things with your code. The idea that it&#8217;s like this great tool for finding defects or even a tool for finding defects seems like a stretch.</p>
+<p>Moving on, another downside the author states for pair programming is that it won&#8217;t scale. The example that he gives is a huge software project with 500 engineers. How could you get them to pair? How could you hire another 500 more people? Which seems odd, because any software project that had 500 people working on the same thing that sounds like a nightmare, no matter what you&#8217;re doing.</p>
+<p><strong>Clayton</strong>:  Right. Exactly. You are going to have so many people doing many random things and wasting a ton of time, even pair programming at that point when you have a project that big, it becomes unmanageable.</p>
+<p><strong>Roy</strong>:  If it&#8217;s 500 people across an entire organization all working on different things, then you could still pair. There&#8217;s nothing that says you couldn&#8217;t, the idea that it wouldn&#8217;t scale? That seems kind of silly.</p>
+<p><strong>Clayton</strong>:  That&#8217;s the mindset difference, right? Because he&#8217;s thinking from the perspective of &#8220;I have 500 people and I need to maintain my current productivity level, which means I have to hire 500 more.&#8221; Instead of saying, &#8220;I have 500 people and that means I have 250 pairs.&#8221;</p>
+<p><strong>Roy</strong>:  That&#8217;s a good point. Kind of the next thing that is the problem with pair programming is why hasn&#8217;t this been tried with other business functions or other job functions? They talk about architects and BAs and testers and all these other things which, if you talk to those who are actually doing pair programming, they have tried to do some form of pairing with people who are not just software developers.</p>
+<p>This one stuck out to me as someone that has kind of betrayed the experience the author has with pair programming and the idea that no one has tried that before.</p>
+<p><strong>Clayton</strong>:  In fact, in my experience, the biggest gains from pair programming come when you have the most different types of experiences combining. Say, you have a graphic designer and a programmer, or something like&#8230;as different as possible.</p>
+<p>Because, if you put two people that are almost identical in front of a computer, the most you&#8217;re going to get out of it is maybe a slightly lower defect rate, because one of them is proofreading what the other one is writing.</p>
+<p>But, if you have two people that have totally different ways of approaching the problem that gives the pair a greater diversity of options to choose from, and it makes it more likely that they might pick the right one.</p>
+<p><strong>Roy</strong>:  The thing that struck me as the biggest bullshit indicator of the whole article was that one of the measurements that&#8217;s used in this calculation is lines of code. The measurement is how fast is an expert single programmer, based on how many lines of code they write?</p>
+<p>That&#8217;s what is used in all the economic calculations. I wouldn&#8217;t doubt that pair programming is probably more expensive, and probably slower, than single people working on things, but that&#8217;s entirely ignoring all the other benefits that you can get.</p>
+<p>If you&#8217;re just doing lines of code, if you&#8217;re working on a software project that all that matters is that you&#8217;re just pumping out lines of code, then just hire a bunch of monkeys and they can just pound on the keyboard. You don&#8217;t need pair programming at that point.</p>
+<p>It seemed like an odd comparison. I would even say that if your software project is so simple that you can just crank out lines of code, then you probably don&#8217;t get any benefit from pairing as far as collaboration, or redundancy or anything.</p>
+<p><strong>Clayton</strong>:  You probably don&#8217;t get any benefit from collaboration of any form. You should probably just outsource, and try to get your code written as cheap as possible.</p>
+<p><strong>Roy</strong>:  Right, because if all it really takes is that you just are pumping out code, then you can just replace that person with someone else, and it doesn&#8217;t matter. But, that&#8217;s not the case, I think, in most software organizations.</p>
+<p><strong>Clayton</strong>:  I was going to say, how many projects are actually out there where you can just put anybody in front of it and pump out code?</p>
+<p><strong>Roy</strong>:  A lot of people try and do that, especially, I would say, shops that are doing outsourced software development, where they&#8217;re solving the same problem multiple times. They probably do just have a set way of doing things, where they could get pretty close to just pumping things out, and it doesn&#8217;t really matter who&#8217;s working on it.</p>
+<p>But, for most organizations that are developing either products for customers or developing products for internal customers, where there is a need for that collaboration and giving some creativity, and having that redundancy, so that you don&#8217;t have the single point of failure with the one person who knows everything&#8230;</p>
+<p><strong>Clayton</strong>:  That&#8217;s true. That&#8217;s one thing that&#8217;s not really acknowledged all that much. I believe one of the lines in that article states something about like, &#8220;If you look at the data in Table three, you can clearly see that the most efficient course of action is to hire a bunch of individual expert programmers.&#8221;</p>
+<p>If you&#8217;ve followed many of our podcasts in the past, then you&#8217;ll know that that does not really fly very well with the way we like to work, and that that sets organizations up for failure, because you end up with all of these single point of failure where if any one of them&#8230;Each one is a link in the chain, and if anyone is gone, then the organization falls apart.</p>
+<p><strong>Roy</strong>:  The single expert programmer is usually a hero and a cowboy. They are the ones that are going to stay up until 3:00 AM heroing some solution for some problem, and then they&#8217;re going to cowboy‑code their way&#8230;</p>
+<p><strong>Clayton</strong>:  They&#8217;re pumping out lots of lines of code.</p>
+<p><strong>Roy</strong>:  Yeah, exactly, and they&#8217;re going to cowboy‑code their way through everything else.</p>
+<p>If you ask any IT hiring manager, the idea that you can just go pluck expert programmers off the street&#8230;which, to the author&#8217;s credit, he does make the point that that probably only makes up about 10 percent of the hiring pool that&#8217;s available, the programming talent.</p>
+<p>I feel like that advice is&#8230;&#8221;You should only hire expert programmers&#8221; is like telling your little sister, &#8220;You should only date guys that are really nice to you, and that are financially secure, and that treat you with respect.&#8221; That&#8217;s not going to be everybody in the world. That&#8217;s probably not very good advice, right?</p>
+<p><strong>Clayton</strong>:  I don&#8217;t want my sister dating everybody in the world, though.</p>
+<p><strong>Roy</strong>:  I agree, but the idea that a hiring manager is just going to go out there and find some expert programmer and say, &#8220;Hey, we can solve all of our problems by hiring three of you, instead of having a few pairs.&#8221; That seems silly.</p>
+<p><strong>Clayton</strong>:  It&#8217;s short‑sighted, too, to think of things in terms of moving faster because you have a pair, because it&#8217;s a single person moving faster. If you have a single person making poor decisions, and maybe moving very quickly but creating this monstrosity that&#8217;s going to be impossible to maintain, sure, you&#8217;re moving faster for now, for the next few weeks.</p>
+<p>But then, all of a sudden, when defects come in or change requirements come in or whatever, and you start needing to adapt the system to meet the new demand, that&#8217;s all of a sudden when things start to slow down, because you didn&#8217;t slow down to begin with.</p>
+<p><strong>Roy</strong>:  Yeah. The way that the example is set up in the article, it&#8217;s very tipped in favor of the single programmer, and not in favor of a more, I would say, real‑world scenario, or at least a scenario that we see with our clients that have a dynamic application or a legacy system, or they&#8217;re trying to build a new product.</p>
+<p>They need lots of creativity, and they need that collaboration, so that they can get lots of different ideas, and so that there&#8217;s the redundancy. Those are the things they need. They don&#8217;t need people just pumping out code.</p>
+<p><strong>Clayton</strong>:  That&#8217;s, I think, we see in almost every organization that I&#8217;ve ever worked with. The biggest problem has always been with figuring out what to build. Not building something quickly. Building something as fast as possible has never been the issue.</p>
+<p><strong>Roy</strong>:  I would say the other thing, I think, that we see a lot is there are scenarios where saving money is a beneficial thing. I think this article comes from the standpoint, the fact that they bring it up in the very beginning, that Agile is sort of not very good with economics.</p>
+<p>Or at least, that&#8217;s the claim they&#8217;re making. Drives to the point, I think, where all they really care about is the bottom line. Which, you know, I think if you spend enough time in the community you realize that going faster and more better, faster, cheaper. That line, which is, I think, how a lot of people view Agile, maybe Scrum especially.</p>
+<p><strong>Clayton</strong>:  And Lean as well.</p>
+<p><strong>Roy</strong>:  Especially with Scrum, if we can do Scrum, then our teams will be faster. They&#8217;ll be cheaper. They&#8217;ll be better or whatever. If that&#8217;s the only thing you&#8217;re driving for then I think this article is appealing to you. If all you care about are dollars and cents.</p>
+<p><strong>Clayton</strong>:  Maybe Agile isn&#8217;t for you if you&#8217;re doing that.</p>
+<p><strong>Roy</strong>:  Right, and that&#8217;s why I would say that you probably don&#8217;t even have the culture in your organization to support para‑programming if all you care about is the bottom line. Because there&#8217;s no way you could look at a pair versus a single person and determine that, &#8220;Oh, the pair is more expensive, but that&#8217;s OK.&#8221;</p>
+<p>That&#8217;s not going to be your mindset. You&#8217;re going to think of them as, &#8220;This pair is more expensive,&#8221; and you&#8217;re not going to see the benefits that you get from para‑programming. So you&#8217;re just going to ignore out of hand which is who this article appeals to.</p>
+<p><strong>Clayton</strong>:  Actually, it&#8217;s a huge disparity between thinking of these things as just a set of processes and tips and tricks to try to make things more efficient or to make things better, rather than looking at it as a value system, where you are completely changing the way that the human beings within your organization interact.</p>
+<p><strong>Roy</strong>:  You&#8217;re changing the way that people will write that software.</p>
+<p><strong>Clayton</strong>:  Right.</p>
+<p><strong>Roy</strong>:  The closing point about divided work. I thought this was just another one to seem kind of ridiculous out of hand as well. I don&#8217;t think there&#8217;s anything that you could compare between para‑programming, two people sitting down writing software like a software feature. I don&#8217;t think that&#8217;s comparable to military command whatsoever other than the fact that there are two people.</p>
+<p>The idea that you would say, &#8220;Divided work can be harmful because look at these examples of things that don&#8217;t work.&#8221; They&#8217;re not the same thing. It&#8217;s apples and oranges at that point.</p>
+<p><strong>Clayton</strong>:  Let&#8217;s look at it from the perspective of decision making ability, right? Where if you have two people sitting in front of a computer and they have to make a decision? They could potentially argue about it for half an hour to an hour. In the software development world, like arguing about something for half an hour to an hour is not big deal. But, I could understand in the military engagement that might be a huge problem.</p>
+<p><strong>Roy</strong>:  Right. [indecipherable 13:04] means software is malleable, right?</p>
+<p><strong>Clayton</strong>:  Right.</p>
+<p><strong>Roy</strong>:  You and I could sit down and para‑program and we could come up with some solution. Then, maybe we go away for the weekend, we talk to some friend and they mention something that triggers an idea. We can come back and change that. There&#8217;s nothing. You can&#8217;t change sending your tanks into battle, and you can&#8217;t just do over. There&#8217;s no undo.</p>
+<p><strong>Clayton</strong>:  But, it is pretty common to see, especially large groups get crippled by shared indecision. It&#8217;s like everybody wants to go in a different direction.</p>
+<p>I can definitely see that extending all the way down to pairs as well, where two people with fundamentally different mindsets want to go in different directions. But, I think that ends up being a much large organizational problem in that probably speaks towards a lack of shared vision for the project.</p>
+<p>Because of everybody is on the same page where their project&#8217;s headed, then the implementation details of going one direction or another, if they&#8217;re both headed in the same way, it doesn&#8217;t become as much of an argument.</p>
+<p><strong>Roy</strong>:  I&#8217;ve seen that on teams where pairs will have very&#8230;especially, if you get two people that are very strong willed. They will have very different ideas of how the system should be architected or whatever the case may be.</p>
+<p>But, when the team doesn&#8217;t have trust and they don&#8217;t have collective code ownership with standards, that&#8217;s when you get people who say, &#8220;We should use this library.&#8221; Then, the other person says, &#8220;No, we should use that one,&#8221; when really it&#8217;s the team that should basically be figuring out, &#8220;When we have to solve this kind of problem, we&#8217;re going to do it this way.&#8221;</p>
+<p>[crosstalk]</p>
+<p><strong>Roy</strong>:  Once you get over that problem, and you say, I think a great example that we always have with the old Integram was authentication stuff. There are 50 different ways you could do authentication and rails. We picked one and that was how we did authentication. That solved the problem of two people pairing and saying, &#8220;Well, my pet library that I think is really great is this one.&#8221;</p>
+<p>Then, the other person saying, &#8220;No, no, no. We should do this way.&#8221; Then, it was you had two different ways in this project that were inconsistent with what the team thought was the standard, if you can get over those kinds of things. That&#8217;s how you can solve some of those problems that they might seem like problems with pairing, but I don&#8217;t think they really are.</p>
+<p><strong>Clayton</strong>:  That&#8217;s true. I think every single one of the items you listed really speaks towards larger organizational problems that have absolutely nothing to do with pairing. Like if these are the things, if these are reasons why you don&#8217;t want to do pairing, then maybe you shouldn&#8217;t be doing pairing yet because your organization is not ready and your organization needs some significant changes before you do.</p>
+<p><strong>Roy</strong>:  If you&#8217;re totally swayed by the economic argument, then you&#8217;re missing all the other benefits that you get. If that&#8217;s where you are then you&#8217;re not ready to be awesome. If I put my Derek hat on for a second, I would say, &#8220;It&#8217;s expensive and it&#8217;s difficult to be awesome and if you&#8217;re going to fall back on some excuse about how it&#8217;s too expensive with all these kind of bullshit calculators that you wrote in excel, then too bad. You don&#8217;t get a taste of the awesome.&#8221;</p>
+<p><strong>Clayton</strong>:  Fair enough.</p>
+<p><strong>Roy</strong>:  Thanks. See you next time.</p>
+<p><strong>Clayton</strong>:  Bye‑bye.</p>
+<p>[music]</p>
+<p><strong>Announcer 1</strong>:  If there is something you&#8217;d like to hear in a future episode, get over to integramtech.com/podcast where you can suggest a topic or a guest.</p>
+<p><strong>Announcer 2</strong>:  Looking for an easy way to stay up‑to‑date with the latest news, techniques and events in the Agile community? Sign up today at agileweekly.com. It&#8217;s the best Agile content delivered weekly for free.</p>
+<p><strong>Announcer 1</strong>:  The Agile Weekly Podcast is brought to you by Integram Technologies and recorded in Gangplank Studios in Chandler, Arizona. For old episodes, check out integramtech.com or subscribe on iTunes.</p>
+<p><strong>Announcer 2</strong>:  Need help with your Agile transition? Have a question and need to phone a friend? Try calling the Agile hotline. It&#8217;s free. Call 866‑244‑8656.</p>
+								</div>
+	</a>
+</article>
+					<nav id="nav-below" class="navigation">
+			<div class="nav-previous">PREVIOUS: <a href="http://integrumtech.com/2013/06/episode-112-7-agile-best-practices-that-you-dont-need-to-follow/" rel="prev">Episode #112 &#8211; 7 Agile Best Practices that You Don&#8217;t Need to Follow</a></div>		<div class="nav-next">NEXT: <a href="http://integrumtech.com/2013/07/episode-114-sprint-failure/" rel="next">Episode #114 &#8211; Sprint Failure</a></div>		</nav><!-- #nav-below -->
+						<div id="comments">
+	
+	
+		<a href="https://facebook.com/AgileWeekly">Join the conversation on Facebook</a></div><!-- #comments -->
+							</section>
+		<div id="callouts" class="whatif">
+					<div class="callout-badge" id="callout-badge-rss">
+				<p class="action"><a href="https://itunes.apple.com/us/podcast/agile-weekly-podcast/id309948372?mt=2">Subscribe to the podcast</a></p>
+			</div>
+			<aside id="text-6" class="widget widget-1 callout-light widget widget_text">			<div class="textwidget"><a href="http://www.stitcher.com/s?fid=19189&refid=stpr"><img src="http://cloudfront.assets.stitcher.com/promo.assets/stitcher-banner-300x250.jpg" width="300" height="250" alt="Listen to Stitcher"></a></div>
+		</aside>		<aside id="integrum-text-widget-12" class="widget widget-2 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Make your <strong>mark</strong></h2>				<div class="blurb">
+					Get involved with the Agile Weekly Podcast by volunteering to be a guest, recommending a speaker, submitting a question, or suggesting a topic.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="https://agileweeklypodcast.uservoice.com/">Step up to the mic</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-13" class="widget widget-3 callout-light widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Build up your <strong>toolkit</strong></h2>				<div class="blurb">
+					Learn new tips and tricks for empowering your team and transforming your business.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="/blog/">See the blog</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-14" class="widget widget-4 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Hungy for <strong>More Info?</strong></h2>				<div class="blurb">
+					Agile Weekly is a quick way to stay up-to-date with the latest news, techniques and events in the Agile community. Signup today for the best Scrum, Lean, Kanban and XP content, curated by agile practitioners.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="http://agileweekly.com">Sign up</a></li>
+									</ul>
+			</div>
+		</aside>				</div>    </div>
+    <footer id="footer-document">
+		<div id="featured-clients" class="clearfix"><h3>Recent revolutions:</h3>			<div class="textwidget"><a href="https://www.britannica.com/" title="Encyclopaedia Brittanica"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-encyclobritannica.gif" alt="Encyclopaedia Brittanica"></a>
+<a href="http://www.orbitz.com/" title="Orbitz"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-orbitz.gif" alt="Orbitz"></a>
+<a href="https://www.monster.com/" title="Monster.com"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-monster.gif" alt="Monster.com"></a>
+<a href="http://www.valleymetro.org/" title="Valley Metro"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-valleymetro.gif" alt="Valley Metro"></a>
+<a href="https://www.microsoft.com/" title="Microsoft"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-microsoft.gif" alt="Microsoft"></a>
+<a href="https://www.intel.com/" title="Intel"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-intel.gif" alt="Intel"></a>
+<a href="http://www.pearson.com/" title="Pearson"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-pearson.gif" alt="Pearson"></a></div>
+		</div>        <div id="footer-contact" class="clearfix">
+			<div id="text-2" class="widget widget_text"><h2>Take the first step towards greatness, and hire a coach today.</h2>			<div class="textwidget"><p>Send us your questions, comments, hopes, and dreams using this form, or contact us at 888-999-1246 or <a href="/cdn-cgi/l/email-protection#ed84838b82ad848399888a9f988099888e85c38e8280"><span class="__cf_email__" data-cfemail="b1d8dfd7def1d8dfc5d4d6c3c4dcc5d4d2d99fd2dedc9f">[email&#160;protected]</span></a></p>
+</div>
+		</div><div id="gform_widget-2" class="widget gform_widget">		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js?ver=1.9.12.7' id='gform_masked_input-js'></script>
+
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_1' ><form method='post' enctype='multipart/form-data'  id='gform_1'  action='/2013/07/episode-113-high-costs-and-negative-value-of-pair-programming/'>
+                        <div class='gform_body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id='field_1_1' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_1' >Name:</label><div class='ginput_container'>
+                                    <input name='input_1' id='input_1_1' type='text' value='' class='medium' tabindex='1'  />
+                                </div></li><li id='field_1_3' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_3' >Phone number:</label><div class='ginput_container'><input name='input_3' id='input_1_3' type='tel' value='' class='medium' tabindex='2'   /></div></li><li id='field_1_2' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_2' >Email:</label><div class='ginput_container'>
+                            <input name='input_2' id='input_1_2' type='email' value='' class='medium' tabindex='3'   />
+                        </div></li><li id='field_1_4' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_4' >Speak up:</label><div class='ginput_container'>
+					<textarea name='input_4' id='input_1_4' class='textarea medium' tabindex='4'    rows='10' cols='50'></textarea>
+				</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Send my message' tabindex='5' onclick='if(window["gf_submitting_1"]){return false;}  if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  ' /> 
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjAzOTlkODFhZmZmM2ZmZjMzY2I2ZTc1OTFjZjU5Zjk5Il0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(!/(android)/i.test(navigator.userAgent)){jQuery('#input_1_3').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );}} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [1, 1]) } ); </script></div><div id="text-3" class="widget widget_text">			<div class="textwidget"><p class="site-id">Site by <a href="http://fortyagency.com" title="Forty branding + marketing">Forty</a></p></div>
+		</div>        </div> <!--/#footer-contact-->
+    </footer>
+</div> <!--/#wrapper-->
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.13-9993131' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.5.1' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.5.1' id='wp-mediaelement-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/comment-reply.min.js?ver=5.5.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/wp-embed.min.js?ver=5.5.1' id='wp-embed-js'></script>
+</body>
+</html>

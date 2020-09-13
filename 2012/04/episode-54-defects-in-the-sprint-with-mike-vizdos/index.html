@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7]><html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8]><html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!--><html lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noodp, noydir" />
+<meta name="viewport" content="width=device-width" />
+<title>Episode #54 - Defects in the Sprint, with Mike Vizdos - Integrum</title>
+<link rel="shortcut icon" type="image/ico" href="http://integrumtech.com/favicon.ico" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://integrumtech.com/wp-content/themes/integrum/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="http://integrumtech.com/wp-content/themes/integrum/css/print.css" />
+<link rel="pingback" href="http://integrumtech.com/xmlrpc.php" />
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://integrumtech.com/2012/04/episode-54-defects-in-the-sprint-with-mike-vizdos/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Episode #54 - Defects in the Sprint, with Mike Vizdos - Integrum" />
+<meta property="og:description" content="Clayton Lengel-Zigich, Roy van de Water and Mike Vizdos discuss: Do we estimate defects? How do I get &#8220;credit&#8221; for doing defects? What counts as &hellip;" />
+<meta property="og:url" content="http://integrumtech.com/2012/04/episode-54-defects-in-the-sprint-with-mike-vizdos/" />
+<meta property="og:site_name" content="Integrum" />
+<meta property="article:tag" content="Clayton Lengel-Zigich,Mike Vizdos,Roy van de Water" />
+<meta property="article:section" content="Agile Weekly Podcast" />
+<meta property="article:published_time" content="2012-04-05T05:00:59+00:00" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/integrumtech.com\/","name":"Integrum"}</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/integrumtech.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style type="text/css">
+.powerpress_player .wp-audio-shortcode { max-width: 200px; }
+</style>
+<link rel='stylesheet' id='mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.13-9993131' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://integrumtech.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='export-wp-page-to-static-html-css'  href='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/css/export-wp-page-to-static-html-public.css?ver=1.0.0' type='text/css' media='all' />
+		<script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/powerpress/player.min.js?ver=5.5.1' id='powerpress-player-js'></script>
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js?ver=5.5.1" id='jquery-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/jquery.cycle.all.js?ver=5.5.1' id='cycle-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/main.js?ver=5.5.1' id='integrum-main-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/js/export-wp-page-to-static-html-public.js?ver=1.0.0' id='export-wp-page-to-static-html-js'></script>
+<link rel="https://api.w.org/" href="http://integrumtech.com/wp-json/" /><link rel="alternate" type="application/json" href="http://integrumtech.com/wp-json/wp/v2/posts/6604" /><link rel='shortlink' href='http://integrumtech.com/?p=6604' />
+<link rel="alternate" type="application/json+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2012%2F04%2Fepisode-54-defects-in-the-sprint-with-mike-vizdos%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2012%2F04%2Fepisode-54-defects-in-the-sprint-with-mike-vizdos%2F&#038;format=xml" />
+<script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://integrumtech.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://integrumtech.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+</head>
+<body class="post-template-default single single-post postid-6604 single-format-standard">
+<div id="wrapper">
+    <div id="wrapper-header">
+    	<header id="header" role="banner">
+            <h1 id="logo"><a href="http://integrumtech.com/" title="Integrum" rel="home">Integrum</a></h1>
+            <nav id="navigation" role="navigation" class="clearfix">
+                <div class="menu-primary-container"><ul id="menu-primary" class="menu"><li id="menu-item-7406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7406"><a title="Go home" href="http://integrumtech.com/">Start</a></li>
+<li id="menu-item-7615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7615"><a title="Meet the team" href="http://integrumtech.com/crew/">Meet</a></li>
+<li id="menu-item-7407" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-7407"><a title="Listen to a scrumcast" href="http://integrumtech.com/category/agile-weekly-podcast/">Listen</a></li>
+<li id="menu-item-7614" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-7614"><a title="Read our industry insights" href="http://integrumtech.com/blog/">Read</a></li>
+<li id="menu-item-7408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7408"><a href="http://integrumtech.com/training-courses/">Learn</a></li>
+<li id="menu-item-7613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7613"><a title="Get in touch with us" href="http://integrumtech.com/contact/">Act</a></li>
+</ul></div>            </nav>
+	    </header>
+    </div>
+    <div id="main" role="main" class="clearfix">
+		<section id="content" class="container-content container-content-wide">
+					<header class="page-header">
+				<h1 class="page-title">Agile Weekly Podcast</h1>
+			</header>
+							<article id="post-6604" class="first post-6604 post type-post status-publish format-standard hentry category-agile-weekly-podcast tag-clayton-lengel-zigich tag-mike-vizdos tag-roy-van-de-water odd">
+	    <header class="entry-header">
+			<h1 class="entry-title"><a href="http://integrumtech.com/2012/04/episode-54-defects-in-the-sprint-with-mike-vizdos/" title="Permalink to Episode #54 &#8211; Defects in the Sprint, with Mike Vizdos" rel="bookmark">Episode #54 &#8211; Defects in the Sprint, with Mike Vizdos</a></h1>
+			<ul class="entry-meta">
+												<li class="episode">#54</li>
+								<li class="date"><time datetime="2012-04-05T05:00:59+00:00">April 5, 2012</time></li>
+				<li class="category"><ul class="post-categories">
+	<li><a href="http://integrumtech.com/category/agile-weekly-podcast/" rel="category tag">Agile Weekly Podcast</a></li></ul></li>
+	        </ul>
+	    </header>
+		<div class="entry-content">
+						<div class="entry-speakers">
+				<p>Featured speakers:</p>
+											<a href="http://integrumtech.com/crew/clayton-lengel-zigich/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/clayton.jpg" alt="Clayton Lengel-Zigich" width="84" height="84">
+								Clayton							</a>
+													<a href="http://integrumtech.com/crew/roy-van-de-water/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/roy.jpg" alt="Roy van de Water" width="84" height="84">
+								Roy							</a>
+									</div>
+						<div class="powerpress_player" id="powerpress_player_2032"><a href="http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/scrumcast_54.mp3" title="Play" onclick="return powerpress_embed_html5a('2032','http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/scrumcast_54.mp3');" target="_blank"><img src="http://integrumtech.com/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></div>
+			<p>Clayton Lengel-Zigich, Roy van de Water and Mike Vizdos discuss:</p>
+<ul>
+<li>Do we estimate defects?</li>
+<li>How do I get &#8220;credit&#8221; for doing defects?</li>
+<li>What counts as a defect?</li>
+<li>New defect comes in what do we do with it?</li>
+<li>How should defects effect velocity?</li>
+<li>Why so defensive?</li>
+<li>How to deal with predictability?</li>
+<li>Definition of done factors in.</li>
+<li>Transparency is what is important.</li>
+<li>Use the retrospective Luke.</li>
+<li>Please don&#8217;t punish me.</li>
+<li>Person that writes the check decides.</li>
+<li>Zero defect mentality.</li>
+<li>Hardening sprint.  Say What?</li>
+<li>Developer Hat v Scrum Master Hat</li>
+</ul>
+<p><em>Transcript</em></p>
+<p><strong>Clayton Lengel‑Zigich</strong>:  Welcome to another episode of the Agile Weekly Podcast. I&#8217;m Clayton Lengel‑Zigich&#8230;</p>
+<p><strong>Roy van de Water</strong>:  I&#8217;m Roy van de Water.</p>
+<p><strong>Scott Dunn</strong>:  I&#8217;m Scott Dunn.</p>
+<p><strong>Clayton</strong>:  Scott thanks for joining us today. I know that you are interested in the strength finder or the strengths&#8230;I don&#8217;t know what the generic term for it is, but maybe can you give, I guess, a little bit of a background of what that is and why you find that interesting?</p>
+<p><strong>Scott</strong>:  Sure. Back when I was a manager for a web development shared systems team, looking for ways to have my team members be engaged and focused. I was at an event called the leadership summit. There, I heard someone named Marcus Buckingham talk about the level of engagement of employees and how low it was. I was definitely listening.</p>
+<p>He gave a stat that less than two out of ten of us are engaged, meaning that we care what is happening at work and are doing our best. The company that he worked for at the time was Gallop. They did a survey of a million employees and a hundred thousand men trying to find what makes great management.</p>
+<p>They boiled it down to twelve questions called the &#8220;Q12&#8221;. The biggest lever if you were a manager to get the best out of your employees was do they have a good chance each day to do what they do best?</p>
+<p>IE Do they have the chance to play to their strengths? From there they came up with an assessment that you can walk‑through and get your top five strength which is called the strength spine which has been on the best seller list for four or five years now.</p>
+<p>Marcus has recently come out with an assessment of the zone, he has recently left Gallop. This is called &#8220;The Stand Out&#8221; which talks more about your strengths, roles and puts you in several categories of manager, leader and sales.</p>
+<p>There is a couple of ways you can approach it. From there you are talking to your team and working with them in a way that helps to discover what their strengths are and to find a way to leverage that as a coach, scrum master or manager.</p>
+<p><strong>Clayton</strong>:  Let&#8217;s say I am a manager and I have this scrum team or agile team, how do I implement this? Do I make everybody take a questionnaire and then put people in boxes? How do these two roles meet?</p>
+<p><strong>Scott</strong>:  That is a great practical question! What I have done before is something that I have detailed on my blog. We can circle back to that later but I do try and make it so people can go to and follow the cheat sheet.</p>
+<p>But basically what I do is I give everyone a couple weeks&#8217; head up and notice in saying, &#8220;I&#8217;m going to be putting books on your desk. Don&#8217;t worry about reading it right now. Just take the assessment in the back. You&#8217;ll find the code. You&#8217;ll go to a website and register and use that code to start your assessment.&#8221;</p>
+<p>That gives them details about how the test works and try to lower the level of anxiety. It&#8217;s not a pass/fail test. You can&#8217;t not have any strengths. You&#8217;re not going to have a strength like loser or something like that show up, and you&#8217;ll be&#8230;</p>
+<p><strong>Clayton</strong>:  Roy hasn&#8217;t taken the test yet.</p>
+<p><strong>Roy</strong>:  That&#8217;s right. I&#8217;m really strong in the ability of being fired.</p>
+<p>[laughter]</p>
+<p><strong>Roy</strong>:  Sorry. Go ahead.</p>
+<p><strong>Scott</strong>:  Is beer drinking a strength? Well&#8230;</p>
+<p><strong>Roy</strong>:  I think I&#8217;ve got that one covered, too.</p>
+<p>[laughter]</p>
+<p><strong>Scott</strong>:  Yeah, you&#8217;ll get lots of funny responses, but the amazing thing is the results I&#8217;ve had. I&#8217;ve done this with at least 200 people so far. On every team that I&#8217;ve been on when I was independent we&#8217;d always do this because one, it&#8217;s a big team‑building thing. It&#8217;s very affirming. These people come out like, &#8220;Wow.&#8221; They&#8217;ll routinely say, &#8220;That really nailed me.&#8221;</p>
+<p>I promise you, over 99 percent of the time they&#8217;re saying, &#8220;That was so accurate. They&#8217;ve been reading my mail. I can&#8217;t believe this.&#8221; It&#8217;s a very affirming process. Not just for them, but that next step after they&#8217;ve taken it I schedule a meeting for all the team to come in.</p>
+<p>We just walk through their strengths. I just list them up on a grid. I&#8217;m writing them up in front of everybody, and I&#8217;ll open up the book and read off, or I&#8217;ll read off their reports. Everyone&#8217;s getting to hear about each other&#8217;s strengths, what they&#8217;re naturally good at where they&#8217;ll find the best of each other. These teams aren&#8217;t great teams because everyone&#8217;s well‑rounded. They&#8217;re great teams precisely because each person&#8217;s not, and you find out. You get that insight.</p>
+<p>I had one manager come up and say when she followed that. That was the most her team had talked to each other in four years. You get these amazing sharing and insights into each other as a team, and that&#8217;s part of the team‑building process as well. From there you start talking about coaching, and we can get into that a little bit later.</p>
+<p>But even if you just did that, you&#8217;re talking 12 to 14 bucks for this book, a one‑hour meeting. They spend a half an hour of their own time taking the test, and it&#8217;s a huge ROI as far as just the connection that they&#8217;re going to make and your insights as their manager or Scrum master as well. It&#8217;s very powerful.</p>
+<p><strong>Clayton</strong>:  What do the results look like? I&#8217;m trying to think of, I think it&#8217;s the Myers‑Briggs Personality Test or something like that. I can&#8217;t remember. I think they have these little codes. Is it the same type of idea?</p>
+<p><strong>Scott</strong>:  No, and I like the Myers‑Briggs. I took it, and my response is what I think most people think the strengths assessments are going to be, which is, &#8220;Oh, that&#8217;s interesting. That says that I&#8217;m an extrovert.&#8221; Well, but what do I do with that? How do I use that at work? Be more extroverty? You don&#8217;t know what to do.</p>
+<p>The strengths by it, it&#8217;s going to give you top five strengths, which are really more like action verbs, or the stand‑out will give you your top two roles and list out all nine. But, there are some that are actionable, like a maximizer. It&#8217;ll give you action items to take with that. If the stand‑out will say, &#8220;Here&#8217;s what you&#8217;re best at. Here&#8217;s what you can do with that. Here&#8217;s a great next step.&#8221;</p>
+<p>If you&#8217;re a maximizer, look for areas where something&#8217;s happening with your team, or the company, or a process. It&#8217;s OK, but it can be made great. You&#8217;ll naturally be pulled towards making things great. Average bugs you.</p>
+<p>It opens your eyes to say &#8220;Wow, that&#8217;s true. We had a deployment processes, and it&#8217;s OK, but I know that we could shrink the time down. Or, a build process, we could shrink that.&#8221; These people, if they&#8217;re on your team, and they&#8217;re a maximizer, they&#8217;re going to love doing that. They&#8217;ll thrive doing that. They&#8217;ll learn the most, and grow the most and perform the most. The team can lean on it, and these people will never get tired of doing that stuff. That&#8217;s one of the insights. Each one of those will be like that.</p>
+<p>I had a team member once, and we were at a lull at work as a Web team. I said, &#8220;Just take it easy. Surf the Web. No big deal. Enjoy your paid time off here.&#8221; It turned out she got frustrated and left for another job, and the reason was one of her strengths was activator.</p>
+<p>The worst thing I could have done for an activator, or I should say an achiever‑‑ that&#8217;s someone who loves to check off everything they&#8217;ve done that day. They love coming in that day, and there are 10 things to do. They get to check, check, check. &#8220;Look, I&#8217;ve been productive. Look&#8230;&#8221;</p>
+
+<p><strong>Scott</strong>:  &#8230;that was driving her nuts. She would rather have me just cook up some work or given her a checklist of things to do and say, &#8220;Hey, could you just take a look at some of these areas in the code base, and review it for areas for opportunity&#8221;? Anything. I could have made it up. For me, that would have killed me. For her, it bugged her so much that she left for another opportunity where they would have kept her busier. Those are a couple of examples of doing that.</p>
+<p><strong>Clayton</strong>:  I understand that it&#8217;s a really good tool for figuring out what kind of jobs the members of the team can do that are personally motivating.</p>
+<p>Do you find it&#8217;s, also, a good tool to use to help team members discover their weaknesses? So that they can try to round out areas they might not necessarily be proficient, or necessarily enjoy as much? Try to find enjoyment in areas where they don&#8217;t excel, so that the team can go more for that &#8220;Everybody in our team is a well‑rounded individual&#8221;?</p>
+<p><strong>Scott</strong>:  Right. That&#8217;s a great question. That&#8217;s a common one, because most of our performance reviews are really spent like, &#8220;I see that you&#8217;ve done this, and this, and this and this. Thank you for your contribution. Now, let&#8217;s spend the rest of our hour talking about these areas where you [laughs] suck.</p>
+<p>Where you&#8217;re not so strong, where you failed, or come up short, or you just don&#8217;t perform well.&#8221; Those areas where you&#8217;re looking at the clock and say, &#8220;Is the clock broken? I hate doing this, anything but this. Let me check my email one more time.'&#8221; That type of work.</p>
+<p>For me, it was organization. &#8220;Here&#8217;s our recommendation. Use the DayRunner, or why don&#8217;t you try the PalmPilot?&#8221; I&#8217;ve tried those things. The truth is, areas where we&#8217;re weak, those things that we do that just drain us that we loathe, all the effort we might put in to try to get better at that will be a lot of pain and not much result.</p>
+<p>If you look back over those areas, and you might know what some of those are. I certainly know some of mine. I look, and I have put a lot of time and effort over the years, and I ain&#8217;t much better. I&#8217;m about the same, marginal improvement, despite putting a lot of time and effort, and money even, at times.</p>
+<p>What would be much better for me, especially as a team member, is to invest all that time and energy into my areas of strength, where there will be leaps in growth, much productivity and engagement. I&#8217;m better to be around. Look for someone else in those areas where the team might need someone who is detail oriented, who loves to check things off, who loves to tackle the tough nuts. Then, find out where we can shift the work.</p>
+<p>On these agile teams as a whole, we should be volunteering. We&#8217;re self‑organizing. We&#8217;re self‑managing. This is the perfect playground to say, &#8220;I love doing this.&#8221; The whole team wins when you do that. &#8220;I&#8217;m not so good at doing this, and someone else probably would like that and they would thrive.&#8221;</p>
+<p>Now, you&#8217;re not playing in areas where you just won&#8217;t ever grow that much, or do that well, and getting not such positive performance reviews, and someone else could. They&#8217;re not getting the opportunity to do more of what they would love to do.</p>
+<p>We actually say, &#8220;Play to your strengths. First of all, discover them. Find out what they are, and begin carving out time each week to invest in learning about that‑‑activities that you could do to practice.&#8221; That&#8217;s how we grow, right? We learn and we practice doing it. Manage around your weaknesses. On the ROI side, it&#8217;s just not worth putting time into your weaknesses. Just work around them.</p>
+<p><strong>Clayton</strong>:  It sounds to me, if everybody is playing to their strengths and doing the things that they&#8217;re best at, you will naturally have a tendency to form information silos and skill silos. You&#8217;ll start to form a team that doesn&#8217;t pass the hit by a bus test. Is that something that you&#8217;ve seen happened? How do you prevent that from being an issue?</p>
+<p><strong>Scott</strong>:  I would separate the difference of technology skill. I&#8217;m definitely one who really believes in generalists. I don&#8217;t want specialists, and I really love breaking down silos.</p>
+<p>But there&#8217;s a difference between, say, technical knowledge, your abilities and aptitude, and what you actually are doing versus areas where you&#8217;re playing your strengths, so several people that might be developers might love development for those different reasons.</p>
+<p>A lot of us in IT have the strengths around learning and input. We love the process of learning, and we love input. If we hated learning, we probably wouldn&#8217;t be IT. We would probably be complaining every time they have a new version of the software out.</p>
+<p>But outside that, you&#8217;ll find people who love to do it because they love the analysis part of it, trying to figure how this works, people that love it because they&#8217;re fixing problems. They don&#8217;t mind doing process work. They love tackling problems and restoring things back to what they should be working.</p>
+<p>We have people who love it because they love teaching others as they&#8217;re building. &#8220;Hey, this is what I have learned. Let me share this with you,&#8221; whether it&#8217;s business side or IT, so those same strengths, whether they&#8217;re all Java developers or not, those strengths will come and play in different ways.</p>
+<p>They can still be generous and share the technology vine. They all work in the codebase, and I would want that. I want collective ownership of the codebase for sure. But why they do it and how they do it is different, and they can play their strengths differently. I&#8217;d look for that, and I still look for ways.</p>
+<p>You might have to shepherd them all around a little bit and say, &#8220;Here&#8217;s an opportunity over here. I&#8217;ve noticed that only one person is the expert in this.&#8221; I&#8217;d do that by nature anyways. But I don&#8217;t think that strengths will get in the way and shift them up and just all playing together in the sandbox so to speak with the actual technology itself.</p>
+<p><strong>Clayton</strong>:  The last question on the strengths topic is there an example you can give us or maybe a situation where you introduced this concept, and you had people to take the test, and it just really went south? Maybe some people are really against it and just really want to participate. Anything like that? Or people usually just willing to give it a shot?</p>
+<p><strong>Scott</strong>:  Everything is always going perfect and sweet for me.</p>
+<p><strong>Roy</strong>:  I thought that was the case, but I just wanted to make sure. That&#8217;s good to know.</p>
+<p><strong>Scott</strong>:  [laughs] No, I did have someone who was a bit of a rebel stallion which actually I like about them. I loved it when people don&#8217;t just accept what I&#8217;m saying. Skepticism&#8217;s good. A healthy skepticism is something I like to see.</p>
+<p>But this person took it to the extremes and just really basically refused to be&#8230;He felt he&#8217;s going to get labeled. I like to say, &#8220;The issue isn&#8217;t the issue.&#8221; I don&#8217;t think that was an issue. I think it was an issue on vulnerability. He was afraid of what the results might say. He knew it would be public. All the other people have their strengths pinned up on their cubes and were talking about it and all that. I think that was the issue.</p>
+<p>But in the end, I let it slide and just gave him time and said, &#8220;I&#8217;m not going to make you participate. I wouldn&#8217;t want to do that.&#8221; Later on, on the side just after all the excitement had die down a bit later, he did take it, and he said, &#8220;It really did nail me. It was accurate, and it was insightful.&#8221; Then we had a nice quiet conversation about that, and that was good to know.</p>
+<p>Outside that, people will approach it skeptically, but they&#8217;ll usually participate. They&#8217;ll understand that there&#8217;s a win it for them, and I&#8217;ll try to take time for that. More importantly, no one&#8217;s ever come up afterwards and said, &#8220;That wasn&#8217;t a good experience for me.&#8221; They might say, &#8220;I wasn&#8217;t sure about this particular strength or that one.&#8221;</p>
+<p>But overall, they say it&#8217;s really good. The conversation will draw insights. But there hasn&#8217;t been resistance except for maybe management saying, &#8220;What&#8217;s happening? Are you doing my job as far as developing my people?&#8221; which you need to make sure you&#8217;re on the same page with them and talk with them beforehand.</p>
+<p>Or HR saying, &#8220;It should be on our category not yours.&#8221; In fact, a very big supporter of this is HR. It&#8217;s worth checking with them, and they can share organizationally that they&#8217;re on board and that they know where this is going.</p>
+<p>For me, it&#8217;s all about team building and the agile team being self‑managing and self‑organizing. I take it from that route and just make sure everyone&#8217;s aware and not over‑communicating, but no significant problems after the fact.</p>
+<p><strong>roy</strong>:  We&#8217;re about out of time. But is there anything that you&#8217;ve been excited about lately ‑‑ maybe a book, blog, training course, or anything like that ‑‑ that you want to share with anyone?</p>
+<p><strong>Scott</strong>:  Yeah, I&#8217;m such a person of immediacy, I guess. There&#8217;s a movie called &#8220;Blue Like Jazz&#8221; which is actually based on a book. But that term, &#8220;Blue Like Jazz,&#8221; is talking about jazz doesn&#8217;t resolve, and I&#8217;m realizing there&#8217;s issues in our agile community, I think, that don&#8217;t always resolve around what we believe and hold true and what we actually live out.</p>
+<p>I&#8217;ve been noodling about that. It maybe challenges us maybe to get back to the community a bit more and see what we can do to make a difference beyond just what teams and individuals themselves within the companies and contributing to the greater good. By the end of the day, I would love to have everybody know scrum and agile process. I&#8217;m looking in the ways to do that. I&#8217;m looking for ways to push out on the other communities outside that.</p>
+<p>I just finished lean start‑up and was really impressed me with that on top of the way we can partake accountability for evaluation of what we say we&#8217;re contributing to the business. If they can&#8217;t measure that, and they don&#8217;t have metrics upfront of how they&#8217;re going to validate that really added value, what are we doing? That closes the loop, the learning loop for scrum, and if they are willing to, I really recommend everyone to take a look at that as well.</p>
+<p><strong>Roy</strong>:  Great. Thanks for joining us today. We appreciate it.</p>
+<p><strong>Scott</strong>:  My pleasure. Thanks for having me, and thanks for all the great questions.</p>
+<p>[music]</p>
+<p><strong>Announcer</strong>:  Is there&#8217;s something you&#8217;d like to hear in a future episode? Head over to Integrumtech.com/podcast where you can suggest a topic or a guest. Looking for an easy way to stay up to date with the latest news, techniques, and events in the agile community? Sign up today at Agileweekly.com. It&#8217;s the best agile content delivered weekly for free.</p>
+<p>The Agile Weekly Podcast is brought to you by Integrum Technologies and recorded at Gangplank Studios in Chandler, Arizona. For old episodes, check out Integrumtech.com or subscribe on iTunes.</p>
+								</div>
+	</a>
+</article>
+					<nav id="nav-below" class="navigation">
+			<div class="nav-previous">PREVIOUS: <a href="http://integrumtech.com/2012/03/scrumcast-53-managers-in-agile-with-jurgen-appelo/" rel="prev">Episode #53 &#8211; Managers in Agile with Jurgen Appelo</a></div>		<div class="nav-next">NEXT: <a href="http://integrumtech.com/2012/04/episode-55-lean-startup-principles-and-agile/" rel="next">Episode #55 &#8211; Lean Startup Principles and Agile</a></div>		</nav><!-- #nav-below -->
+						<div id="comments">
+	
+	
+		<a href="https://facebook.com/AgileWeekly">Join the conversation on Facebook</a></div><!-- #comments -->
+							</section>
+		<div id="callouts" class="whatif">
+					<div class="callout-badge" id="callout-badge-rss">
+				<p class="action"><a href="https://itunes.apple.com/us/podcast/agile-weekly-podcast/id309948372?mt=2">Subscribe to the podcast</a></p>
+			</div>
+			<aside id="text-6" class="widget widget-1 callout-light widget widget_text">			<div class="textwidget"><a href="http://www.stitcher.com/s?fid=19189&refid=stpr"><img src="http://cloudfront.assets.stitcher.com/promo.assets/stitcher-banner-300x250.jpg" width="300" height="250" alt="Listen to Stitcher"></a></div>
+		</aside>		<aside id="integrum-text-widget-12" class="widget widget-2 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Make your <strong>mark</strong></h2>				<div class="blurb">
+					Get involved with the Agile Weekly Podcast by volunteering to be a guest, recommending a speaker, submitting a question, or suggesting a topic.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="https://agileweeklypodcast.uservoice.com/">Step up to the mic</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-13" class="widget widget-3 callout-light widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Build up your <strong>toolkit</strong></h2>				<div class="blurb">
+					Learn new tips and tricks for empowering your team and transforming your business.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="/blog/">See the blog</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-14" class="widget widget-4 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Hungy for <strong>More Info?</strong></h2>				<div class="blurb">
+					Agile Weekly is a quick way to stay up-to-date with the latest news, techniques and events in the Agile community. Signup today for the best Scrum, Lean, Kanban and XP content, curated by agile practitioners.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="http://agileweekly.com">Sign up</a></li>
+									</ul>
+			</div>
+		</aside>				</div>    </div>
+    <footer id="footer-document">
+		<div id="featured-clients" class="clearfix"><h3>Recent revolutions:</h3>			<div class="textwidget"><a href="https://www.britannica.com/" title="Encyclopaedia Brittanica"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-encyclobritannica.gif" alt="Encyclopaedia Brittanica"></a>
+<a href="http://www.orbitz.com/" title="Orbitz"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-orbitz.gif" alt="Orbitz"></a>
+<a href="https://www.monster.com/" title="Monster.com"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-monster.gif" alt="Monster.com"></a>
+<a href="http://www.valleymetro.org/" title="Valley Metro"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-valleymetro.gif" alt="Valley Metro"></a>
+<a href="https://www.microsoft.com/" title="Microsoft"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-microsoft.gif" alt="Microsoft"></a>
+<a href="https://www.intel.com/" title="Intel"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-intel.gif" alt="Intel"></a>
+<a href="http://www.pearson.com/" title="Pearson"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-pearson.gif" alt="Pearson"></a></div>
+		</div>        <div id="footer-contact" class="clearfix">
+			<div id="text-2" class="widget widget_text"><h2>Take the first step towards greatness, and hire a coach today.</h2>			<div class="textwidget"><p>Send us your questions, comments, hopes, and dreams using this form, or contact us at 888-999-1246 or <a href="/cdn-cgi/l/email-protection#11787f777e51787f65747663647c657472793f727e7c"><span class="__cf_email__" data-cfemail="3f565159507f56514b5a584d4a524b5a5c57115c505211">[email&#160;protected]</span></a></p>
+</div>
+		</div><div id="gform_widget-2" class="widget gform_widget">		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js?ver=1.9.12.7' id='gform_masked_input-js'></script>
+
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_1' ><form method='post' enctype='multipart/form-data'  id='gform_1'  action='/2012/04/episode-54-defects-in-the-sprint-with-mike-vizdos/'>
+                        <div class='gform_body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id='field_1_1' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_1' >Name:</label><div class='ginput_container'>
+                                    <input name='input_1' id='input_1_1' type='text' value='' class='medium' tabindex='1'  />
+                                </div></li><li id='field_1_3' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_3' >Phone number:</label><div class='ginput_container'><input name='input_3' id='input_1_3' type='tel' value='' class='medium' tabindex='2'   /></div></li><li id='field_1_2' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_2' >Email:</label><div class='ginput_container'>
+                            <input name='input_2' id='input_1_2' type='email' value='' class='medium' tabindex='3'   />
+                        </div></li><li id='field_1_4' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_4' >Speak up:</label><div class='ginput_container'>
+					<textarea name='input_4' id='input_1_4' class='textarea medium' tabindex='4'    rows='10' cols='50'></textarea>
+				</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Send my message' tabindex='5' onclick='if(window["gf_submitting_1"]){return false;}  if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  ' /> 
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjAzOTlkODFhZmZmM2ZmZjMzY2I2ZTc1OTFjZjU5Zjk5Il0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(!/(android)/i.test(navigator.userAgent)){jQuery('#input_1_3').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );}} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [1, 1]) } ); </script></div><div id="text-3" class="widget widget_text">			<div class="textwidget"><p class="site-id">Site by <a href="http://fortyagency.com" title="Forty branding + marketing">Forty</a></p></div>
+		</div>        </div> <!--/#footer-contact-->
+    </footer>
+</div> <!--/#wrapper-->
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.13-9993131' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.5.1' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.5.1' id='wp-mediaelement-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/comment-reply.min.js?ver=5.5.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/wp-embed.min.js?ver=5.5.1' id='wp-embed-js'></script>
+</body>
+</html>

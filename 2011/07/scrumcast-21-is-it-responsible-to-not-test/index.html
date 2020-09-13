@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7]><html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8]><html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!--><html lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noodp, noydir" />
+<meta name="viewport" content="width=device-width" />
+<title>Episode #21 - Is It Responsible to Not Test? - Integrum</title>
+<link rel="shortcut icon" type="image/ico" href="http://integrumtech.com/favicon.ico" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://integrumtech.com/wp-content/themes/integrum/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="http://integrumtech.com/wp-content/themes/integrum/css/print.css" />
+<link rel="pingback" href="http://integrumtech.com/xmlrpc.php" />
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://integrumtech.com/2011/07/scrumcast-21-is-it-responsible-to-not-test/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Episode #21 - Is It Responsible to Not Test? - Integrum" />
+<meta property="og:description" content="Derek Neighbors, Jade Meskill, Clayton Lengel-Zigich and Chris Coneybeer have a conversation on when if ever it is responsible to not test. Obie Blog Post &hellip;" />
+<meta property="og:url" content="http://integrumtech.com/2011/07/scrumcast-21-is-it-responsible-to-not-test/" />
+<meta property="og:site_name" content="Integrum" />
+<meta property="article:tag" content="Chris Coneybeer,Clayton Lengel-Zigich,Derek Neighbors,Jade Meskill" />
+<meta property="article:section" content="Agile Weekly Podcast" />
+<meta property="article:published_time" content="2011-07-07T05:00:11+00:00" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/integrumtech.com\/","name":"Integrum"}</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/integrumtech.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style type="text/css">
+.powerpress_player .wp-audio-shortcode { max-width: 200px; }
+</style>
+<link rel='stylesheet' id='mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.13-9993131' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://integrumtech.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='export-wp-page-to-static-html-css'  href='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/css/export-wp-page-to-static-html-public.css?ver=1.0.0' type='text/css' media='all' />
+		<script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/powerpress/player.min.js?ver=5.5.1' id='powerpress-player-js'></script>
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js?ver=5.5.1" id='jquery-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/jquery.cycle.all.js?ver=5.5.1' id='cycle-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/themes/integrum/js/main.js?ver=5.5.1' id='integrum-main-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/export-wp-page-to-static-html/public/js/export-wp-page-to-static-html-public.js?ver=1.0.0' id='export-wp-page-to-static-html-js'></script>
+<link rel="https://api.w.org/" href="http://integrumtech.com/wp-json/" /><link rel="alternate" type="application/json" href="http://integrumtech.com/wp-json/wp/v2/posts/5506" /><link rel='shortlink' href='http://integrumtech.com/?p=5506' />
+<link rel="alternate" type="application/json+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2011%2F07%2Fscrumcast-21-is-it-responsible-to-not-test%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://integrumtech.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fintegrumtech.com%2F2011%2F07%2Fscrumcast-21-is-it-responsible-to-not-test%2F&#038;format=xml" />
+<script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://integrumtech.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://integrumtech.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+</head>
+<body class="post-template-default single single-post postid-5506 single-format-standard">
+<div id="wrapper">
+    <div id="wrapper-header">
+    	<header id="header" role="banner">
+            <h1 id="logo"><a href="http://integrumtech.com/" title="Integrum" rel="home">Integrum</a></h1>
+            <nav id="navigation" role="navigation" class="clearfix">
+                <div class="menu-primary-container"><ul id="menu-primary" class="menu"><li id="menu-item-7406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-7406"><a title="Go home" href="http://integrumtech.com/">Start</a></li>
+<li id="menu-item-7615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7615"><a title="Meet the team" href="http://integrumtech.com/crew/">Meet</a></li>
+<li id="menu-item-7407" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-7407"><a title="Listen to a scrumcast" href="http://integrumtech.com/category/agile-weekly-podcast/">Listen</a></li>
+<li id="menu-item-7614" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-7614"><a title="Read our industry insights" href="http://integrumtech.com/blog/">Read</a></li>
+<li id="menu-item-7408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7408"><a href="http://integrumtech.com/training-courses/">Learn</a></li>
+<li id="menu-item-7613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7613"><a title="Get in touch with us" href="http://integrumtech.com/contact/">Act</a></li>
+</ul></div>            </nav>
+	    </header>
+    </div>
+    <div id="main" role="main" class="clearfix">
+		<section id="content" class="container-content container-content-wide">
+					<header class="page-header">
+				<h1 class="page-title">Agile Weekly Podcast</h1>
+			</header>
+							<article id="post-5506" class="first post-5506 post type-post status-publish format-standard hentry category-agile-weekly-podcast tag-chris-coneybeer tag-clayton-lengel-zigich tag-derek-neighbors tag-jade-meskill odd">
+	    <header class="entry-header">
+			<h1 class="entry-title"><a href="http://integrumtech.com/2011/07/scrumcast-21-is-it-responsible-to-not-test/" title="Permalink to Episode #21 &#8211; Is It Responsible to Not Test?" rel="bookmark">Episode #21 &#8211; Is It Responsible to Not Test?</a></h1>
+			<ul class="entry-meta">
+												<li class="episode">#21</li>
+								<li class="date"><time datetime="2011-07-07T05:00:11+00:00">July 7, 2011</time></li>
+				<li class="category"><ul class="post-categories">
+	<li><a href="http://integrumtech.com/category/agile-weekly-podcast/" rel="category tag">Agile Weekly Podcast</a></li></ul></li>
+	        </ul>
+	    </header>
+		<div class="entry-content">
+						<div class="entry-speakers">
+				<p>Featured speakers:</p>
+											<a href="http://integrumtech.com/crew/clayton-lengel-zigich/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/clayton.jpg" alt="Clayton Lengel-Zigich" width="84" height="84">
+								Clayton							</a>
+													<a href="http://integrumtech.com/crew/derek-neighbors/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/derek.jpg" alt="Derek Neighbors" width="84" height="84">
+								Derek							</a>
+													<a href="http://integrumtech.com/crew/jade-meskill/">
+								<img src="http://integrumtech.com/wp-content/themes/integrum/img/headshots/jade.jpg" alt="Jade Meskill" width="84" height="84">
+								Jade							</a>
+									</div>
+						<div class="powerpress_player" id="powerpress_player_7284"><a href="http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/scrumcast_21.mp3" title="Play" onclick="return powerpress_embed_html5a('7284','http://media.blubrry.com/scrumcast/p/s3.amazonaws.com/SCRUMCast/scrumcast_21.mp3');" target="_blank"><img src="http://integrumtech.com/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></div>
+			<p>Derek Neighbors, Jade Meskill, Clayton Lengel-Zigich and Chris Coneybeer have a conversation on when if ever it is responsible to not test.</p>
+<ul>
+<li>Obie Blog Post</li>
+<li>Crazy Bob Martin</li>
+<li>Test everything all the time</li>
+<li>To what degree</li>
+<li>Not breaking things</li>
+<li>Verifying value delivered</li>
+<li>Market vs quality</li>
+<li>What&#8217;s right level of coverage</li>
+<li>BDD as a technique</li>
+<li>How much risk can you tolerate</li>
+<li>Prototyping</li>
+<li>Technical debt</li>
+<li>Whats your testing comfort level</li>
+<li>Communities have different testing tool competency levels</li>
+<li>Irresponsible?</li>
+</ul>
+<p><em>Transcript</em></p>
+<p><strong>Derek Neighbors</strong>:  Hello, and welcome to another episode of the Scrumcast. I&#8217;m Derek Neighbors.</p>
+<p><strong>Jade Meskill</strong>:  I&#8217;m Jade Meskill.</p>
+<p><strong>Clayton Lengel‑Zigich</strong>:  I&#8217;m Clayton Lengel‑Zigich.</p>
+<p><strong>Chris Coneybeer</strong>:  I&#8217;m Chris Coneybeer.</p>
+<p><strong>Derek</strong>:  Today, we want to talk about is it ever responsible to not test?</p>
+<p>[all men gasp]</p>
+<p><strong>Derek</strong>:  I had to pick the guys up off the floor but&#8230;</p>
+<p>[laughter]</p>
+<p><strong>Derek</strong>:  This has come up a number of times. I remember personally arguing about this with James Shore and a few other people at, I believe it was, Agile Roots probably two years ago, maybe 2009. Then, recently, OBIEEs brought this up in a blog post as he&#8217;s doing his own start‑up, and he talks about maybe he shouldn&#8217;t be testing for his own start‑up in some ways, shapes, and forms.</p>
+<p>I just wanted to, obviously, be in a group that&#8217;s pretty adamant about testing and pretty focused on quality, what we think about that.</p>
+<p><strong>Clayton</strong>:  I read an interesting post the other day that was supposed to be an argument against TDD. It was one of those things where half of it was drawn in, and then the other half of it was, &#8220;To prove my point look at how crazy Bob Martin is. When he talks about testing, he&#8217;s crazy. That means testing&#8217;s crazy.&#8221;</p>
+<p>[laughter]</p>
+<p><strong>Clayton</strong>:  It was funny, but there were a lot of people that had commented on it that were like, &#8220;Oh, I&#8217;m so glad that someone finally came out and said this,&#8221; like it was some Oprah show or something where someone was revealing this great truth.</p>
+<p>I thought that was interesting, but at the same time, no one was really getting into the like, &#8220;Well, hmm. Maybe it isn&#8217;t responsible to test everything all the time,&#8221; counteracting the Bob Martin or some of the people that are really into the test‑all‑the‑effing‑time kind of stuff. There&#8217;s something to be said for that.</p>
+<p><strong>Jade</strong>:  A lot of it is the degree of which you&#8217;re testing. Advocating a position where you don&#8217;t test at all is very dangerous and completely irresponsible. But do you need unit tests that cover every single edge case, as well as, acceptance tests, as well as, request testing? There are so many levels of testing that you can get into, especially with a web‑based application.</p>
+<p>When you&#8217;re running a Lean Start‑up and you&#8217;re in move‑fast mode, totally experimenting, and trying to figure things out, it can be quite a bit of overhead to do a complete full‑stack top‑to‑bottom, outside‑in testing.</p>
+<p><strong>Chris</strong>:  Even if you&#8217;re doing your Lean Start‑up, there should still be some testing in there for acceptance. There should be some testing around what is the core criteria of the application I&#8217;m writing for, not of the unit testing, testing out every single line of code. I understand the coverage being a lot lower.</p>
+<p>But I still think that, no matter what, if you&#8217;re doing acceptance tests, even integration tests and depending on what you&#8217;re building, what you&#8217;re doing, you&#8217;re going to think about a lot more things, and have more confidence in that code. Not confidence in being perfect but confidence in your not going too far away from what you&#8217;re trying to get to.</p>
+<p>When you start writing everything with no test ‑‑ I just would have no faith that I couldn&#8217;t break something and not be aware of it. Then, if I&#8217;m a starter that could have a bad presentation to any end users or people I&#8217;m showing the product to.</p>
+<p><strong>Clayton</strong>:  I heard a good way of describing testing, and a lot of people think of testing, especially if you read stuff on Twitter, like TDD. It&#8217;s all about, &#8220;Oh, TDD is so great because I realize that I broke something before I got it to production,&#8221; or whatever. So, testing becomes all about making sure you&#8217;re not breaking things.</p>
+<p>The next level of that is, the code I heard was, &#8220;You should be doing testing so that you can verify that you&#8217;re delivering the value that you say you are with your application.&#8221; That would be really important if you said, &#8220;From my Lean Start‑up, I&#8217;m going to test the value parts and the rest of it is&#8230;&#8221; Maybe, I don&#8217;t do that. Maybe, not test those things. That could work.</p>
+<p><strong>Jade</strong>:  One of the arguments that came into is, when you&#8217;re funding somebody as an investor, the truth is you don&#8217;t give a shit about testing. They want, you just don&#8217;t care. What you care about is, can you compete in the marketplace? At some point, testing or quality factors into that. But sometimes getting to market or getting to discovery, quality is not the most important thing.</p>
+<p>So, if I say, &#8220;Clayton, I&#8217;m going to give you a hundred thousand dollars and I need this list of 15 features. If you can&#8217;t get those 15 features done, regardless of what the quality of those 15 features is, this project&#8217;s done and we&#8217;re not going any forward, and ending. If you deliver those 15 features to me, regardless of the quality, if you can demonstrate on some level that you can complete these 15 features, I&#8217;ll give you another million dollars to continue on with this product.&#8221;</p>
+<p>That, in a Lean Start‑up mode, is where it starts to become a little difficult to say, what is that threshold? Is it OK to go four weeks without tests? Is it OK to go 10 weeks without tests? Is it OK to go 90 days without tests? Is it OK to only have 10 percent coverage or only have the value items covered?</p>
+<p>I mean, there is a point and you could say the same thing, even not on Lean Start‑ups. When you&#8217;re in large enterprises that have millions of lines of code with no test and you want to do new development and it&#8217;s not reasonable to go back and write tests for every line of code that&#8217;s already written, at some point you have to make trade‑offs to say, &#8220;What&#8217;s the acceptable amount of testing that is responsible.&#8221;</p>
+<p>That&#8217;s a word we use a lot but we drop real quick when we get into our wars, when it&#8217;s all testing all the time no matter what. We drop the whole like, &#8220;What&#8217;s responsible?&#8221; Maybe, we could talk about. What are some of the things that we see that are responsible or, maybe better, what we see that is irresponsible?</p>
+<p><strong>Chris</strong>:  For me, I really embrace the core idea that BDD, a behavior driven development, is less about test coverage and the percentage of testing, but more as a technique to help me discover the problem I&#8217;m trying to solve. So when I approach it from that angle, I&#8217;m not really interested in necessarily ensuring that every single line of code is covered.</p>
+<p>I&#8217;m more concerned about, &#8220;Am I creating a quality design that is good enough to solve the problem that I&#8217;m trying to solve?&#8221; There&#8217;s a bare minimum level of test coverage that you can implement when you&#8217;re going down that path that is going to cover you in 90 percent of cases, especially, as your software continues to grow and add new features. You have some level of confidence that you&#8217;re not completely destroying the application by changing a few things around.</p>
+<p>So when I&#8217;m testing in Rails, I really like to do acceptance testing, some more outside‑in testing. I&#8217;m coming in as a user and following the path and making sure that things are working the way I anticipate them, but I can change around a lot of the implementation details behind the scenes without having to go back, refactor all my tests and worry about this whole gigantic test suit.</p>
+<p>There&#8217;s a bare minimum level of coverage that you can get where the testing is pragmatic and simple but good enough for the time being. It really comes down to risk. How much risk are you willing to take and how much risk can the product or project that you&#8217;re working on afford to take?</p>
+<p>If you have a hundred thousand dollars for the start‑up and it&#8217;s make it or break it, you can take a lot of risk with your software because the bigger risk is that you don&#8217;t deliver anything. If you spend all your money and engineering time doing testing, you&#8217;re not going to get to market anyway and it was just a waste of time</p>
+<p><strong>Derek</strong>:  On your thousand dollar example, if you treat it as a prototype, people readily acknowledge that you should build the prototype and throw it away. If you can be responsible to do that, you should also recognize that maybe doing a full testing is irresponsible, because that&#8217;s something you&#8217;re going to throw away.</p>
+<p>At the same time, I&#8217;m kind of torn, because I know that when you get to a certain point, I acknowledge that, there are benefits that you get from, say, TDD that are like architectural decisions. You get other benefits that are not really what you&#8217;re specifically testing. Those are harder to get and more people think that they understand those and get those than they do.</p>
+<p>I could see a lot of people saying, &#8220;Well, you know, I do TDD because I have to test everything, because we&#8217;ve got all these great TDD benefits,&#8221; when maybe, they&#8217;re not really getting those and it&#8217;s a prototype that they should be throwing away anyway.</p>
+<p><strong>Chris</strong>:  How many people do you think have the discipline to actually throw away that prototype?</p>
+<p><strong>Jade</strong>:  None.</p>
+<p><strong>Derek</strong>:  None.</p>
+<p>[laughter]</p>
+<p><strong>Jade</strong>:  To me, where the argument comes in is what&#8217;s that time frame? I mean, I would argue. To me personally, it&#8217;s probably in the four to six week time frame, so you can lie to yourself that it&#8217;s kind of a prototype for four to six weeks. Once you get beyond that sixth week, if you think of it really in terms of technical debt like financial debt, I might bootstrap a start‑up with credit cards and that becomes irresponsible to a certain dollar figure.</p>
+<p>Is that dollar figure $50,000? Is it $100,000? Is it $200,000? I don&#8217;t know it&#8217;s going to be different for everybody. It&#8217;s kind of the same thing. If you&#8217;re doing an application without tests, you&#8217;re incurring a certain amount of technical debt, or you&#8217;re making it more difficult to pay down technical debt that you do occur.</p>
+<p>At some point, whatever that time frame is, it&#8217;s pretty damn short. I want to say less than six weeks, but it really depends on who you are, but then, you&#8217;re just lying to yourself.</p>
+<p><strong>Chris</strong>:  How could you gauge that? How could you find that limit, that threshold, between test all the effing time and no testing at all? How do you, as a team, determine what that pain threshold is?</p>
+<p><strong>Jade</strong>:  For me, after playing with a bunch of test frameworks lately and really pushing through, most people feel that testing makes them slower. When you&#8217;re comfortable with your framework, that&#8217;s simply not true.</p>
+<p>Testing often makes you faster, not slower. Even though, you&#8217;re writing twice as much code, what you&#8217;re doing is you&#8217;re thinking much more about the code you&#8217;re going to write, therefore you actually end up writing less code in probably a quicker amount of time that produces more functionality.</p>
+<p>I would say, that a team that is used to testing, this isn&#8217;t even an argument, because to them, they don&#8217;t see testing as slowing them down, even in a new project, if they&#8217;re testing properly. If they&#8217;re over testing, 100 percent coverage, then that&#8217;s a different story.</p>
+<p>What I would say is, if I was doing a different prototype and I wasn&#8217;t really comfortable with the test framework, what I would do is, I would probably say, if I&#8217;m breaking something down into stories or tasks, I would give myself 10 or 15 minutes per task or story to say, &#8220;Can I feasibly write a test for this?&#8221;</p>
+<p>If I get stuck, I immediately throw the test away. But I have the scenario, I&#8217;ve got the harnessing for testing, so if I come back later, presumably, it&#8217;s easy for people to add specs or to add tests in there. Additionally, what that allows is that allows maybe other people on the team that are more comfortable with testing to test instead of just saying, &#8220;Oh well, nobody is testing, so I&#8217;m not going to test.&#8221;</p>
+<p>That&#8217;s a fine line, as well. That&#8217;s a reality. Not everybody is really good at testing and testing quickly and making responsible test decisions.</p>
+<p><strong>Chris</strong>:  There are a lot of languages and frameworks out there that haven&#8217;t yet made it easy for people to do that minimum level of testing.</p>
+<p><strong>Jade</strong>:  If you&#8217;re choosing those, you&#8217;re probably not very Lean Start‑up anyways.</p>
+<p><strong>Chris</strong>:  [laughs] Wow.</p>
+<p><strong>Clayton</strong>:  That&#8217;s a good point, though, because a lot of the, and maybe, that&#8217;s just because we live in this community, but a lot of the, &#8220;You&#8217;re an idiot if you&#8217;re not testing everything.&#8221; A lot of that comes from Ruby, for instance, on Rails, where it is really easy to test. If you&#8217;re using Rails&#8230;</p>
+<p><strong>Chris</strong>:  It&#8217;s ridiculously easy.</p>
+<p><strong>Clayton</strong>:  &#8230;it&#8217;s like, &#8220;How could you not be testing? But if you&#8217;re some guy who says, &#8220;I have a great idea and all I know is C‑Sharp.&#8221; It&#8217;s like, &#8220;Maybe, it isn&#8217;t so easy to get 100 percent bootstrapped and do the testing.&#8221; Maybe, that&#8217;s why you don&#8217;t see that from that community and it&#8217;s easy to berate those people.</p>
+<p><strong>Jade</strong>:  What do you think, Chris? You&#8217;re familiar with the .net community.</p>
+<p><strong>Chris</strong>:  For .net community, it&#8217;s been building up for the last couple of years. We&#8217;ve been learning a lot from other frameworks. Now, it is a lot easier to get up and running and do acceptance testing on there.</p>
+<p>You have tools available and you have a lot of frameworks. You go out to get hub and search for TDD and for .net, and you&#8217;ll turn up a ton of frameworks and a lot of tools that are available for you. You can grab Selenium down and start doing acceptance testing.</p>
+<p>For me, that&#8217;d be the first thing I would want to do. Speaking in this idea of a Lean Start‑up with 15 things, I want to, as much as I like to do integration testing for contracts against other systems and things like that, I would take those 15 things and start writing that out, putting that into some steps and running that through acceptance testing.</p>
+<p>That way, I have a contract as to what my user wants. Yes, I&#8217;m not getting all unit testing. I&#8217;m not getting everything underneath, but I&#8217;m using acceptance testing as a type of contract to make sure that I&#8217;m going to get back to what is it that I&#8217;m supposed to be delivering. I mean, it&#8217;s completely possible in .net, no problem.</p>
+<p>There are a lot of tools out there available and a lot of tutorials and slides available to get you through that. Even if you take a look at the Microsoft stack alone, take a look at Team Foundation. Team Foundation System now has test runners and has all that. You can get that continuous integration right there in front of you. There are open source tools available for that, too.</p>
+<p><strong>Jade</strong>:  Cool.</p>
+<p><strong>Clayton</strong>:  What&#8217;s the verdict? Is it you&#8217;re responsible to not test in your Lean Start‑up?</p>
+<p><strong>Jade</strong>:  I&#8217;d say, irresponsible.</p>
+<p><strong>Derek</strong>:  It&#8217;s irresponsible, if you&#8217;re not at least having a discussion about why you&#8217;re not testing.</p>
+<p><strong>Chris</strong>:  I&#8217;m going to equivocate on this one and say it depends.</p>
+<p><strong>Clayton</strong>:  I fall in the category of I feel like I&#8217;m not super slow when I test. If I were doing a Lean Start‑up, I&#8217;d say, it was irresponsible if I didn&#8217;t.</p>
+<p><strong>Jade</strong>:  I will say, I&#8217;m not as fast as Clayton at testing. At this point, I would say, I was irresponsible if I did not do some testing for my start‑up.</p>
+<p><strong>Clayton</strong>:  With that, we&#8217;ll see you next time. Thanks for joining us.</p>
+								</div>
+	</a>
+</article>
+					<nav id="nav-below" class="navigation">
+			<div class="nav-previous">PREVIOUS: <a href="http://integrumtech.com/2011/06/scrumcast-20-whats-most-valuable-in-agile/" rel="prev">Episode #20 &#8211; What&#8217;s Most Valuable in Agile?</a></div>		<div class="nav-next">NEXT: <a href="http://integrumtech.com/2011/07/scrumcast-22-why-enterprises-crave-documentation-artifacts/" rel="next">Episode #22 &#8211; Why Enterprises Crave Documentation Artifacts</a></div>		</nav><!-- #nav-below -->
+						<div id="comments">
+	
+	
+		<a href="https://facebook.com/AgileWeekly">Join the conversation on Facebook</a></div><!-- #comments -->
+							</section>
+		<div id="callouts" class="whatif">
+					<div class="callout-badge" id="callout-badge-rss">
+				<p class="action"><a href="https://itunes.apple.com/us/podcast/agile-weekly-podcast/id309948372?mt=2">Subscribe to the podcast</a></p>
+			</div>
+			<aside id="text-6" class="widget widget-1 callout-light widget widget_text">			<div class="textwidget"><a href="http://www.stitcher.com/s?fid=19189&refid=stpr"><img src="http://cloudfront.assets.stitcher.com/promo.assets/stitcher-banner-300x250.jpg" width="300" height="250" alt="Listen to Stitcher"></a></div>
+		</aside>		<aside id="integrum-text-widget-12" class="widget widget-2 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Make your <strong>mark</strong></h2>				<div class="blurb">
+					Get involved with the Agile Weekly Podcast by volunteering to be a guest, recommending a speaker, submitting a question, or suggesting a topic.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="https://agileweeklypodcast.uservoice.com/">Step up to the mic</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-13" class="widget widget-3 callout-light widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Build up your <strong>toolkit</strong></h2>				<div class="blurb">
+					Learn new tips and tricks for empowering your team and transforming your business.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="/blog/">See the blog</a></li>
+									</ul>
+			</div>
+		</aside>				<aside id="integrum-text-widget-14" class="widget widget-4 callout-dark widget integrum-text-widget">			<div class="container-callout clearfix">
+				<h2 class="widget-title">Hungy for <strong>More Info?</strong></h2>				<div class="blurb">
+					Agile Weekly is a quick way to stay up-to-date with the latest news, techniques and events in the Agile community. Signup today for the best Scrum, Lean, Kanban and XP content, curated by agile practitioners.				</div>
+				<ul class="callout-action-list clearfix">
+										<li class="action action-go"><a href="http://agileweekly.com">Sign up</a></li>
+									</ul>
+			</div>
+		</aside>				</div>    </div>
+    <footer id="footer-document">
+		<div id="featured-clients" class="clearfix"><h3>Recent revolutions:</h3>			<div class="textwidget"><a href="https://www.britannica.com/" title="Encyclopaedia Brittanica"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-encyclobritannica.gif" alt="Encyclopaedia Brittanica"></a>
+<a href="http://www.orbitz.com/" title="Orbitz"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-orbitz.gif" alt="Orbitz"></a>
+<a href="https://www.monster.com/" title="Monster.com"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-monster.gif" alt="Monster.com"></a>
+<a href="http://www.valleymetro.org/" title="Valley Metro"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-valleymetro.gif" alt="Valley Metro"></a>
+<a href="https://www.microsoft.com/" title="Microsoft"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-microsoft.gif" alt="Microsoft"></a>
+<a href="https://www.intel.com/" title="Intel"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-intel.gif" alt="Intel"></a>
+<a href="http://www.pearson.com/" title="Pearson"><img src="http://integrumtech.com/wp-content/themes/integrum/img/client-logo-pearson.gif" alt="Pearson"></a></div>
+		</div>        <div id="footer-contact" class="clearfix">
+			<div id="text-2" class="widget widget_text"><h2>Take the first step towards greatness, and hire a coach today.</h2>			<div class="textwidget"><p>Send us your questions, comments, hopes, and dreams using this form, or contact us at 888-999-1246 or <a href="/cdn-cgi/l/email-protection#95fcfbf3fad5fcfbe1f0f2e7e0f8e1f0f6fdbbf6faf8"><span class="__cf_email__" data-cfemail="721b1c141d321b1c06171500071f0617111a5c111d1f5c">[email&#160;protected]</span></a></p>
+</div>
+		</div><div id="gform_widget-2" class="widget gform_widget">		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+			/* <![CDATA[ */
+			var rcewpp = {
+				"ajax_url":"http://integrumtech.com/wp-admin/admin-ajax.php",
+				"nonce": "456adbb983",
+				"home_url": "http://integrumtech.com"
+			};
+			/* ]]\> */
+		</script>
+		<script type='text/javascript' src='http://integrumtech.com/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js?ver=1.9.12.7' id='gform_masked_input-js'></script>
+
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_1' ><form method='post' enctype='multipart/form-data'  id='gform_1'  action='/2011/07/scrumcast-21-is-it-responsible-to-not-test/'>
+                        <div class='gform_body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id='field_1_1' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_1' >Name:</label><div class='ginput_container'>
+                                    <input name='input_1' id='input_1_1' type='text' value='' class='medium' tabindex='1'  />
+                                </div></li><li id='field_1_3' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_3' >Phone number:</label><div class='ginput_container'><input name='input_3' id='input_1_3' type='tel' value='' class='medium' tabindex='2'   /></div></li><li id='field_1_2' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_2' >Email:</label><div class='ginput_container'>
+                            <input name='input_2' id='input_1_2' type='email' value='' class='medium' tabindex='3'   />
+                        </div></li><li id='field_1_4' class='gfield field_sublabel_below field_description_below' ><label class='gfield_label' for='input_1_4' >Speak up:</label><div class='ginput_container'>
+					<textarea name='input_4' id='input_1_4' class='textarea medium' tabindex='4'    rows='10' cols='50'></textarea>
+				</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Send my message' tabindex='5' onclick='if(window["gf_submitting_1"]){return false;}  if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  ' /> 
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjAzOTlkODFhZmZmM2ZmZjMzY2I2ZTc1OTFjZjU5Zjk5Il0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(!/(android)/i.test(navigator.userAgent)){jQuery('#input_1_3').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );}} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [1, 1]) } ); </script></div><div id="text-3" class="widget widget_text">			<div class="textwidget"><p class="site-id">Site by <a href="http://fortyagency.com" title="Forty branding + marketing">Forty</a></p></div>
+		</div>        </div> <!--/#footer-contact-->
+    </footer>
+</div> <!--/#wrapper-->
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.13-9993131' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.5.1' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.5.1' id='wp-mediaelement-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/comment-reply.min.js?ver=5.5.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='http://integrumtech.com/wp-includes/js/wp-embed.min.js?ver=5.5.1' id='wp-embed-js'></script>
+</body>
+</html>
